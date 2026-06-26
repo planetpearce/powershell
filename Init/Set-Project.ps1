@@ -1,3 +1,9 @@
+<#
+.PARAMETER Alias
+    vsp
+.PARAMETER Description
+    Discovers .sln and .slnx solution files in the directory tree, presents an interactive selection menu, and opens the chosen solution in Visual Studio.
+#>
 function Set-Project {
     [CmdletBinding()] param([string]$Filter = "", [string]$Path = $PWD.Path)
 

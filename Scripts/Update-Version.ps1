@@ -1,3 +1,7 @@
+<#
+.PARAMETER Description
+    Stamps the current git commit hash into the InformationalVersion field of the nearest .csproj file, auto-detecting the project if no path is supplied.
+#>
 param (
     [string]$csprojPath
 )

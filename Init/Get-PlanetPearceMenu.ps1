@@ -1,3 +1,9 @@
+<#
+.PARAMETER Alias
+    pp
+.PARAMETER Description
+    Displays an interactive fuzzy command radar menu listing all available Init utilities and Scripts for quick discovery and execution.
+#>
 # =========================================================================
 # 🌌 PLANET PEARCE: AUTOMATED FUZZY COMMAND RADAR INTERFACE
 # =========================================================================

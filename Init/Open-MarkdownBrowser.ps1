@@ -1,3 +1,9 @@
+<#
+.PARAMETER Alias
+    mdview
+.PARAMETER Description
+    Renders a Markdown file with custom CSS styling in the default browser. Defaults to README.md in the current directory.
+#>
 function Open-MarkdownBrowser {
     [CmdletBinding()]
     param(

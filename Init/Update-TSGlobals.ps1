@@ -1,3 +1,7 @@
+<#
+.PARAMETER Description
+    Recursively walks JavaScript module directories, parses structural variables and function signatures, and generates a strongly-typed globals.d.ts declaration file for IntelliSense.
+#>
 function Update-TSGlobals {
     <#
     .SYNOPSIS

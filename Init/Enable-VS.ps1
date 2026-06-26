@@ -1,3 +1,9 @@
+<#
+.PARAMETER Alias
+    vst
+.PARAMETER Description
+    Mounts the Visual Studio Developer Shell environment into the current terminal session via vswhere without resetting the working directory.
+#>
 function Enable-VS {
     [CmdletBinding()]
     param()

@@ -1,4 +1,8 @@
-﻿function Get-DevDriveStatus {
+﻿<#
+.PARAMETER Description
+    Validates D: Dev Drive health by checking ReFS format, async antivirus filter mode, and trusted state.
+#>
+function Get-DevDriveStatus {
     [CmdletBinding()]
     param()
 
@@ -36,7 +40,7 @@
         $TrustStatus = if ($IsTrusted) { "Trusted (Async Mode Active) ⚡" } else { "Untrusted (Slow Sync Scanning Active) ⚠️" }
         $Color = if ($IsTrusted) { "Green" } else { "Yellow" }
     }
-d
+
     # 3. Output metrics dashboard block
     Write-Host "📦 Dev Drive Health Status (${Letter}:):" -ForegroundColor Cyan
     Write-Host "   • Storage Capacity: " -NoNewline; Write-Host "$FreeSpaceGB GB free / $TotalSpaceGB GB total ($PercentFree% available)" -ForegroundColor White

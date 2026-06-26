@@ -1,3 +1,7 @@
+<#
+.PARAMETER Description
+    Safely deletes bin, obj, and .vs build artifacts under verified project footprints. Supports -Deep flag to also flush the local NuGet package cache.
+#>
 [CmdletBinding(SupportsShouldProcess = $true)]
 param(
     [Parameter(Mandatory=$false, Position=0)]

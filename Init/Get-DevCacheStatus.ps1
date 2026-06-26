@@ -1,3 +1,7 @@
+<#
+.PARAMETER Description
+    Reports current disk usage for high-traffic Dev Drive cache paths including NuGet packages, MSBuild outputs, Roslyn compiles, and ReSharper caches.
+#>
 function Get-DevCacheStatus {
     [CmdletBinding()]
     param()

@@ -26,9 +26,37 @@
 
 Write-Host "🚀 Boot Launching" -ForegroundColor Cyan
 
-# Configure Process Environment Paths (Safely handles array formatting)
-$env:PSModulePath = "D:\PowerShell\Modules;{0}" -f $env:PSModulePath
-$env:Path         = "D:\PowerShell\Scripts;{0}" -f $env:Path
+# Helper function to inject paths cleanly without array nesting bugs
+function Inject-UniquePath {
+    param(
+        [Parameter(Mandatory=$true)][string]$EnvironmentVariable,
+        [Parameter(Mandatory=$true)][string]$TargetDirectory
+    )
+    if (Test-Path $TargetDirectory) {
+        # Dynamically retrieve the environment variable string value
+        $CurrentRaw   = (Get-Item "Env:\$EnvironmentVariable").Value
+        $CurrentPaths = $CurrentRaw -split [IO.Path]::PathSeparator
+        
+        # Filter out empty entries and any existing copies of our target path
+        $CleanPaths   = $CurrentPaths | Where-Object { $_ -and $_ -ne $TargetDirectory }
+        
+        # Flatten the elements by combining them into a single-layer array
+        $FlatArray    = @($TargetDirectory) + $CleanPaths
+        
+        # Join the flattened paths back together with the proper system separator
+        $NewValue     = $FlatArray -join [IO.Path]::PathSeparator
+        
+        # Update the global environment profile variable
+        Set-Item "Env:\$EnvironmentVariable" -Value $NewValue
+    }
+}
+
+# Safely inject your Dev Drive paths to the absolute front of the stack
+Inject-UniquePath -EnvironmentVariable "PSModulePath" -TargetDirectory "D:\PowerShell\Modules"
+Inject-UniquePath -EnvironmentVariable "Path"         -TargetDirectory "D:\PowerShell\Scripts"
+
+# Clean up the helper function so it doesn't clutter your session global scope
+Remove-Item Function:\Inject-UniquePath
 
 # Redirect ALL temporary compilation, MSBuild, and Roslyn artifacts to the Dev Drive
 $env:TEMP = "D:\MSBuild"
@@ -40,26 +68,23 @@ if (-not (Test-Path "D:\MSBuild")) {
     $null = New-Item -ItemType Directory -Path "D:\MSBuild" -Force
 }
 
-# Dynamically discover and source all modular initialization files
-# 🏎️ OPTIMIZATION: Used native $PSScriptRoot to bypass Split-Path execution loops completely
-$InitPath = Join-Path $PSScriptRoot "init"
-
-Write-Host "🔥 Enabling Boosters" -ForegroundColor Cyan
-if (Test-Path $InitPath) {
-    Get-ChildItem -Path $InitPath -Filter *.ps1 -File | ForEach-Object {
-        Write-Host "   ⚡" $_.BaseName -ForegroundColor Gray
-        . $_.FullName
-    }
-}
+. "D:/PowerShell/Init-Logs.ps1"
+. $InitManager
 
 # Standard Operational Environment Aliases
 Set-Alias vsp Set-Project
 Set-Alias vst Enable-VS
 Set-Alias go  Get-Go
 
+Set-Alias azl  Connect-Azure
+Set-Alias cmds Get-Commands
+
+Set-Alias la   Get-AllFiles
+Set-Alias lr   Get-RecursiveList
+Set-Alias lss  Get-SortedBySize
+Set-Alias ldu  Get-DirSize
+
 # Visual Terminal On-Boot Dashboard Menu
 # 🟢 FIXED: Extracted raw character code leaks and repaired spelling typography tokens
 Write-Host "👨‍🚀 Orbit Stabilized" -ForegroundColor Cyan
-
-# Execute your starting repo environment routing hook
-Get-Go
+Write-Host

@@ -1,0 +1,730 @@
+**********************
+PowerShell transcript start
+Start time: 20260626125307
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 93024
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+PS D:\> status
+
+========================================================
+🖥️  NICK'S CORE DEVELOPMENT ENVIRONMENT DIAGNOSTICS
+========================================================
+
+📦 Dev Drive Health Status (D:):
+   • Storage Capacity:
+651.1 GB free / 764.1 GB total (85.2% available)
+   • Defender Security:
+Requires Admin Privileges to Query 🔒
+
+⚡ Dev Drive Transient Cache Allocation:
+   • Resharper Caches   :
+689.5 MB
+(2036 files)
+   • NuGet Packages     :
+12.7 GB
+(63264 files)
+   • MSBuild Metadata   :
+46.2 MB
+(1338 files)
+   • Roslyn Compiles    :
+0.7 MB
+(5 files)
+   • NuGet Scratch      :
+0 MB
+(0 files)
+   • npm Global Cache   :
+219.6 MB
+(12783 files)
+
+⚙️  Global Configuration Scopes:
+   • global.json        :
+None active in working tree path 🍃
+
+🛠️  Toolchain & Developer SDK Runtimes:
+   • Git Engine Tool    :
+v2.53.0.windows.2
+   • Node.js Runtime    :
+v24.15.0
+(npm v11.12.1)
+   • .NET SDK Active    :
+v10.0.301
+   • Installed .NET SDKs :
+     - 8.0.422 [C:\Program Files\dotnet\sdk]
+     - 9.0.315 [C:\Program Files\dotnet\sdk]
+     - 10.0.301 [C:\Program Files\dotnet\sdk]
+   • Active Workloads    :
+     - Workload version: 10.0.300-manifests.8c7d7c03
+     - android 36.1.43/10.0.100 VS 18.7.11919.86
+     - ios 26.5.10284/10.0.100 VS 18.7.11919.86
+     - maccatalyst 26.5.10284/10.0.100 VS 18.7.11919.86
+     - maui-windows 10.0.20/10.0.100 VS 18.7.11919.86
+========================================================
+PS D:\> cd .logs
+Set-Location: Cannot find path 'D:\.logs' because it does not exist.
+Set-Location: Cannot find path 'D:\.logs' because it does not exist.
+PS D:\> ls
+
+    Directory: D:\
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            6/4/2025 11:04 AM                .nuget
+d----            5/4/2026  7:51 PM                3d
+d----           6/26/2026 12:16 PM                MSBuild
+d----           6/26/2026 12:53 PM                PowerShell
+d----           6/23/2026  4:56 AM                repos
+d----           6/24/2026  4:03 PM                ResharperCaches
+-a---           6/24/2026 12:01 PM           7251 bikini.web.orchestration.csproj
+
+PS D:\> Write-DevOpsLog "Initial Setup"
+PS D:\> cd .logs
+Set-Location: Cannot find path 'D:\.logs' because it does not exist.
+Set-Location: Cannot find path 'D:\.logs' because it does not exist.
+PS D:\> ls
+
+    Directory: D:\
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            6/4/2025 11:04 AM                .nuget
+d----            5/4/2026  7:51 PM                3d
+d----           6/26/2026 12:16 PM                MSBuild
+d----           6/26/2026 12:53 PM                PowerShell
+d----           6/23/2026  4:56 AM                repos
+d----           6/24/2026  4:03 PM                ResharperCaches
+-a---           6/24/2026 12:01 PM           7251 bikini.web.orchestration.csproj
+
+PS D:\> cd .\PowerShell\
+PS D:\PowerShell> ls
+
+    Directory: D:\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:08 AM                .github
+d----           6/26/2026 12:53 PM                .logs
+d----           6/25/2026 11:46 PM                Init
+d----           6/22/2026 10:27 PM                Modules
+d----           6/24/2026 11:37 AM                Scripts
+-a---           6/26/2026 12:53 PM           6108 _profile.ps1
+-a---           6/26/2026 11:33 AM           1043 .gitignore
+-a---           4/23/2024  8:29 PM            131 powershell.config.json
+-a---           6/22/2026  6:29 PM             18 ps-profile.code-workspace
+-a---           6/24/2026  1:47 PM          10474 README.md
+
+PS D:\PowerShell> cd logs
+Set-Location: Cannot find path 'D:\PowerShell\logs' because it does not exist.
+Set-Location: Cannot find path 'D:\PowerShell\logs' because it does not exist.
+PS D:\PowerShell> cd .logs
+PS D:\PowerShell\.logs> ls
+
+    Directory: D:\PowerShell\.logs
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           6/26/2026 12:53 PM              0 ConsoleSession_2026-06-26.log
+-a---           6/26/2026 12:54 PM            156 DevOpsAudit.json
+
+PS D:\PowerShell\.logs> more .\ConsoleSession_2026-06-26.log
+
+PS D:\PowerShell\.logs> more .\DevOpsAudit.json
+
+PS D:\PowerShell\.logs> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+=====================================================================
+          ⚡ POWERSHELL DEVOPS WORKSPACE INITIALIZED ⚡
+=====================================================================
+
+[+] Loading System Core Utilities (./Init):
+  --> Enable-VS.ps1                                | No description provided.
+  --> Get-DevCacheStatus.ps1                       | No description provided.
+  --> Get-DevDriveStatus.ps1                       | No description provided.
+  --> Get-GitLogTable.ps1                          | No description provided.
+  --> Get-Go.ps1                                   | No description provided.
+  --> Get-PlanetPearceMenu.ps1                     | No description provided.
+  --> Get-Status.ps1                               | No description provided.
+  --> Open-MarkdownBrowser.ps1                     | No description provided.
+  --> Set-Project.ps1                              | No description provided.
+  --> Update-TSGlobals.ps1                         | No description provided.
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+  --> Clean-Build.ps1                              | No description provided.
+  --> NugetAnalysis.ps1                            | No description provided.
+  --> Update-Version.ps1                           | No description provided.
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+PS D:\PowerShell\.logs> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+=====================================================================
+          ⚡ POWERSHELL DEVOPS WORKSPACE INITIALIZED ⚡
+=====================================================================
+
+[+] Loading System Core Utilities (./Init):
+  --> Enable-VS.ps1                                | No description provided.
+  --> Get-DevCacheStatus.ps1                       | No description provided.
+  --> Get-DevDriveStatus.ps1                       | No description provided.
+  --> Get-GitLogTable.ps1                          | No description provided.
+  --> Get-Go.ps1                                   | No description provided.
+  --> Get-PlanetPearceMenu.ps1                     | No description provided.
+  --> Get-Status.ps1                               | No description provided.
+  --> Open-MarkdownBrowser.ps1                     | No description provided.
+  --> Set-Project.ps1                              | No description provided.
+  --> Update-TSGlobals.ps1                         | No description provided.
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+  --> Clean-Build.ps1                              | No description provided.
+  --> NugetAnalysis.ps1                            | No description provided.
+  --> Update-Version.ps1                           | No description provided.
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+**********************
+PowerShell transcript start
+Start time: 20260626130739
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 73028
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+PS D:\> go bikini web.orch
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> go ps
+PS D:\PowerShell> ls
+
+    Directory: D:\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:08 AM                .github
+d----           6/26/2026 12:54 PM                .logs
+d----           6/25/2026 11:46 PM                Init
+d----           6/22/2026 10:27 PM                Modules
+d----           6/24/2026 11:37 AM                Scripts
+-a---           6/26/2026  1:01 PM           9565 _profile.ps1
+-a---           6/26/2026 11:33 AM           1043 .gitignore
+-a---           4/23/2024  8:29 PM            131 powershell.config.json
+-a---           6/22/2026  6:29 PM             18 ps-profile.code-workspace
+-a---           6/24/2026  1:47 PM          10474 README.md
+
+PS D:\PowerShell> $PROFILE | Select-Object -Property AllUsersAllHosts, AllUsersCurrentHost, CurrentUserAllHosts, CurrentUserCurrentHost | Format-List
+
+AllUsersAllHosts       : C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\profile.ps1
+AllUsersCurrentHost    : C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\Microsoft.PowerSh
+                         ell_profile.ps1
+CurrentUserAllHosts    : C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell\profile.ps1
+CurrentUserCurrentHost : C:\Users\NickPearce\OneDrive - Found
+                         Image\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+
+PS D:\PowerShell> more $PROFILE
+
+PS D:\PowerShell> $PROFILE | Select-Object -Property AllUsersAllHosts, AllUsersCurrentHost, CurrentUserAllHosts, CurrentUserCurrentHost | Format-List
+
+AllUsersAllHosts       : C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\profile.ps1
+AllUsersCurrentHost    : C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\Microsoft.PowerSh
+                         ell_profile.ps1
+CurrentUserAllHosts    : C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell\profile.ps1
+CurrentUserCurrentHost : C:\Users\NickPearce\OneDrive - Found
+                         Image\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+
+PS D:\PowerShell> ls
+
+    Directory: D:\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:08 AM                .github
+d----           6/26/2026 12:54 PM                .logs
+d----           6/25/2026 11:46 PM                Init
+d----           6/22/2026 10:27 PM                Modules
+d----           6/24/2026 11:37 AM                Scripts
+-a---           6/26/2026  1:01 PM           9565 _profile.ps1
+-a---           6/26/2026 11:33 AM           1043 .gitignore
+-a---           4/23/2024  8:29 PM            131 powershell.config.json
+-a---           6/22/2026  6:29 PM             18 ps-profile.code-workspace
+-a---           6/24/2026  1:47 PM          10474 README.md
+
+PS D:\PowerShell> Get-Content $PROFILE.CurrentUserCurrentHost
+. "D:\PowerShell\_profile.ps1"
+PS D:\PowerShell> Get-Content $PROFILE.CurrentUserAllHosts
+# =====================================================================
+# Universal PowerShell Bootstrapper (profile.ps1)
+# =====================================================================
+
+# Prevents VS Code from overriding the default profile
+
+# 1. Environment Guard: Prevent execution blocks in non-interactive CI setups
+if ($Host.Name -match "Visual Studio Code Host" -or $Host.UI.RawUI) {
+
+    # 2. Reference your primary Dev Drive profile repo cleanly
+    $DevDriveProfile = "D:\PowerShell\Microsoft.PowerShell_profile.ps1"
+
+    if (Test-Path $DevDriveProfile) {
+        . $DevDriveProfile
+    }
+}
+PS D:\PowerShell> $PROFILE
+C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+PS D:\PowerShell> cd "$HOME\OneDrive - Found Image\Documents\PowerShell"
+PS C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell> ls
+
+    Directory: C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+lar--           6/25/2026 11:50 PM                Modules
+lar--           6/23/2026  2:20 AM                Scripts
+la---           6/26/2026 11:03 AM             32 Microsoft.PowerShell_profile.ps1
+la---           6/26/2026 12:32 PM            633 profile.ps1
+la---           6/22/2026 11:06 PM           1958 README.md
+
+PS C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell> more .\profile.ps1
+
+PS C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell> go ps
+PS D:\PowerShell> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+=====================================================================
+          ⚡ POWERSHELL DEVOPS WORKSPACE INITIALIZED ⚡
+=====================================================================
+
+[+] Loading System Core Utilities (./Init):
+  --> Enable-VS.ps1                                | No description provided.
+  --> Get-DevCacheStatus.ps1                       | No description provided.
+  --> Get-DevDriveStatus.ps1                       | No description provided.
+  --> Get-GitLogTable.ps1                          | No description provided.
+  --> Get-Go.ps1                                   | No description provided.
+  --> Get-PlanetPearceMenu.ps1                     | No description provided.
+  --> Get-Status.ps1                               | No description provided.
+  --> Open-MarkdownBrowser.ps1                     | No description provided.
+  --> Set-Project.ps1                              | No description provided.
+  --> Update-TSGlobals.ps1                         | No description provided.
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+  --> Clean-Build.ps1                              | No description provided.
+  --> NugetAnalysis.ps1                            | No description provided.
+  --> Update-Version.ps1                           | No description provided.
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+PS D:\PowerShell> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+d
+PS C:\Users\NickPearce\OneDrive - Found Image\Pictures> t
+t: The term 't' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+t: The term 't' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS C:\Users\NickPearce\OneDrive - Found Image\Pictures> CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="UseFuzzyMatching"; value="True"
+>> ParameterBinding(Get-Command): name="FuzzyMinimumDistance"; value="1"
+>> ParameterBinding(Get-Command): name="Name"; value="t"
+>> CommandInvocation(Select-Object): "Select-Object"
+>> ParameterBinding(Select-Object): name="First"; value="5"
+>> ParameterBinding(Select-Object): name="Unique"; value="True"
+>> ParameterBinding(Select-Object): name="ExpandProperty"; value="Name"
+>> ParameterBinding(Select-Object): name="InputObject"; value="%"
+>> ParameterBinding(Select-Object): name="InputObject"; value="?"
+>> ParameterBinding(Select-Object): name="InputObject"; value="ft"
+>> ParameterBinding(Select-Object): name="InputObject"; value="h"
+>> ParameterBinding(Select-Object): name="InputObject"; value="r"
+%
+?
+ft
+h
+r
+PS C:\Users\NickPearce\OneDrive - Found Image\Pictures> go dt
+PS C:\Users\NickPearce\OneDrive - Found Image\Desktop> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+Cancelled.
+PS C:\Users\NickPearce\OneDrive - Found Image\Desktop> pp
+PS C:\Users\NickPearce\OneDrive - Found Image\Desktop> go pp
+Searching in: D:\repos\PlanetPearce...
+
+Multiple solutions found:
+[a]
+D:\repos\PlanetPearce\MainSolution\
+planetpearce.sln
+[b]
+D:\repos\PlanetPearce\PlanetPearce.vue\
+PlanetPearce.vue.sln
+[↑ Up Arrow] Scan Parent Root
+[Space/Esc] Quit
+Select letter or ↑:
+Cancelled.
+PS C:\Users\NickPearce\OneDrive - Found Image\Desktop> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+Cancelled.
+PS C:\Users\NickPearce\OneDrive - Found Image\Desktop> go ps
+PS D:\PowerShell> ls
+
+    Directory: D:\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:08 AM                .github
+d----           6/26/2026 12:54 PM                .logs
+d----           6/25/2026 11:46 PM                Init
+d----           6/22/2026 10:27 PM                Modules
+d----           6/24/2026 11:37 AM                Scripts
+-a---           6/26/2026  1:01 PM           9565 _profile.ps1
+-a---           6/26/2026 11:33 AM           1043 .gitignore
+-a---           4/23/2024  8:29 PM            131 powershell.config.json
+-a---           6/22/2026  6:29 PM             18 ps-profile.code-workspace
+-a---           6/24/2026  1:47 PM          10474 README.md
+
+PS D:\PowerShell> code .\_profile.ps1
+
+**********************
+PowerShell transcript start
+Start time: 20260626132142
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit
+Process ID: 56796
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+PS D:\PowerShell> $PROFILE
+C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+PS D:\PowerShell> $PROFILE | Select-Object -Property AllUsersAllHosts, AllUsersCurrentHost, CurrentUserAllHosts, CurrentUserCurrentHost | Format-List
+
+AllUsersAllHosts       : C:\Program Files\PowerShell\7\profile.ps1
+AllUsersCurrentHost    : C:\Program Files\PowerShell\7\Microsoft.PowerShell_profile.ps1
+CurrentUserAllHosts    : C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell\profile.ps1
+CurrentUserCurrentHost : C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+

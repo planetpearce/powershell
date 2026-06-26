@@ -1,3 +1,7 @@
+<#
+.PARAMETER Description
+    Scans all .csproj files in the current solution directory and opens a NuGet package inventory grid view showing installed versions and any version conflicts.
+#>
 # Run this from the root of your solution directory
 $solutionPath = Get-Location
 Write-Host "Scanning $solutionPath for NuGet packages..." -ForegroundColor Cyan

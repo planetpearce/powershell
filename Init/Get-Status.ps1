@@ -1,3 +1,9 @@
+<#
+.PARAMETER Alias
+    status
+.PARAMETER Description
+    Shows the current status of the development environment, including Dev Drive health, cache telemetry, global.json detection, and installed SDKs.
+#>
 function Get-Status {
     [CmdletBinding()]
     param()
