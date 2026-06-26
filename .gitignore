@@ -1,0 +1,36 @@
+# ==========================================
+# PowerShell Modules & Local Dependencies
+# ==========================================
+# Ignore the entire local Modules folder
+Modules/
+
+# Ignore auto-generated or downloaded modules from the PSGallery
+# 6/26/26 Remove these if they end up empty
+/.modules/
+/RequiredModules/
+
+# ==========================================
+# PowerShell Runtime & Temporary Files
+# ==========================================
+# Ignore history files if redirected to this workspace
+.psrepository/
+*_history.txt
+
+# ==========================================
+# VS Code & Workspace Metadata
+# ==========================================
+# Ignore local environment history (but keep shared tasks/launch settings)
+.vscode/extensions.json
+.vscode/tasks.json
+
+# ==========================================
+# DevOps & Security Safeguards
+# ==========================================
+# NEVER commit environment variables or raw credentials
+*.env
+*.ps1xml
+*.pfx
+*.cer
+*.key
+secret*
+credentials*
