@@ -69,7 +69,7 @@ if (-not (Test-Path "D:\MSBuild")) {
 }
 
 . "D:/PowerShell/Init-Logs.ps1"
-. $InitManager
+. "D:/PowerShell/Init-Functions.ps1"
 
 # Standard Operational Environment Aliases
 Set-Alias vsp Set-Project

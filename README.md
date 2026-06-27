@@ -47,22 +47,44 @@ The environment separates permanent OS/User state from volatile, high-turnover d
 
 The entire operational shell environment is hosted on the Dev Drive. To bootstrap this, a single-line stub profile is dropped into the standard OS location (`C:\Users\NickPearce\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`) pointing straight to the `D:` drive core:
 ```powershell
-. "D:\PowerShell\Microsoft.PowerShell_profile.ps1"
+. "D:\PowerShell\_profile.ps1"
 ```
 
 ### Folder Architecture (`D:\PowerShell\`)
-*   **`\init\`**: A plug-and-play bootstrap directory. Every standalone function (`Set-Project.ps1`, `Set-Repo.ps1`, `Check-DevDrive.ps1`, `Get-DevCacheStatus.ps1`) lives in here and is dynamically loaded at shell launch via a loop inside `Microsoft.PowerShell_profile.ps1`.
+*   **`\Init\`**: A plug-and-play bootstrap directory. Every `.ps1` file here is auto-loaded at startup by `Init-Functions.ps1`. Each file declares a `<# .PARAMETER Alias / .PARAMETER Description #>` metadata block at the top — the loader parses these to register aliases and print the boot dashboard automatically. No manual registration is needed; dropping a new `.ps1` here is sufficient.
 *   **`\Modules\`**: Prioritized at position #1 in `$env:PSModulePath`. Any user-scoped `Install-Module` or `Save-Module` commands automatically unpack tools on the fast ReFS partition, safely isolated from OneDrive.
-*   **`\Scripts\`**: Added natively to the global execution `$env:Path`. Any script dropped here (like `Clear-Build.ps1`) runs instantly from any terminal location.
+*   **`\Scripts\`**: Added natively to the global execution `$env:Path`. Any script dropped here (like `Clean-Build.ps1`) runs instantly from any terminal location. Scripts also support the metadata block format and appear in the boot dashboard alongside Init functions.
 
 ---
 
 ## ⚡ Active Automation Quick Reference
 
-*   **`go` (`Set-Repo`)**: Master control center launcher. Maps static system paths, web macros (like `go emojis` for a full-screen browser viewport), core OneDrive shell links, and development repositories into instant keystroke panels.
-*   **`vsp` (`Set-Project`)**: Solution discovery parser. Traverses folders to detect `.sln` or new XML `.slnx` schemas. Features rapid multi-character alphanumeric selection keys and interactive **Up Arrow** multi-level directory climbing.
-*   **`Clear-Build`**: A safe cleanup crew utility. Recursively targets `bin`, `obj`, and `.vs` folders, utilizing an inline project footprint validation boundary check to verify that a `.csproj` or `.sln` asset exists nearby before executing a delete. Safe to run globally without damaging PowerShell shell tooling. Supports `Clear-Build -Deep` to completely flush global NuGet allocations.
-*   **`vst` (`Enable-VS`)**: Dynamically evaluates `vswhere.exe` parameters to mount official Visual Studio developer environments cleanly on top of the active shell instance with folder retention flags enabled.
+### Navigation & Project Tools
+*   **`go` (`Get-Go`)**: Master navigation hub. Maps bookmarked directories, git repositories, and web macros (e.g. `go emojis` opens a browser viewport) into instant keystroke jumps. Accepts a fuzzy filter argument.
+*   **`vsp` (`Set-Project`)**: Solution discovery parser. Traverses folders to detect `.sln` or `.slnx` schemas. Features alphanumeric selection keys and interactive **Up Arrow** multi-level directory climbing to open the chosen solution in Visual Studio.
+*   **`vst` (`Enable-VS`)**: Dynamically evaluates `vswhere.exe` to mount the Visual Studio Developer Shell on top of the active terminal session without resetting the working directory.
+*   **`pp` (`Get-PlanetPearceMenu`)**: Interactive fuzzy command radar menu listing all available Init utilities and Scripts for quick discovery and execution.
+
+### Shell & Environment Diagnostics
+*   **`status` (`Get-Status`)**: Full dev environment diagnostics — Dev Drive health, cache telemetry (NuGet, MSBuild, Roslyn, npm), active `global.json` detection, and installed .NET SDK / workload enumeration.
+*   **`cmds` (`Get-Commands`)**: Re-displays the boot dashboard at any time, listing all loaded Init utilities, available Scripts, and profile aliases with descriptions. Use `cmds -Library` for an expanded two-line-per-entry view.
+*   **`glt` (`Get-GitLogTable`)**: Outputs the last 20 git commits as a tab-aligned table showing hash, author, date, and subject.
+
+### Azure
+*   **`azl` (`Connect-Azure`)**: Authenticates to Azure for the Planet Pearce tenant (`19269dc1-...`) and sets the active subscription in one step via `Connect-AzAccount`.
+
+### Directory Listing (Linux-style)
+*   **`ll` (`Get-LongList`)**: Long listing with human-readable sizes, modification dates, and file mode. Directories render in Cyan, hidden files in DarkGray, system files in DarkYellow.
+*   **`la` (`Get-AllFiles`)**: Same as `ll` but includes hidden and system files (`-Force`).
+*   **`lr` (`Get-RecursiveList`)**: Recursive flat listing with relative paths from the current directory.
+*   **`lss` (`Get-SortedBySize`)**: Files only, sorted largest to smallest.
+*   **`ldu` (`Get-DirSize`)**: Total recursive size of every item in the current directory, sorted largest first — equivalent to `du -sh *`.
+
+### Build & Deployment Scripts
+*   **`Clean-Build`**: Safe cleanup utility. Recursively targets `bin`, `obj`, and `.vs` folders under verified project footprints (requires a `.csproj`, `.sln`, or `.slnx` nearby). Supports `-Deep` to also flush the local NuGet package cache.
+*   **`mdview` (`Open-MarkdownBrowser`)**: Renders a Markdown file with custom CSS in the default browser. Defaults to `README.md` in the current directory.
+*   **`Update-Version`**: Stamps the current git commit hash into the `InformationalVersion` field of the nearest `.csproj`, auto-detecting the project file if no path is supplied.
+*   **`NugetAnalysis`**: Scans all `.csproj` files in the solution and opens a NuGet package inventory grid view showing installed versions and version conflicts.
 
 ---
 
@@ -100,10 +122,10 @@ Major Windows 11 feature upgrades, domain profile migrations, or storage drive r
     ```
     *Note: Right-click the file inside `C:\Users\NickPearce\Documents\PowerShell` in File Explorer and select **"Always keep on this device"** to prevent future cloud eviction.*
 
-### 4. Locked Directory Execution Errors (`Clear-Build`)
-*   **The Symptom:** Running `Clear-Build` logs `[LOCKED] Could not delete...` in bright red across multiple folders.
+### 4. Locked Directory Execution Errors (`Clean-Build`)
+*   **The Symptom:** Running `Clean-Build` logs `[LOCKED] Could not delete...` in bright red across multiple folders.
 *   **The Cause:** Visual Studio (`devenv.exe`), the background Roslyn compiler server (`VBCSCompiler.exe`), or a running JetBrains engine process is holding an active file-handle lock on a compiled `.dll` asset.
-*   **The Fix:** Completely close Visual Studio and any active debug instances, wait 5 seconds for the background compilation worker threads to terminate gracefully, and re-run your `Clear-Build` command.
+*   **The Fix:** Completely close Visual Studio and any active debug instances, wait 5 seconds for the background compilation worker threads to terminate gracefully, and re-run your `Clean-Build` command.
 
 ---
 
