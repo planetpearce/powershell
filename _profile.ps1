@@ -11,20 +11,17 @@
     
     Write-Host "`n     _____   _                    _     _____                          " -ForegroundColor $blue
     Write-Host "    |  __ \ | |                  | |   |  __ \                         " -ForegroundColor $blue
-    Write-Host "    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___  " -ForegroundColor $blue
+    Write-Host "    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___  " -ForegroundColor $blue
     Write-Host "    |  ___/ | | / _\` || '_ \ / _ \ __| |  ___// _ \/ _\` || '__/ __/ _ \ " -ForegroundColor $pink
-    Write-Host "    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/ " -ForegroundColor $pink
+    Write-Host "    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/ " -ForegroundColor $pink
     Write-Host "    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___| " -ForegroundColor $pink
     Write-Host ""
-    Write-Host "                         🚀 ORBITING: " -NoNewline -ForegroundColor $gray
-    Write-Host "PLANET PEARCE" -NoNewline -ForegroundColor $blue
-    Write-Host " 🚀" -ForegroundColor $gray
-    Write-Host "                         📡 STATION:  " -NoNewline -ForegroundColor $gray
+    Write-Host "                         🛰️ ORBITING: " -NoNewline -ForegroundColor $gray
+    Write-Host "PLANET PEARCE" -ForegroundColor $blue
+    Write-Host "                         🌑 SYSTEM:   " -NoNewline -ForegroundColor $gray
     Write-Host "VIOLETTA" -ForegroundColor $pink
     Write-Host " -----------------------------------------------------------------------`n" -ForegroundColor $gray
 }
-
-Write-Host "🚀 Boot Launching" -ForegroundColor Cyan
 
 # Helper function to inject paths cleanly without array nesting bugs
 function Inject-UniquePath {
@@ -72,13 +69,7 @@ if (-not (Test-Path "D:\MSBuild")) {
 . "D:/PowerShell/Init-Functions.ps1"
 
 # Standard Operational Environment Aliases
-Set-Alias vsp Set-Project
-Set-Alias vst Enable-VS
-Set-Alias go  Get-Go
-
-Set-Alias azl  Connect-Azure
-Set-Alias cmds Get-Commands
-
+Set-Alias ..   cd..
 Set-Alias la   Get-AllFiles
 Set-Alias lr   Get-RecursiveList
 Set-Alias lss  Get-SortedBySize

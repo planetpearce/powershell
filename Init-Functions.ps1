@@ -53,36 +53,36 @@ function Format-ScriptEntry {
         Write-Host "    $Description" -ForegroundColor DarkGray
     } else {
         # Compact: fixed columns, description truncated to terminal width
-        $DisplayAlias = if ($Alias) { "($Alias)" } else { '' }
-        $FixedWidth = 2 + 25 + 1 + 10 + 3  # '  ' + name + ' ' + alias + ' | '
+        $DisplayAlias = if ($Alias) { "$Alias" } else { '' }
+        $FixedWidth = 3 + 25 + 1 + 10 + 3  # '   ' + name + ' ' + alias + ' | '
         $MaxDesc = [Math]::Max(10, $TermWidth - $FixedWidth)
         $TruncDesc = if ($Description.Length -gt $MaxDesc) { $Description.Substring(0, $MaxDesc - 1) + [char]0x2026 } else { $Description }
-        Write-Host ("  {0,-25} {1,-10} | {2}" -f $Name, $DisplayAlias, $TruncDesc) -ForegroundColor Gray
+        Write-Host ("    {0,-25}" -f $Name, $DisplayAlias) -ForegroundColor Gray -NoNewline  
+        Write-Host (" {0,-10}" -f $DisplayAlias) -ForegroundColor DarkYellow
     }
 }
-
-Write-Host "⚡ Functions Initialized" -ForegroundColor Cyan
 
 # ---------------------------------------------------------------------
 # 1. Process and Load Initialization Functions (./Init)
 # ---------------------------------------------------------------------
 $InitFolder = "D:\PowerShell\Init"
 if (Test-Path $InitFolder) {
-    Write-Host "`n[+] Loading System Core Utilities (./Init):" -ForegroundColor Green
+    Write-Host "⚡ Loading System Core Utilities" -ForegroundColor Cyan
     
     Get-ChildItem -Path $InitFolder -Filter *.ps1 | ForEach-Object {
         $Meta = Get-ScriptMetadata -FilePath $_.FullName
         
         # Dot-source the file into memory so the functions are globally available
         . $_.FullName
-        
-        Format-ScriptEntry -Name $_.BaseName -Alias $Meta.Alias -Description $Meta.Description
 
-        # If an alias was defined, dynamically map it to execute this specific utility
+        # If an alias was defined, dynamically map it to execute this specific utility 
         if ($Meta.Alias) {
             $FunctionName = $_.BaseName
-            Set-Item -Path "Function:\script-alias-$($Meta.Alias)" -Value ([scriptblock]::Create($FunctionName))
+            Set-Item -Path "Function:\script-alias-$($Meta.Alias)" -Value ([scriptblock]::Create("$FunctionName @args"))
             Set-Alias -Name $Meta.Alias -Value "script-alias-$($Meta.Alias)" -Scope Global -Force
+
+            # Only show if an alias is defined
+            Format-ScriptEntry -Name $_.BaseName -Alias $Meta.Alias -Description $Meta.Description
         }
     }
 }
@@ -92,7 +92,7 @@ if (Test-Path $InitFolder) {
 # ---------------------------------------------------------------------
 $ScriptsFolder = "D:\PowerShell\Scripts"
 if (Test-Path $ScriptsFolder) {
-    Write-Host "`n[+] Available Deployment & Automation Scripts (./Scripts):" -ForegroundColor Yellow
+    Write-Host "⚡ Initializing Scripts" -ForegroundColor Cyan
     
     Get-ChildItem -Path $ScriptsFolder -Filter *.ps1 | ForEach-Object {
         $Meta = Get-ScriptMetadata -FilePath $_.FullName
@@ -107,5 +107,14 @@ if (Test-Path $ScriptsFolder) {
         }
     }
 }
-Write-Host "`n=====================================================================" -ForegroundColor Cyan
 
+Write-Host "⚡ Optimizing Controls" -ForegroundColor Cyan
+Select-String -Path "D:\PowerShell\_profile.ps1" -Pattern '^\s*Set-Alias\s+(\S+)\s+(\S+)' |
+        ForEach-Object {
+            $Groups = $_.Matches[0].Groups
+            $AliasName = $Groups[1].Value
+            $Target    = $Groups[2].Value
+            # Write-Host ("    {0,-15} → {1}" -f $AliasName, $Target) -ForegroundColor Gray
+
+            Format-ScriptEntry -Name $Target -Alias $AliasName -Description "Alias for '$Target'" -Mode 'Compact'
+        }

@@ -728,3 +728,309 @@ AllUsersCurrentHost    : C:\Program Files\PowerShell\7\Microsoft.PowerShell_prof
 CurrentUserAllHosts    : C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell\profile.ps1
 CurrentUserCurrentHost : C:\Users\NickPearce\OneDrive - Found Image\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 
+**********************
+PowerShell transcript end
+End time: 20260627001607
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260626145306
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -Command & { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+Process ID: 97268
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+[+] Loading System Core Utilities (./Init):
+  --> Enable-VS                                    | No description provided.
+  --> Get-DevCacheStatus                           | No description provided.
+  --> Get-DevDriveStatus                           | No description provided.
+  --> Get-GitLogTable                              | No description provided.
+  --> Get-Go                                       | No description provided.
+  --> Get-PlanetPearceMenu                         | No description provided.
+  --> Get-Status                          (di)     | Deploys core infrastructure components to Azure.
+  --> Open-MarkdownBrowser                         | No description provided.
+  --> Set-Project                                  | No description provided.
+  --> Update-TSGlobals                             | No description provided.
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+  --> Clean-Build                                  | No description provided.
+  --> NugetAnalysis                                | No description provided.
+  --> Update-Version                               | No description provided.
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+PS>& { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+**********************************************************************
+** Visual Studio 2026 Developer PowerShell v18.7.2
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> npm run build:watch
+modules by path ../Assets/sass/*.scss 50 bytes (javascript) 158 bytes (css/mini-extract)
+  ../Assets/sass/nav.scss 50 bytes [built] [code generated]
+  css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs/index.js??ruleSet[1].rules[0].use[2]!../Assets/sass/nav.scss 158 bytes [built] [code generated]
++ 6 modules
+
+WARNING in ./src/index.js 15:0-77
+export 'order' (reexported as 'order') was not found in './js/view-order' (possible exports: orderDetails)
+
+webpack 5.107.2 compiled with 1 warning in 2309 ms
+
+⚡⚡ [Webpack Lifecycle - Watch File Save Mutation] Invoking Update-TSGlobals...
+assets by status 6.56 MiB [cached] 4 assets
+asset app.js 148 KiB [emitted] (name: app)
+Entrypoint app 6.7 MiB = vendor.css 715 KiB vendor.js 5.05 MiB app.css 834 KiB app.js 148 KiB
+cached modules 1.6 MiB (javascript) 790 KiB (css/mini-extract) [cached] 845 modules
+runtime modules 3.3 KiB 6 modules
+./src/index.js 587 bytes [built] [code generated]
+webpack 5.107.2 compiled successfully in 72 ms
+❌❌ [Update-TSGlobals Error]: Command failed: powershell -Command "Update-TSGlobals -SourcePath 'D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\src\js' -OutputFilePath 'D:\repos\Biki
+ni\BikiniGit\BikiniMain\Bikini.Web.Orchestration\src\globals.d.ts' -Force"
+Update-TSGlobals : The term 'Update-TSGlobals' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included,
+verify that the path is correct and try again.
+At line:1 char:1
++ Update-TSGlobals -SourcePath 'D:\repos\Bikini\BikiniGit\BikiniMain\Bi ...
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Update-TSGlobals:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+^C
+**********************
+PowerShell transcript start
+Start time: 20260626185024
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -Command & { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+Process ID: 97556
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+[+] Loading System Core Utilities (./Init):
+  Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subscription using Connect-AzAccount.
+  Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current terminal session via vswhere without resetting the working directory.
+  Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and descriptions. Use -Library for an expanded view.
+  Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including NuGet packages, MSBuild outputs, Roslyn compiles, and ReSharper c…
+  Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter mode, and trusted state.
+  Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, date, and commit subject.
+  Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories, and web URLs. Accepts an optional fuzzy filter argument.
+  Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss (sort by size), ldu (dir sizes).
+  Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init utilities and Scripts for quick discovery and execution.
+  Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive health, cache telemetry, global.json detection, and installed SD…
+  Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defaults to README.md in the current directory.
+  Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an interactive selection menu, and opens the chosen solution in Visua…
+  Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables and function signatures, and generates a strongly-typed globals.…
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+  Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footprints. Supports -Deep flag to also flush the local NuGet package…
+  NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet package inventory grid view showing installed versions and any ve…
+  Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the nearest .csproj file, auto-detecting the project if no path is …
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+PS>& { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+**********************************************************************
+** Visual Studio 2026 Developer PowerShell v18.7.2
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+PS D:\repos\Bikini\BikiniGit\CorePackages> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\CorePackages
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           4/22/2026  2:53 PM                Bikini.Cli
+d----           6/26/2026  6:50 PM                Bikini.Core
+d----           4/22/2026  3:00 PM                Bikini.Core.Cli
+d----           4/24/2026  2:21 PM                Bikini.Core.Test
+d----           6/26/2026  6:50 PM                Bikini.Core.Web
+d----           6/26/2026  6:27 PM                Bikini.DataCore
+d----           4/21/2026  4:00 PM                Bikini.DataCore.Test
+d----           6/26/2026  6:50 PM                Bikini.DataIntegration
+d----           6/26/2026  6:50 PM                Bikini.DataPrint
+d----           4/24/2026  2:21 PM                TestResults
+-a---           4/24/2026 11:50 AM            108 .editorconfig
+-a---           4/24/2026  2:17 PM           1422 CorePackages.sln.DotSettings.user
+-a---           4/24/2026 11:50 AM           1330 CorePackages.slnx
+-a---           4/21/2026  6:44 PM            450 nuget.config
+-a---           4/29/2026 10:47 AM           1417 publishCore.ps1
+
+PS D:\repos\Bikini\BikiniGit\CorePackages> more publishCore.ps1
+
+# Using credential provider with PAT
+# 4/21/26 Need to renew PAT in 90 days
+    dotnet nuget push $_.fullname --source "https://pkgs.dev.azure.com/blackwoodbiz/4a279858-8dc1-46dc-9b6e-c13f845e59a0/_packaging/DevelopFeed/nuget/v3/index.json" --api-key "USING_C
+REDENTIAL_PROVIDER"
+}
+PS D:\repos\Bikini\BikiniGit\CorePackages> .\publishCore.ps1 5.10.11
+PS D:\repos\Bikini\BikiniGit\CorePackages> .\publishCore.ps1 5.10.11
+Publishing package Bikini.Base.5.10.11.nupkg
+
+Publishing package Bikini.Core.5.10.11.nupkg
+
+Publishing package Bikini.Core.Web.5.10.11.nupkg
+
+Publishing package Bikini.DataCore.5.10.11.nupkg
+
+Publishing package Bikini.DataIntegration.5.10.11.nupkg
+
+Publishing package Bikini.DataPrint.5.10.11.nupkg
+
+PS D:\repos\Bikini\BikiniGit\CorePackages> .\publishCore.ps1 
+
+╔═══════════════════════════════════════════════╗
+║   NuGet Package Publisher - CorePackages      ║
+╚═══════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║          NuGet Package Publisher - Quick Reference           ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📦 WHAT THIS SCRIPT DOES:
+  1. Increments version in all 6 package projects
+  2. Rebuilds the solution
+  3. Publishes packages to NuGet feed
+  4. Commits version changes to Git
+
+🚀 COMMON USAGE:
+  .\publishCore.ps1
+    → Patch increment (5.10.11 → 5.10.12)
+
+  .\publishCore.ps1 -IncrementType Minor
+    → Minor increment (5.10.11 → 5.11.0)
+
+  .\publishCore.ps1 -IncrementType Major
+    → Major increment (5.10.11 → 6.0.0)
+
+  .\publishCore.ps1 -CommitMessage
+"Added new feature"
+    → Custom commit message
+
+⚙️  OPTIONS:
+  -SkipBuild
+Skip solution rebuild
+  -SkipCommit
+Skip Git commit
+
+📋 CURRENT VERSION:
+  5.10.12
+
+  Next versions will be:
+    Patch:
+5.10.13
+    Minor:
+5.11.0
+    Major:
+6.0.0
+
+───────────────────────────────────────────────────────────────
+
+🎯 DEFAULT ACTION:
+   Increment:
+Patch
+   Version:
+5.10.12 → 5.10.13
+   Steps:
+Version → Build → Publish → Commit
+
+
+=== Incrementing Version ===
+Current version: 5.10.12
+New version: 5.10.13
+  Updated: ..\Bikini.Base\Bikini.Base.csproj
+  Updated: .\Bikini.Core\Bikini.Core.csproj
+  Updated: .\Bikini.Core.Web\Bikini.Core.Web.csproj
+  Updated: .\Bikini.DataCore\Bikini.DataCore.csproj
+  Updated: .\Bikini.DataIntegration\Bikini.DataIntegration.csproj
+  Updated: .\Bikini.DataPrint\Bikini.DataPrint.csproj
+
+=== Building Solution ===
+Build completed successfully
+
+=== Publishing Packages ===
+Found 6 package(s) to publish
+
+Publishing: Bikini.Base.5.10.13.nupkg
+  ✓ Published successfully
+
+Publishing: Bikini.Core.5.10.13.nupkg
+  ✓ Published successfully
+
+Publishing: Bikini.Core.Web.5.10.13.nupkg
+  ✓ Published successfully
+
+Publishing: Bikini.DataCore.5.10.13.nupkg
+  ✓ Published successfully
+
+Publishing: Bikini.DataIntegration.5.10.13.nupkg
+  ✓ Published successfully
+
+Publishing: Bikini.DataPrint.5.10.13.nupkg
+  ✓ Published successfully
+
+=== Committing Changes ===
+✓ Committed: Bump version to 5.10.13
+
+╔═══════════════════════════════════════════════╗
+║            ✓ All Steps Completed!            ║
+╚═══════════════════════════════════════════════╝
+Version: 5.10.13
+PS D:\repos\Bikini\BikiniGit\CorePackages> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\CorePackages
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           4/22/2026  2:53 PM                Bikini.Cli
+d----           6/26/2026  6:50 PM                Bikini.Core
+d----           4/22/2026  3:00 PM                Bikini.Core.Cli
+d----           4/24/2026  2:21 PM                Bikini.Core.Test
+d----           6/26/2026  6:50 PM                Bikini.Core.Web
+d----           6/26/2026  6:27 PM                Bikini.DataCore
+d----           4/21/2026  4:00 PM                Bikini.DataCore.Test
+d----           6/26/2026  6:50 PM                Bikini.DataIntegration
+d----           6/26/2026  6:50 PM                Bikini.DataPrint
+d----           4/24/2026  2:21 PM                TestResults
+-a---           4/24/2026 11:50 AM            108 .editorconfig
+-a---           4/24/2026  2:17 PM           1422 CorePackages.sln.DotSettings.user
+-a---           4/24/2026 11:50 AM           1330 CorePackages.slnx
+-a---           4/21/2026  6:44 PM            450 nuget.config
+-a---           6/26/2026 10:02 PM           1650 Publish.ps1
+-a---           6/26/2026  7:33 PM          18622 publishCore.ps1
+-a---           6/26/2026  7:34 PM           8994 README-Publishing.md
+-a---           6/26/2026  7:33 PM          12739 updatePackages.ps1
+
+PS D:\repos\Bikini\BikiniGit\CorePackages> more publishcore.ps1
+
+PS D:\repos\Bikini\BikiniGit\CorePackages> Remove-Item D:\PowerShell\Scripts\Bikini -Recurse
+**********************
+PowerShell transcript end
+End time: 20260628084314
+**********************

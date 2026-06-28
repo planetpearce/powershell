@@ -1,0 +1,2808 @@
+**********************
+PowerShell transcript start
+Start time: 20260628020828
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -Command & { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+Process ID: 104320
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS>& { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+**********************************************************************
+** Visual Studio 2026 Developer PowerShell v18.7.2
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+PS D:\repos\Bikini\BikiniGit\BikiniMain> if (Get-Module -Name PSReadLine) {$setPSReadLineOption = Get-Command Set-PSReadLineOption -ErrorAction SilentlyContinue;if ($setPSReadLineOption) { if ($setPSReadLineOption.Parameters.ContainsKey('AddToHistoryHandler')) { Set-PSReadLineOption -AddToHistoryHandler { $false }; }; if ($setPSReadLineOption.Parameters.ContainsKey('HistorySaveStyle')) { Set-PSReadLineOption -HistorySaveStyle SaveNothing; };};$Global:VSReadLine = $function:PSConsoleHostReadLine;$env:GIT_PAGER='cat';$Global:VSPrompt = $function:Prompt;$Global:VSInCmd=$false;[console]::WindowHeight = 9999;function Global:PSConsoleHostReadLine { [Console]::Write("$([char]0x1b)]633;P$([char]0x1b)\"); $cmd = $Global:VSReadLine.Invoke(); $Global:VSInCmd = $true; [Console]::Write("$([char]0x1b)]633;C$([char]0x1b)\"); $cmd;};function Global:Prompt { $rc = [int]!$Global:?; $r = $Global:VSPrompt.Invoke(); if ($Global:VSInCmd -eq $true) { $r = "$([char]0x1b)]633;D;$rc;$([char]0x1b)\$r"; }; $Global:VSInCmd=$false; return $r;};};clear;
+PS D:\repos\Bikini\BikiniGit\BikiniMain> cd D:\repos\Bikini\BikiniGit; git add -A; git commit -m "Convert to unified modal for add/edit notes with textarea for newline preservation"
+
+warning: in the working c
+opy of 'BikiniMain/Bikini
+.Web.Orchestration/src/gl
+obals.d.ts', LF will be r
+eplaced by CRLF the next
+time Git touches it
+[dev 2f825c2da] Convert t
+o unified modal for add/e
+dit notes with textarea f
+or newline preservation
+ 6 files changed, 106 ins
+ertions(+), 50 deletions(
+-)
+**********************
+PowerShell transcript start
+Start time: 20260628021418
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -Command & { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+Process ID: 116384
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subscription using Connect-AzAcco…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current terminal session via vswhere withou…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and descriptions. Use -Library f…
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including NuGet packages, MSBuild outpu…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter mode, and trusted state.
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, date, and commit subject.
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories, and web URLs. Accepts an op…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss (sort by size), ldu (dir si…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init utilities and Scripts for qui…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive health, cache telemetry, glo…
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defaults to README.md in the curr…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an interactive selection menu, an…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables and function signatures, and…
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footprints. Supports -Deep flag t…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet package inventory grid view s…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards arguments — call with pwsh -F…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the nearest .csproj file, auto-…
+👨‍🚀 Orbit Stabilized
+
+PS>& { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+**********************************************************************
+** Visual Studio 2026 Developer PowerShell v18.7.2
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+**********************
+PowerShell transcript start
+Start time: 20260628022047
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 93344
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS D:\> cmds
+
+⚡ Loaded System Core Utilities (./Init)
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+
+⚡ Initialized Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+
+⚡ Profile Aliases
+   vsp             → Set-Project
+   vst             → Enable-VS
+   go              → Get-Go
+   azl             → Connect-Azure
+   cmds            → Get-Commands
+   la              → Get-AllFiles
+   lr              → Get-RecursiveList
+   lss             → Get-SortedBySize
+   ldu             → Get-DirSize
+PS D:\> cmds -Library
+
+⚡ Loaded System Core Utilities (./Init)
+  Connect-Azure
+ (azl)
+    Authenticates to Azure for the Planet Pearce tenant and sets the active subscription using Connect-AzAccount.
+  Enable-VS
+ (vst)
+    Mounts the Visual Studio Developer Shell environment into the current terminal session via vswhere without resetting the working directory.
+  Get-Commands
+ (cmds)
+    Lists all loaded Init utilities and available Scripts with their aliases and descriptions. Use -Library for an expanded view.
+  Get-DevCacheStatus
+
+    Reports current disk usage for high-traffic Dev Drive cache paths including NuGet packages, MSBuild outputs, Roslyn compiles, and ReSharper caches.
+  Get-DevDriveStatus
+
+    Validates D: Dev Drive health by checking ReFS format, async antivirus filter mode, and trusted state.
+  Get-GitLogTable
+ (glt)
+    Outputs the last 20 git commits as a tab-aligned table showing hash, author, date, and commit subject.
+  Get-Go
+ (go)
+    Smart navigation hub for jumping to bookmarked directories, git repositories, and web URLs. Accepts an optional fuzzy filter argument.
+  Get-Listing
+ (ll)
+    Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss (sort by size), ldu (dir sizes).
+  Get-PlanetPearceMenu
+ (pp)
+    Displays an interactive fuzzy command radar menu listing all available Init utilities and Scripts for quick discovery and execution.
+  Get-Status
+ (status)
+    Shows the current status of the development environment, including Dev Drive health, cache telemetry, global.json detection, and installed SDKs.
+  Open-MarkdownBrowser
+ (mdview)
+    Renders a Markdown file with custom CSS styling in the default browser. Defaults to README.md in the current directory.
+  Set-Project
+ (vsp)
+    Discovers .sln and .slnx solution files in the directory tree, presents an interactive selection menu, and opens the chosen solution in Visual Studio.
+  Update-TSGlobals
+
+    Recursively walks JavaScript module directories, parses structural variables and function signatures, and generates a strongly-typed globals.d.ts declaration file for IntelliSense.
+
+⚡ Initialized Scripts (./Scripts)
+  Clean-Build
+
+    Safely deletes bin, obj, and .vs build artifacts under verified project footprints. Supports -Deep flag to also flush the local NuGet package cache.
+  NugetAnalysis
+
+    Scans all .csproj files in the current solution directory and opens a NuGet package inventory grid view showing installed versions and any version conflicts.
+  Update-TSGlobals
+
+    Build tool entry point for Update-TSGlobals. Loads the profile and forwards arguments — call with pwsh -File instead of powershell -Command.
+  Update-Version
+
+    Stamps the current git commit hash into the InformationalVersion field of the nearest .csproj file, auto-detecting the project if no path is supplied.
+
+⚡ Profile Aliases
+   vsp             → Set-Project
+   vst             → Enable-VS
+   go              → Get-Go
+   azl             → Connect-Azure
+   cmds            → Get-Commands
+   la              → Get-AllFiles
+   lr              → Get-RecursiveList
+   lss             → Get-SortedBySize
+   ldu             → Get-DirSize
+PS D:\> cmds -Library
+
+⚡ Loaded System Core Utilities (./Init)
+  Connect-Azure
+ (azl)
+    Authenticates to Azure for the Planet Pearce tenant and sets the active subscription using Connect-AzAccount.
+  Enable-VS
+ (vst)
+    Mounts the Visual Studio Developer Shell environment into the current terminal session via vswhere without resetting the working directory.
+  Get-Commands
+ (cmds)
+    Lists all loaded Init utilities and available Scripts with their aliases and descriptions. Use -Library for an expanded view.
+  Get-DevCacheStatus
+
+    Reports current disk usage for high-traffic Dev Drive cache paths including NuGet packages, MSBuild outputs, Roslyn compiles, and ReSharper caches.
+  Get-DevDriveStatus
+
+    Validates D: Dev Drive health by checking ReFS format, async antivirus filter mode, and trusted state.
+  Get-GitLogTable
+ (glt)
+    Outputs the last 20 git commits as a tab-aligned table showing hash, author, date, and commit subject.
+  Get-Go
+ (go)
+    Smart navigation hub for jumping to bookmarked directories, git repositories, and web URLs. Accepts an optional fuzzy filter argument.
+  Get-Listing
+ (ll)
+    Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss (sort by size), ldu (dir sizes).
+  Get-PlanetPearceMenu
+ (pp)
+    Displays an interactive fuzzy command radar menu listing all available Init utilities and Scripts for quick discovery and execution.
+  Get-Status
+ (status)
+    Shows the current status of the development environment, including Dev Drive health, cache telemetry, global.json detection, and installed SDKs.
+  Open-MarkdownBrowser
+ (mdview)
+    Renders a Markdown file with custom CSS styling in the default browser. Defaults to README.md in the current directory.
+  Set-Project
+ (vsp)
+    Discovers .sln and .slnx solution files in the directory tree, presents an interactive selection menu, and opens the chosen solution in Visual Studio.
+  Update-TSGlobals
+
+    Recursively walks JavaScript module directories, parses structural variables and function signatures, and generates a strongly-typed globals.d.ts declaration file for IntelliSense.
+
+⚡ Initialized Scripts (./Scripts)
+  Clean-Build
+
+    Safely deletes bin, obj, and .vs build artifacts under verified project footprints. Supports -Deep flag to also flush the local NuGet package cache.
+  NugetAnalysis
+
+    Scans all .csproj files in the current solution directory and opens a NuGet package inventory grid view showing installed versions and any version conflicts.
+  Update-TSGlobals
+
+    Build tool entry point for Update-TSGlobals. Loads the profile and forwards arguments — call with pwsh -File instead of powershell -Command.
+  Update-Version
+
+    Stamps the current git commit hash into the InformationalVersion field of the nearest .csproj file, auto-detecting the project if no path is supplied.
+
+⚡ Profile Aliases
+   ..              → cd..
+   la              → Get-AllFiles
+   lr              → Get-RecursiveList
+   lss             → Get-SortedBySize
+   ldu             → Get-DirSize
+**********************
+PowerShell transcript start
+Start time: 20260628024820
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 115212
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini> go emojis
+**********************
+PowerShell transcript start
+Start time: 20260628025507
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 52632
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+☄️ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+**********************
+PowerShell transcript start
+Start time: 20260628084006
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 115284
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS D:\> go bikini web.orch
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           12/2/2025  3:45 PM                .config
+d----           6/22/2026  1:14 AM                bin
+d----           6/24/2026 10:15 PM                Components
+d----           6/27/2026  8:12 PM                Controllers
+d----           12/2/2025  3:45 PM                Models
+d----           6/25/2026  3:00 AM                node_modules
+d----           6/26/2026 10:51 PM                obj
+d----           12/2/2025  3:45 PM                Properties
+d----           6/27/2026  4:22 PM                src
+d----           6/19/2026  9:40 PM                Views
+d----           6/25/2026  3:34 AM                wwwroot
+-a---           6/23/2026  9:48 PM           1174 .stylelintrc.json
+-a---           12/2/2025  3:45 PM            127 appsettings.Development.json
+-a---           5/29/2026  4:35 PM            498 appsettings.json
+-a---           6/27/2026  7:48 PM           6078 Bikini.Web.Orchestration.csproj
+-a---           12/2/2025  3:45 PM            704 Bikini.Web.Orchestration.csproj.DotSettings
+-a---            5/4/2026  1:25 PM           1307 Bikini.Web.Orchestration.csproj.user
+-a---           6/25/2026  3:00 AM         331997 package-lock.json
+-a---           6/26/2026  2:15 PM           4181 package.json
+-a---           12/2/2025  3:45 PM            618 Program.cs
+-a---           6/24/2026  1:42 PM           2549 publish.ps1
+-a---           6/25/2026 11:24 PM           4563 README.md
+-a---           5/28/2026 10:20 PM           6064 Startup.cs
+-a---           6/26/2026 11:55 PM          10459 webpack.config.js
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git status
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git status
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git status
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> glt
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git log
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git log
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git status
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> glt
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> go core
+Searching in: D:\repos\Bikini\BikiniGit\CorePackages...
+
+Multiple solutions found:
+[a]
+D:\repos\Bikini\BikiniGit\CorePackages\
+CorePackages.slnx
+[b]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Cli\
+Bikini.Cli.sln
+[c]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore\
+Bikini.DataCore.sln
+[d]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataIntegration\
+Bikini.DataIntegration.sln
+[↑ Up Arrow] Scan Parent Root
+[Space/Esc] Quit
+Select letter or ↑:
+
+Parsing: CorePackages.slnx
+
+Select project directory:
+[a]
+Bikini.Core
+(D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core)
+[b]
+Bikini.Core.Cli
+(D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Cli)
+[c]
+Bikini.Core.Test
+(D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Test)
+[d]
+Bikini.Core.Web
+(D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Web)
+[e]
+Bikini.DataCore
+(D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore)
+[f]
+Bikini.DataCore.Test
+(D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore.Test)
+[↑ Up Arrow] Scan Parent Root
+[Space/Esc] Quit
+Press letter or ↑:
+WARNING: Invalid selection.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+Cancelled.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> set-project
+Searching in: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration...
+WARNING: No solution (.sln/.slnx) found.
+Press [↑ Up Arrow] to climb higher, or any other key to exit.
+Searching in: D:\repos\Bikini\BikiniGit\BikiniMain...
+
+Parsing: Bikini.slnx
+
+Select project directory:
+[a]
+Bikini.Api.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Api.Gbs)
+[b]
+Bikini.AppHost
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.AppHost)
+[c]
+Bikini.Assets
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Assets)
+[d]
+Bikini.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes)
+[e]
+Bikini.Barcodes.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes.Test)
+[f]
+Bikini.Base
+(D:\repos\Bikini\BikiniGit\BikiniMain\..\Bikini.Base)
+[g]
+Bikini.Biz.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Calendars)
+[h]
+Bikini.Biz.Channel
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Channel)
+[i]
+Bikini.Biz.Comp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Comp)
+[j]
+Bikini.Biz.Compose
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose)
+[k]
+Bikini.Biz.Compose.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose.Tests)
+[l]
+Bikini.Biz.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration)
+[m]
+Bikini.Biz.Orchestration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration.Models)
+[n]
+Bikini.Biz.OrderCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon)
+[o]
+Bikini.Biz.OrderCommon.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon.Models)
+[p]
+Bikini.Biz.Principal
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Principal)
+[q]
+Bikini.Biz.PrintCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.PrintCommon)
+[r]
+Bikini.Biz.Printing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Printing)
+[s]
+Bikini.Biz.Search
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Search)
+[t]
+Bikini.Blazor.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design)
+[u]
+Bikini.Blazor.Design.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design.Client)
+[v]
+Bikini.Cli
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli)
+[w]
+Bikini.Cli.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli.Test)
+[x]
+Bikini.ClientEngine
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ClientEngine)
+[y]
+Bikini.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design)
+[z]
+Bikini.Design.Api
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design.Api)
+[aa]
+Bikini.Encryption
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Encryption)
+[ab]
+Bikini.Event.ShopifyOrder
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Event.ShopifyOrder)
+[ac]
+Bikini.Events
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Events)
+[ad]
+Bikini.Export
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export)
+[ae]
+Bikini.Export.Console
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Console)
+[af]
+Bikini.Export.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Tests)
+[ag]
+Bikini.Faire
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire)
+[ah]
+Bikini.Faire.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire.Models)
+[ai]
+Bikini.Ftp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Ftp)
+[aj]
+Bikini.Function.Image
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image)
+[ak]
+Bikini.Function.Image.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Product)
+[al]
+Bikini.Function.Image.Upc
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Upc)
+[am]
+Bikini.Function.Image.Week
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Week)
+[an]
+Bikini.Function.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Notification)
+[ao]
+Bikini.Function.Order
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Order)
+[ap]
+Bikini.Function.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print)
+[aq]
+Bikini.Function.Print.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print.Client)
+[ar]
+Bikini.Function.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.QuickBooks)
+[as]
+Bikini.Functions.Shopify.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Shopify.Product)
+[at]
+Bikini.Functions.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Tests)
+[au]
+Bikini.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images)
+[av]
+Bikini.Images.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images.Models)
+[aw]
+Bikini.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration)
+[ax]
+Bikini.Integration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration.Models)
+[ay]
+Bikini.Notification.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Client)
+[az]
+Bikini.Notification.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Core)
+[ba]
+Bikini.Notification.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Tests)
+[bb]
+Bikini.Orders.Adapters
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Adapters)
+[bc]
+Bikini.Orders.KeyVault
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.KeyVault)
+[bd]
+Bikini.Orders.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models)
+[be]
+Bikini.Orders.Models.Workflow
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models.Workflow)
+[bf]
+Bikini.PdfBackup
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.PdfBackup)
+[bg]
+Bikini.ProductImages
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ProductImages)
+[bh]
+Bikini.Production
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production)
+[bi]
+Bikini.Production.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production.Models)
+[bj]
+Bikini.Products
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Products)
+[bk]
+Bikini.Publishing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Publishing)
+[bl]
+Bikini.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks)
+[bm]
+Bikini.QuickBooks.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks.Core)
+[bn]
+Bikini.ServiceDefaults
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ServiceDefaults)
+[bo]
+Bikini.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify)
+[bp]
+Bikini.Shopify.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify.Models)
+[bq]
+Bikini.Storage
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage)
+[br]
+Bikini.Storage.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage.Tests)
+[bs]
+Bikini.Tests.Net5
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Tests.Net5)
+[bt]
+Bikini.Web.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Barcodes)
+[bu]
+Bikini.Web.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Calendars)
+[bv]
+Bikini.Web.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Design)
+[bw]
+Bikini.Web.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Images)
+[bx]
+Bikini.Web.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Integration)
+[by]
+Bikini.Web.Landing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Landing)
+[bz]
+Bikini.Web.Net8
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Net8)
+[ca]
+Bikini.Web.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Notification)
+[cb]
+Bikini.Web.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration)
+[cc]
+Bikini.Web.Orders
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orders)
+[cd]
+Bikini.Web.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Print)
+[ce]
+Bikini.Web.Public
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Public)
+[cf]
+Bikini.Webhook.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Gbs)
+[cg]
+Bikini.Webhook.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Shopify)
+[ch]
+Bikini.Webhook.Vanilla
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Vanilla)
+[ci]
+BlazorApp1
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1)
+[cj]
+BlazorApp1.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1.Client)
+[ck]
+QuadrilateralDistortion
+(D:\repos\Bikini\BikiniGit\BikiniMain\QuadrilateralDistortion)
+[↑ Up Arrow] Scan Parent Root
+[Space/Esc] Quit
+Press letter or ↑:
+
+Climbing up to search: D:\repos\Bikini\BikiniGit
+Searching in: D:\repos\Bikini\BikiniGit...
+
+Multiple solutions found:
+[a]
+D:\repos\Bikini\BikiniGit\AspireBikiniReports\
+AspireBikiniReports.slnx
+[b]
+D:\repos\Bikini\BikiniGit\Bikini.SignalR\
+Bikini.SignalR.sln
+[c]
+D:\repos\Bikini\BikiniGit\BikiniMain\
+Bikini.slnx
+[d]
+D:\repos\Bikini\BikiniGit\CorePackages\
+CorePackages.slnx
+[e]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Cli\
+Bikini.Cli.sln
+[f]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore\
+Bikini.DataCore.sln
+[g]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataIntegration\
+Bikini.DataIntegration.sln
+[↑ Up Arrow] Scan Parent Root
+[Space/Esc] Quit
+Select letter or ↑:
+
+Parsing: AspireBikiniReports.slnx
+
+Select project directory:
+[a]
+AspireBikiniReports.ApiService
+(D:\repos\Bikini\BikiniGit\AspireBikiniReports\AspireBikiniReports.ApiService)
+[b]
+AspireBikiniReports.AppHost
+(D:\repos\Bikini\BikiniGit\AspireBikiniReports\AspireBikiniReports.AppHost)
+[c]
+AspireBikiniReports.ServiceDefaults
+(D:\repos\Bikini\BikiniGit\AspireBikiniReports\AspireBikiniReports.ServiceDefaults)
+[d]
+AspireBikiniReports.Web
+(D:\repos\Bikini\BikiniGit\AspireBikiniReports\AspireBikiniReports.Web)
+[↑ Up Arrow] Scan Parent Root
+[Space/Esc] Quit
+Press letter or ↑:
+Cancelled.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> set-project
+Searching in: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration...
+WARNING: No solution (.sln/.slnx) found.
+Press [↑ Up Arrow] to climb higher, or any other key to exit.
+Searching in: D:\repos\Bikini\BikiniGit\BikiniMain...
+
+Parsing: Bikini.slnx
+
+Select project directory:
+[a]
+Bikini.Api.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Api.Gbs)
+[b]
+Bikini.AppHost
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.AppHost)
+[c]
+Bikini.Assets
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Assets)
+[d]
+Bikini.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes)
+[e]
+Bikini.Barcodes.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes.Test)
+[f]
+Bikini.Base
+(D:\repos\Bikini\BikiniGit\BikiniMain\..\Bikini.Base)
+[g]
+Bikini.Biz.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Calendars)
+[h]
+Bikini.Biz.Channel
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Channel)
+[i]
+Bikini.Biz.Comp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Comp)
+[j]
+Bikini.Biz.Compose
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose)
+[k]
+Bikini.Biz.Compose.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose.Tests)
+[l]
+Bikini.Biz.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration)
+[m]
+Bikini.Biz.Orchestration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration.Models)
+[n]
+Bikini.Biz.OrderCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon)
+[o]
+Bikini.Biz.OrderCommon.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon.Models)
+[p]
+Bikini.Biz.Principal
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Principal)
+[q]
+Bikini.Biz.PrintCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.PrintCommon)
+[r]
+Bikini.Biz.Printing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Printing)
+[s]
+Bikini.Biz.Search
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Search)
+[t]
+Bikini.Blazor.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design)
+[u]
+Bikini.Blazor.Design.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design.Client)
+[v]
+Bikini.Cli
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli)
+[w]
+Bikini.Cli.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli.Test)
+[x]
+Bikini.ClientEngine
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ClientEngine)
+[y]
+Bikini.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design)
+[z]
+Bikini.Design.Api
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design.Api)
+[aa]
+Bikini.Encryption
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Encryption)
+[ab]
+Bikini.Event.ShopifyOrder
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Event.ShopifyOrder)
+[ac]
+Bikini.Events
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Events)
+[ad]
+Bikini.Export
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export)
+[ae]
+Bikini.Export.Console
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Console)
+[af]
+Bikini.Export.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Tests)
+[ag]
+Bikini.Faire
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire)
+[ah]
+Bikini.Faire.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire.Models)
+[ai]
+Bikini.Ftp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Ftp)
+[aj]
+Bikini.Function.Image
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image)
+[ak]
+Bikini.Function.Image.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Product)
+[al]
+Bikini.Function.Image.Upc
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Upc)
+[am]
+Bikini.Function.Image.Week
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Week)
+[an]
+Bikini.Function.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Notification)
+[ao]
+Bikini.Function.Order
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Order)
+[ap]
+Bikini.Function.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print)
+[aq]
+Bikini.Function.Print.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print.Client)
+[ar]
+Bikini.Function.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.QuickBooks)
+[as]
+Bikini.Functions.Shopify.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Shopify.Product)
+[at]
+Bikini.Functions.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Tests)
+[au]
+Bikini.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images)
+[av]
+Bikini.Images.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images.Models)
+[aw]
+Bikini.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration)
+[ax]
+Bikini.Integration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration.Models)
+[ay]
+Bikini.Notification.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Client)
+[az]
+Bikini.Notification.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Core)
+[ba]
+Bikini.Notification.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Tests)
+[bb]
+Bikini.Orders.Adapters
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Adapters)
+[bc]
+Bikini.Orders.KeyVault
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.KeyVault)
+[bd]
+Bikini.Orders.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models)
+[be]
+Bikini.Orders.Models.Workflow
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models.Workflow)
+[bf]
+Bikini.PdfBackup
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.PdfBackup)
+[bg]
+Bikini.ProductImages
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ProductImages)
+[bh]
+Bikini.Production
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production)
+[bi]
+Bikini.Production.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production.Models)
+[bj]
+Bikini.Products
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Products)
+[bk]
+Bikini.Publishing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Publishing)
+[bl]
+Bikini.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks)
+[bm]
+Bikini.QuickBooks.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks.Core)
+[bn]
+Bikini.ServiceDefaults
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ServiceDefaults)
+[bo]
+Bikini.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify)
+[bp]
+Bikini.Shopify.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify.Models)
+[bq]
+Bikini.Storage
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage)
+[br]
+Bikini.Storage.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage.Tests)
+[bs]
+Bikini.Tests.Net5
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Tests.Net5)
+[bt]
+Bikini.Web.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Barcodes)
+[bu]
+Bikini.Web.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Calendars)
+[bv]
+Bikini.Web.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Design)
+[bw]
+Bikini.Web.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Images)
+[bx]
+Bikini.Web.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Integration)
+[by]
+Bikini.Web.Landing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Landing)
+[bz]
+Bikini.Web.Net8
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Net8)
+[ca]
+Bikini.Web.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Notification)
+[cb]
+Bikini.Web.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration)
+[cc]
+Bikini.Web.Orders
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orders)
+[cd]
+Bikini.Web.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Print)
+[ce]
+Bikini.Web.Public
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Public)
+[cf]
+Bikini.Webhook.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Gbs)
+[cg]
+Bikini.Webhook.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Shopify)
+[ch]
+Bikini.Webhook.Vanilla
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Vanilla)
+[ci]
+BlazorApp1
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1)
+[cj]
+BlazorApp1.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1.Client)
+[ck]
+QuadrilateralDistortion
+(D:\repos\Bikini\BikiniGit\BikiniMain\QuadrilateralDistortion)
+[↑ Up Arrow] Scan Parent Root
+[Space/Esc] Quit
+Press letter or ↑:
+Cancelled.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+1
+Searching in: D:\repos...
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+1
+Searching in: D:\repos...
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+2
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+
+Select project directory:
+[a]
+Bikini.Api.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Api.Gbs)
+[b]
+Bikini.AppHost
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.AppHost)
+[c]
+Bikini.Assets
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Assets)
+[d]
+Bikini.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes)
+[e]
+Bikini.Barcodes.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes.Test)
+[f]
+Bikini.Base
+(D:\repos\Bikini\BikiniGit\BikiniMain\..\Bikini.Base)
+[g]
+Bikini.Biz.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Calendars)
+[h]
+Bikini.Biz.Channel
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Channel)
+[i]
+Bikini.Biz.Comp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Comp)
+[j]
+Bikini.Biz.Compose
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose)
+[k]
+Bikini.Biz.Compose.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose.Tests)
+[l]
+Bikini.Biz.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration)
+[m]
+Bikini.Biz.Orchestration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration.Models)
+[n]
+Bikini.Biz.OrderCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon)
+[o]
+Bikini.Biz.OrderCommon.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon.Models)
+[p]
+Bikini.Biz.Principal
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Principal)
+[q]
+Bikini.Biz.PrintCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.PrintCommon)
+[r]
+Bikini.Biz.Printing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Printing)
+[s]
+Bikini.Biz.Search
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Search)
+[t]
+Bikini.Blazor.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design)
+[u]
+Bikini.Blazor.Design.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design.Client)
+[v]
+Bikini.Cli
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli)
+[w]
+Bikini.Cli.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli.Test)
+[x]
+Bikini.ClientEngine
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ClientEngine)
+[y]
+Bikini.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design)
+[z]
+Bikini.Design.Api
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design.Api)
+[aa]
+Bikini.Encryption
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Encryption)
+[ab]
+Bikini.Event.ShopifyOrder
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Event.ShopifyOrder)
+[ac]
+Bikini.Events
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Events)
+[ad]
+Bikini.Export
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export)
+[ae]
+Bikini.Export.Console
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Console)
+[af]
+Bikini.Export.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Tests)
+[ag]
+Bikini.Faire
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire)
+[ah]
+Bikini.Faire.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire.Models)
+[ai]
+Bikini.Ftp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Ftp)
+[aj]
+Bikini.Function.Image
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image)
+[ak]
+Bikini.Function.Image.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Product)
+[al]
+Bikini.Function.Image.Upc
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Upc)
+[am]
+Bikini.Function.Image.Week
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Week)
+[an]
+Bikini.Function.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Notification)
+[ao]
+Bikini.Function.Order
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Order)
+[ap]
+Bikini.Function.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print)
+[aq]
+Bikini.Function.Print.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print.Client)
+[ar]
+Bikini.Function.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.QuickBooks)
+[as]
+Bikini.Functions.Shopify.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Shopify.Product)
+[at]
+Bikini.Functions.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Tests)
+[au]
+Bikini.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images)
+[av]
+Bikini.Images.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images.Models)
+[aw]
+Bikini.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration)
+[ax]
+Bikini.Integration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration.Models)
+[ay]
+Bikini.Notification.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Client)
+[az]
+Bikini.Notification.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Core)
+[ba]
+Bikini.Notification.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Tests)
+[bb]
+Bikini.Orders.Adapters
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Adapters)
+[bc]
+Bikini.Orders.KeyVault
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.KeyVault)
+[bd]
+Bikini.Orders.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models)
+[be]
+Bikini.Orders.Models.Workflow
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models.Workflow)
+[bf]
+Bikini.PdfBackup
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.PdfBackup)
+[bg]
+Bikini.ProductImages
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ProductImages)
+[bh]
+Bikini.Production
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production)
+[bi]
+Bikini.Production.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production.Models)
+[bj]
+Bikini.Products
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Products)
+[bk]
+Bikini.Publishing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Publishing)
+[bl]
+Bikini.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks)
+[bm]
+Bikini.QuickBooks.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks.Core)
+[bn]
+Bikini.ServiceDefaults
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ServiceDefaults)
+[bo]
+Bikini.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify)
+[bp]
+Bikini.Shopify.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify.Models)
+[bq]
+Bikini.Storage
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage)
+[br]
+Bikini.Storage.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage.Tests)
+[bs]
+Bikini.Tests.Net5
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Tests.Net5)
+[bt]
+Bikini.Web.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Barcodes)
+[bu]
+Bikini.Web.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Calendars)
+[bv]
+Bikini.Web.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Design)
+[bw]
+Bikini.Web.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Images)
+[bx]
+Bikini.Web.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Integration)
+[by]
+Bikini.Web.Landing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Landing)
+[bz]
+Bikini.Web.Net8
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Net8)
+[ca]
+Bikini.Web.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Notification)
+[cb]
+Bikini.Web.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration)
+[cc]
+Bikini.Web.Orders
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orders)
+[cd]
+Bikini.Web.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Print)
+[ce]
+Bikini.Web.Public
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Public)
+[cf]
+Bikini.Webhook.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Gbs)
+[cg]
+Bikini.Webhook.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Shopify)
+[ch]
+Bikini.Webhook.Vanilla
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Vanilla)
+[ci]
+BlazorApp1
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1)
+[cj]
+BlazorApp1.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1.Client)
+[ck]
+QuadrilateralDistortion
+(D:\repos\Bikini\BikiniGit\BikiniMain\QuadrilateralDistortion)
+[↑ Up Arrow] Scan Parent Root
+[Space] Go to Solution Root  [Esc] Quit
+Press letter or ↑:
+WARNING: Invalid selection.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+2
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+
+Select project directory:
+[a]
+Bikini.Api.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Api.Gbs)
+[b]
+Bikini.AppHost
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.AppHost)
+[c]
+Bikini.Assets
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Assets)
+[d]
+Bikini.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes)
+[e]
+Bikini.Barcodes.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes.Test)
+[f]
+Bikini.Base
+(D:\repos\Bikini\BikiniGit\BikiniMain\..\Bikini.Base)
+[g]
+Bikini.Biz.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Calendars)
+[h]
+Bikini.Biz.Channel
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Channel)
+[i]
+Bikini.Biz.Comp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Comp)
+[j]
+Bikini.Biz.Compose
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose)
+[k]
+Bikini.Biz.Compose.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose.Tests)
+[l]
+Bikini.Biz.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration)
+[m]
+Bikini.Biz.Orchestration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration.Models)
+[n]
+Bikini.Biz.OrderCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon)
+[o]
+Bikini.Biz.OrderCommon.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon.Models)
+[p]
+Bikini.Biz.Principal
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Principal)
+[q]
+Bikini.Biz.PrintCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.PrintCommon)
+[r]
+Bikini.Biz.Printing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Printing)
+[s]
+Bikini.Biz.Search
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Search)
+[t]
+Bikini.Blazor.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design)
+[u]
+Bikini.Blazor.Design.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design.Client)
+[v]
+Bikini.Cli
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli)
+[w]
+Bikini.Cli.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli.Test)
+[x]
+Bikini.ClientEngine
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ClientEngine)
+[y]
+Bikini.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design)
+[z]
+Bikini.Design.Api
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design.Api)
+[aa]
+Bikini.Encryption
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Encryption)
+[ab]
+Bikini.Event.ShopifyOrder
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Event.ShopifyOrder)
+[ac]
+Bikini.Events
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Events)
+[ad]
+Bikini.Export
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export)
+[ae]
+Bikini.Export.Console
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Console)
+[af]
+Bikini.Export.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Tests)
+[ag]
+Bikini.Faire
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire)
+[ah]
+Bikini.Faire.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire.Models)
+[ai]
+Bikini.Ftp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Ftp)
+[aj]
+Bikini.Function.Image
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image)
+[ak]
+Bikini.Function.Image.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Product)
+[al]
+Bikini.Function.Image.Upc
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Upc)
+[am]
+Bikini.Function.Image.Week
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Week)
+[an]
+Bikini.Function.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Notification)
+[ao]
+Bikini.Function.Order
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Order)
+[ap]
+Bikini.Function.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print)
+[aq]
+Bikini.Function.Print.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print.Client)
+[ar]
+Bikini.Function.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.QuickBooks)
+[as]
+Bikini.Functions.Shopify.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Shopify.Product)
+[at]
+Bikini.Functions.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Tests)
+[au]
+Bikini.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images)
+[av]
+Bikini.Images.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images.Models)
+[aw]
+Bikini.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration)
+[ax]
+Bikini.Integration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration.Models)
+[ay]
+Bikini.Notification.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Client)
+[az]
+Bikini.Notification.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Core)
+[ba]
+Bikini.Notification.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Tests)
+[bb]
+Bikini.Orders.Adapters
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Adapters)
+[bc]
+Bikini.Orders.KeyVault
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.KeyVault)
+[bd]
+Bikini.Orders.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models)
+[be]
+Bikini.Orders.Models.Workflow
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models.Workflow)
+[bf]
+Bikini.PdfBackup
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.PdfBackup)
+[bg]
+Bikini.ProductImages
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ProductImages)
+[bh]
+Bikini.Production
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production)
+[bi]
+Bikini.Production.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production.Models)
+[bj]
+Bikini.Products
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Products)
+[bk]
+Bikini.Publishing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Publishing)
+[bl]
+Bikini.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks)
+[bm]
+Bikini.QuickBooks.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks.Core)
+[bn]
+Bikini.ServiceDefaults
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ServiceDefaults)
+[bo]
+Bikini.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify)
+[bp]
+Bikini.Shopify.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify.Models)
+[bq]
+Bikini.Storage
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage)
+[br]
+Bikini.Storage.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage.Tests)
+[bs]
+Bikini.Tests.Net5
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Tests.Net5)
+[bt]
+Bikini.Web.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Barcodes)
+[bu]
+Bikini.Web.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Calendars)
+[bv]
+Bikini.Web.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Design)
+[bw]
+Bikini.Web.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Images)
+[bx]
+Bikini.Web.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Integration)
+[by]
+Bikini.Web.Landing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Landing)
+[bz]
+Bikini.Web.Net8
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Net8)
+[ca]
+Bikini.Web.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Notification)
+[cb]
+Bikini.Web.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration)
+[cc]
+Bikini.Web.Orders
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orders)
+[cd]
+Bikini.Web.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Print)
+[ce]
+Bikini.Web.Public
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Public)
+[cf]
+Bikini.Webhook.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Gbs)
+[cg]
+Bikini.Webhook.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Shopify)
+[ch]
+Bikini.Webhook.Vanilla
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Vanilla)
+[ci]
+BlazorApp1
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1)
+[cj]
+BlazorApp1.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1.Client)
+[ck]
+QuadrilateralDistortion
+(D:\repos\Bikini\BikiniGit\BikiniMain\QuadrilateralDistortion)
+[↑ Up Arrow] Scan Parent Root
+[Space] Go to Solution Root  [Esc] Quit
+Press letter or ↑:
+PS D:\repos\Bikini\BikiniGit\BikiniMain> go core
+Searching in: D:\repos\Bikini\BikiniGit\CorePackages...
+
+Multiple solutions found:
+[a]
+D:\repos\Bikini\BikiniGit\CorePackages\
+CorePackages.slnx
+[b]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Cli\
+Bikini.Cli.sln
+[c]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore\
+Bikini.DataCore.sln
+[d]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataIntegration\
+Bikini.DataIntegration.sln
+[↑ Up Arrow] Scan Parent Root
+[Space] Go to Search Root  [Esc] Quit
+Select letter or ↑:
+PS D:\repos\Bikini\BikiniGit\CorePackages> git status
+
+PS D:\repos\Bikini\BikiniGit\CorePackages> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+4
+Searching in: D:\repos\PlanetPearce...
+
+Multiple solutions found:
+[a]
+D:\repos\PlanetPearce\MainSolution\
+planetpearce.sln
+[b]
+D:\repos\PlanetPearce\PlanetPearce.vue\
+PlanetPearce.vue.sln
+[↑ Up Arrow] Scan Parent Root
+[Space] Go to Search Root  [Esc] Quit
+Select letter or ↑:
+PS D:\repos\PlanetPearce> ls
+
+    Directory: D:\repos\PlanetPearce
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           1/23/2026  9:23 PM                MainSolution
+d----           6/22/2026 12:54 PM                PlanetPearce.vue
+d----           6/22/2026 12:54 PM                signalr-function
+d----           1/23/2026  9:23 PM                Sudoku-decompiled
+d----           6/22/2026 12:54 PM                template-vue-ts
+
+PS D:\repos\PlanetPearce> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+r
+PS D:\PowerShell> ls
+
+    Directory: D:\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:08 AM                .github
+d----           6/28/2026  2:08 AM                .logs
+d----           6/26/2026  4:33 PM                Init
+d----           6/22/2026 10:27 PM                Modules
+d----           6/27/2026  5:26 PM                Scripts
+-a---           6/28/2026  2:58 AM           3981 _profile.ps1
+-a---           6/26/2026 11:33 AM           1043 .gitignore
+-a---           6/28/2026  2:48 AM           5542 Init-Functions.ps1
+-a---           6/28/2026  2:58 AM           1750 Init-Logs.ps1
+-a---           4/23/2024  8:29 PM            131 powershell.config.json
+-a---           6/26/2026 11:47 PM            162 ps-profile.code-workspace
+-a---           6/26/2026  5:20 PM          12686 README.md
+-a---           6/27/2026 12:15 AM              0 settings.json
+
+PS D:\PowerShell> git status
+

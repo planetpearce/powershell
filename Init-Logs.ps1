@@ -17,7 +17,7 @@ $ErrorActionPreference = "SilentlyContinue"
 Start-Transcript -Path $TranscriptFile -Append -NoClobber | Out-Null
 $ErrorActionPreference = "Continue"
 
-Write-Host "👨‍🚀 Log Transcripts Initialized" -ForegroundColor Cyan
+Write-Host "⚡ Log Transcripts Initialized" -ForegroundColor Cyan
 
 # 3. Create a structured function to log custom script executions
 function Write-DevOpsLog {

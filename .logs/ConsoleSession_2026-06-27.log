@@ -1,0 +1,3134 @@
+**********************
+PowerShell transcript start
+Start time: 20260627001619
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit
+Process ID: 114596
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+[+] Loading System Core Utilities (./Init):
+  Connect-Azure             (azl)      | Authenticates to Azure for the Planet …
+  Enable-VS                 (vst)      | Mounts the Visual Studio Developer She…
+  Get-Commands              (cmds)     | Lists all loaded Init utilities and av…
+  Get-DevCacheStatus                   | Reports current disk usage for high-tr…
+  Get-DevDriveStatus                   | Validates D: Dev Drive health by check…
+  Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a t…
+  Get-Go                    (go)       | Smart navigation hub for jumping to bo…
+  Get-Listing               (ll)       | Linux-style listing helpers: ll (long)…
+  Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command …
+  Get-Status                (status)   | Shows the current status of the develo…
+  Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CS…
+  Set-Project               (vsp)      | Discovers .sln and .slnx solution file…
+  Update-TSGlobals                     | Recursively walks JavaScript module di…
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+  Clean-Build                          | Safely deletes bin, obj, and .vs build…
+  NugetAnalysis                        | Scans all .csproj files in the current…
+  Update-TSGlobals                     | Build tool entry point for Update-TSGl…
+  Update-Version                       | Stamps the current git commit hash int…
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+**********************
+PowerShell transcript end
+End time: 20260627001700
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260627002920
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit
+Process ID: 94296
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+[+] Loading System Core Utilities (./Init):
+  Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subscription using Connect-AzAccount.
+  Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current terminal session via vswhere without resetting the working directory.
+  Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and descriptions. Use -Library for an expanded view.
+  Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including NuGet packages, MSBuild outputs, Roslyn compiles, and ReSharper c…
+  Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter mode, and trusted state.
+  Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, date, and commit subject.
+  Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories, and web URLs. Accepts an optional fuzzy filter argument.
+  Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss (sort by size), ldu (dir sizes).
+  Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init utilities and Scripts for quick discovery and execution.
+  Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive health, cache telemetry, global.json detection, and installed SD…
+  Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defaults to README.md in the current directory.
+  Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an interactive selection menu, and opens the chosen solution in Visua…
+  Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables and function signatures, and generates a strongly-typed globals.…
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+  Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footprints. Supports -Deep flag to also flush the local NuGet package…
+  NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet package inventory grid view showing installed versions and any ve…
+  Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards arguments — call with pwsh -File instead of powershell -Command.
+  Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the nearest .csproj file, auto-detecting the project if no path is …
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+**********************
+PowerShell transcript start
+Start time: 20260627003045
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 99628
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+[+] Loading System Core Utilities (./Init):
+  Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subscr…
+  Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current terminal…
+  Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and d…
+  Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including Nu…
+  Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter …
+  Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, d…
+  Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories, …
+  Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss …
+  Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init ut…
+  Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive h…
+  Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defaul…
+  Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an int…
+  Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables a…
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+  Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footpr…
+  NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet pa…
+  Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards ar…
+  Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the …
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+[+] Loading System Core Utilities (./Init):
+  Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subscr…
+  Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current terminal…
+  Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and d…
+  Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including Nu…
+  Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter …
+  Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, d…
+  Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories, …
+  Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss …
+  Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init ut…
+  Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive h…
+  Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defaul…
+  Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an int…
+  Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables a…
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+  Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footpr…
+  NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet pa…
+  Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards ar…
+  Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the …
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+PS D:\> cmds
+🚀 Loading System Core Utilities (./Init:
+  Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subscr…
+  Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current terminal…
+  Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and d…
+  Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including Nu…
+  Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter …
+  Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, d…
+  Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories, …
+  Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss …
+  Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init ut…
+  Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive h…
+  Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defaul…
+  Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an int…
+  Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables a…
+🚀 Initializing Scripts (./Scripts)
+  Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footpr…
+  NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet pa…
+  Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards ar…
+  Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the …
+🚀 Profile Aliases
+  vsp             → Set-Project
+  vst             → Enable-VS
+  go              → Get-Go
+  azl             → Connect-Azure
+  cmds            → Get-Commands
+  la              → Get-AllFiles
+  lr              → Get-RecursiveList
+  lss             → Get-SortedBySize
+  ldu             → Get-DirSize
+PS D:\> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+Cancelled.
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+[+] Loading System Core Utilities (./Init):
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+PS D:\> ..
+..: The term '..' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+..: The term '..' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS D:\> CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="UseFuzzyMatching"; value="True"
+>> ParameterBinding(Get-Command): name="FuzzyMinimumDistance"; value="1"
+>> ParameterBinding(Get-Command): name="Name"; value=".."
+>> CommandInvocation(Select-Object): "Select-Object"
+>> ParameterBinding(Select-Object): name="First"; value="5"
+>> ParameterBinding(Select-Object): name="Unique"; value="True"
+>> ParameterBinding(Select-Object): name="ExpandProperty"; value="Name"
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+[+] Loading System Core Utilities (./Init):
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+
+[+] Available Deployment & Automation Scripts (./Scripts):
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+
+=====================================================================
+👨‍🚀 Orbit Stabilized
+
+PS D:\> cmds
+🚀 Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+🚀 Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+🚀 Profile Aliases
+  vsp             → Set-Project
+  vst             → Enable-VS
+  go              → Get-Go
+  azl             → Connect-Azure
+  cmds            → Get-Commands
+  la              → Get-AllFiles
+  lr              → Get-RecursiveList
+  lss             → Get-SortedBySize
+  ldu             → Get-DirSize
+PS D:\> ll
+Get-Listing: The term 'Get-Listing' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+Get-Listing: The term 'Get-Listing' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS D:\> la
+Mode   Modified          Size        Name
+-----  ----------------  ----------  -------------------------------
+d--h-  2026-01-09 13:30      <DIR>   .linqpad.tmp
+d----  2025-06-04 11:04      <DIR>   .nuget
+d--hs  2025-03-31 12:02      <DIR>   $RECYCLE.BIN
+d----  2026-05-04 19:51      <DIR>   3d
+d----  2026-06-26 23:14      <DIR>   MSBuild
+d----  2026-06-27 00:15      <DIR>   PowerShell
+d--hs  2026-03-11 17:31      <DIR>   Recovery
+d----  2026-06-23 04:56      <DIR>   repos
+d----  2026-06-24 16:03      <DIR>   ResharperCaches
+d--hs  2025-04-09 03:53      <DIR>   System Volume Information
+-a---  2026-06-24 12:01      7.1 KB  bikini.web.orchestration.csproj
+-a-hs  2026-03-12 13:24     12.0 KB  DumpStack.log.tmp
+-a-hs  2026-03-12 13:24      4.0 GB  pagefile.sys
+
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+🚀 Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+
+🚀 Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+🚀 Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+
+🚀 Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Functions Initialized
+
+🚀 Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+
+🚀 Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS D:\> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _ _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || || | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🚀 ORBITING:
+PLANET PEARCE
+ 🚀
+                         📡 STATION:
+VIOLETTA
+ -----------------------------------------------------------------------
+🚀 Boot Launching
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS D:\> cmds
+
+⚡ Loaded System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+
+⚡ Initialized Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+
+⚡ Profile Aliases
+   vsp             → Set-Project
+   vst             → Enable-VS
+   go              → Get-Go
+   azl             → Connect-Azure
+   cmds            → Get-Commands
+   la              → Get-AllFiles
+   lr              → Get-RecursiveList
+   lss             → Get-SortedBySize
+   ldu             → Get-DirSize
+**********************
+PowerShell transcript start
+Start time: 20260627021104
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -Command & { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+Process ID: 86604
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS>& { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+**********************************************************************
+** Visual Studio 2026 Developer PowerShell v18.7.2
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+PS D:\repos\Bikini\BikiniGit\BikiniMain> if (Get-Module -Name PSReadLine) {$setPSReadLineOption = Get-Command Set-PSReadLineOption -ErrorAction SilentlyContinue;if ($setPSReadLineOption) { if ($setPSReadLineOption.Parameters.ContainsKey('AddToHistoryHandler')) { Set-PSReadLineOption -AddToHistoryHandler { $false }; }; if ($setPSReadLineOption.Parameters.ContainsKey('HistorySaveStyle')) { Set-PSReadLineOption -HistorySaveStyle SaveNothing; };};$Global:VSReadLine = $function:PSConsoleHostReadLine;$env:GIT_PAGER='cat';$Global:VSPrompt = $function:Prompt;$Global:VSInCmd=$false;[console]::WindowHeight = 9999;function Global:PSConsoleHostReadLine { [Console]::Write("$([char]0x1b)]633;P$([char]0x1b)\"); $cmd = $Global:VSReadLine.Invoke(); $Global:VSInCmd = $true; [Console]::Write("$([char]0x1b)]633;C$([char]0x1b)\"); $cmd;};function Global:Prompt { $rc = [int]!$Global:?; $r = $Global:VSPrompt.Invoke(); if ($Global:VSInCmd -eq $true) { $r = "$([char]0x1b)]633;D;$rc;$([char]0x1b)\$r"; }; $Global:VSInCmd=$false; return $r;};};clear;
+PS D:\repos\Bikini\BikiniGit\BikiniMain> git diff BikiniMain\Bikini.Biz.OrderCommon\CommonOopsAdapter.cs
+
+fatal: ambiguous argument
+ 'BikiniMain\Bikini.Biz.O
+rderCommon\CommonOopsAdap
+ter.cs': unknown revision
+ or path not in the worki
+ng tree.
+Use '--' to separate path
+s from revisions, like th
+is:
+'git <command> [<revision
+>...] -- [<file>...]'
+]633;D;1;\PS D:\repos\Bikini\BikiniGit\BikiniMain> git checkout -- "BikiniMain/Bikini.Biz.OrderCommon/CommonOopsAdapter.cs"
+
+error: pathspec 'BikiniMa
+in/Bikini.Biz.OrderCommon
+/CommonOopsAdapter.cs' di
+d not match any file(s) k
+nown to git
+]633;D;1;\PS D:\repos\Bikini\BikiniGit\BikiniMain> git status
+
+On branch dev
+Your branch is ahead of '
+origin/dev' by 3 commits.
+  (use "git push" to publ
+ish your local commits)
+
+Changes not staged for co
+mmit:
+  (use "git add/rm <file>
+..." to update what will
+be committed)
+  (use "git restore <file
+>..." to discard changes
+in working directory)
+        modified:   ../Bi
+kini.Base/Bikini.Base.csp
+roj
+        modified:   Bikin
+i.Api.Gbs/Bikini.Api.Gbs.
+csproj
+        modified:   Bikin
+i.Assets/Bikini.Assets.cs
+proj
+        modified:   Bikin
+i.Barcodes/Bikini.Barcode
+s.csproj
+        modified:   Bikin
+i.Biz.Calendars/Bikini.Bi
+z.Calendars.csproj
+        modified:   Bikin
+i.Biz.Channel/Bikini.Biz.
+Channel.csproj
+        modified:   Bikin
+i.Biz.Compose/Bikini.Biz.
+Compose.csproj
+        modified:   Bikin
+i.Biz.Orchestration.Model
+s/BikOrderModel.cs
+        modified:   Bikin
+i.Biz.Orchestration.Model
+s/Bikini.Biz.Orchestratio
+n.Models.csproj
+        modified:   Bikin
+i.Biz.Orchestration/Bikin
+i.Biz.Orchestration.cspro
+j
+        modified:   Bikin
+i.Biz.Orchestration/Orche
+strationEngine.cs
+        modified:   Bikin
+i.Biz.Orchestration/Searc
+hResultsModel.cs
+        modified:   Bikin
+i.Biz.OrderCommon.Models/
+Bikini.Biz.OrderCommon.Mo
+dels.csproj
+        modified:   Bikin
+i.Biz.OrderCommon/Bikini.
+Biz.OrderCommon.csproj
+        modified:   Bikin
+i.Biz.OrderCommon/CommonO
+opsAdapter.cs
+        modified:   Bikin
+i.Biz.OrderCommon/OrderCo
+mmonEngine.cs
+        modified:   Bikin
+i.Biz.Principal/Bikini.Bi
+z.Principal.csproj
+        modified:   Bikin
+i.Biz.PrintCommon/Bikini.
+Biz.PrintCommon.csproj
+        modified:   Bikin
+i.Biz.Printing/Bikini.Biz
+.Printing.csproj
+        modified:   Bikin
+i.Biz.Search/Bikini.Biz.S
+earch.csproj
+        modified:   Bikin
+i.Blazor.Design/Bikini.Bl
+azor.Design/Bikini.Blazor
+.Design.csproj
+        modified:   Bikin
+i.Cli/Bikini.Cli.csproj
+        modified:   Bikin
+i.ClientEngine/Bikini.Cli
+entEngine.csproj
+        modified:   Bikin
+i.Design.Api/Bikini.Desig
+n.Api.csproj
+        modified:   Bikin
+i.Event.ShopifyOrder/Biki
+ni.Event.ShopifyOrder.csp
+roj
+        modified:   Bikin
+i.Events/Bikini.Events.cs
+proj
+        modified:   Bikin
+i.Export.Console/Bikini.E
+xport.Console.csproj
+        modified:   Bikin
+i.Export/Bikini.Export.cs
+proj
+        modified:   Bikin
+i.Faire/Bikini.Faire.cspr
+oj
+        modified:   Bikin
+i.Ftp/Bikini.Ftp.csproj
+        modified:   Bikin
+i.Function.Image.Product/
+Bikini.Function.Image.Pro
+duct.csproj
+        modified:   Bikin
+i.Function.Image.Upc/Biki
+ni.Function.Image.Upc.csp
+roj
+        modified:   Bikin
+i.Function.Image.Week/Bik
+ini.Function.Image.Week.c
+sproj
+        modified:   Bikin
+i.Function.Image/Bikini.F
+unction.Image.csproj
+        modified:   Bikin
+i.Function.Notification/B
+ikini.Function.Notificati
+on.csproj
+        modified:   Bikin
+i.Function.Order/Bikini.F
+unction.Order.csproj
+        modified:   Bikin
+i.Function.Print.Client/B
+ikini.Function.Print.Clie
+nt.csproj
+        modified:   Bikin
+i.Function.Print/Bikini.F
+unction.Print.csproj
+        modified:   Bikin
+i.Function.QuickBooks/Bik
+ini.Function.QuickBooks.c
+sproj
+        modified:   Bikin
+i.Functions.Tests/Bikini.
+Functions.Tests.csproj
+        modified:   Bikin
+i.Images/Bikini.Images.cs
+proj
+        modified:   Bikin
+i.Integration/Bikini.Inte
+gration.csproj
+        modified:   Bikin
+i.Integration/Integration
+Singleton.cs
+        modified:   Bikin
+i.Notification.Client/Bik
+ini.Notification.Client.c
+sproj
+        modified:   Bikin
+i.Orders.Adapters/Bikini.
+Orders.Adapters.csproj
+        modified:   Bikin
+i.Orders.KeyVault/Bikini.
+Orders.KeyVault.csproj
+        modified:   Bikin
+i.Orders.Models.Workflow/
+Bikini.Orders.Models.Work
+flow.csproj
+        modified:   Bikin
+i.Orders.Models/Bikini.Or
+ders.Models.csproj
+        modified:   Bikin
+i.ProductImages/Bikini.Pr
+oductImages.csproj
+        modified:   Bikin
+i.Production/Bikini.Produ
+ction.csproj
+        modified:   Bikin
+i.Products/Bikini.Product
+s.csproj
+        modified:   Bikin
+i.QuickBooks.Core/Bikini.
+QuickBooks.Core.csproj
+        modified:   Bikin
+i.Storage/Bikini.Storage.
+csproj
+        modified:   Bikin
+i.Tests.Net5/Bikini.Tests
+.Net5.csproj
+        modified:   Bikin
+i.Web.Barcodes/Bikini.Web
+.Barcodes.csproj
+        modified:   Bikin
+i.Web.Calendars/Bikini.We
+b.Calendars.csproj
+        modified:   Bikin
+i.Web.Design/Bikini.Web.D
+esign.csproj
+        modified:   Bikin
+i.Web.Images/Bikini.Web.I
+mages.csproj
+        modified:   Bikin
+i.Web.Integration/Bikini.
+Web.Integration.csproj
+        modified:   Bikin
+i.Web.Landing/Bikini.Web.
+Landing.csproj
+        modified:   Bikin
+i.Web.Notification/Bikini
+.Web.Notification.csproj
+        modified:   Bikin
+i.Web.Orchestration/Bikin
+i.Web.Orchestration.cspro
+j
+        modified:   Bikin
+i.Web.Orchestration/Contr
+ollers/BikOrdersControlle
+r.cs
+        modified:   Bikin
+i.Web.Orchestration/webpa
+ck.config.js
+        modified:   Bikin
+i.Web.Orders/Bikini.Web.O
+rders.csproj
+        modified:   Bikin
+i.Web.Print/Bikini.Web.Pr
+int.csproj
+        modified:   Bikin
+i.Web.Public/Bikini.Web.P
+ublic.csproj
+        modified:   Bikin
+i.Webhook.Gbs/Bikini.Webh
+ook.Gbs.csproj
+        modified:   Bikin
+i.Webhook.Shopify/Bikini.
+Webhook.Shopify.csproj
+        modified:   Blazo
+rApp1/BlazorApp1/BlazorAp
+p1.csproj
+        modified:   ../Co
+rePackages/Bikini.Core.We
+b/Bikini.Core.Web.csproj
+        modified:   ../Co
+rePackages/Bikini.Core/Bi
+kini.Core.csproj
+        modified:   ../Co
+rePackages/Bikini.DataCor
+e/Bikini.DataCore.csproj
+        modified:   ../Co
+rePackages/Bikini.DataCor
+e/DbContextCore.cs
+        modified:   ../Co
+rePackages/Bikini.DataCor
+e/Entities/BikOrderPartSt
+atusView.cs
+        modified:   ../Co
+rePackages/Bikini.DataCor
+e/Sql/CreatePerformanceVi
+ews.sql
+        modified:   ../Co
+rePackages/Bikini.DataInt
+egration/Bikini.DataInteg
+ration.csproj
+        modified:   ../Co
+rePackages/Bikini.DataPri
+nt/Bikini.DataPrint.cspro
+j
+        deleted:    ../Co
+rePackages/publishCore.ps
+1
+
+Untracked files:
+  (use "git add <file>...
+" to include in what will
+ be committed)
+        ../.vscode/
+        Update.ps1
+        ../CorePackages/P
+ublish.ps1
+        ../CorePackages/R
+EADME-Publishing.md
+        ../PERFORMANCE_IN
+STRUMENTATION_GUIDE.md
+        ../PERFORMANCE_OP
+TIMIZATION_SUMMARY.md
+        ../QUICK_PERFORMA
+NCE_TEST_PLAN.md
+        ../dev-ops/
+
+no changes added to commi
+t (use "git add" and/or "
+git commit -a")
+]633;D;0;\PS D:\repos\Bikini\BikiniGit\BikiniMain> cd BikiniMain; git diff Bikini.Biz.OrderCommon/CommonOopsAdapter.cs | head -200
+
+Set-Location: Cannot find path 'D:\repos\Bikini\BikiniGit\BikiniMain\BikiniMain' because it does not exist.
+Set-Location: Cannot find path 'D:\repos\Bikini\BikiniGit\BikiniMain\BikiniMain' because it does not exist.
+head: The term 'head' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+head: The term 'head' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+]633;D;1;\PS D:\repos\Bikini\BikiniGit\BikiniMain> Get-Content "D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon\CommonOopsAdapter.cs" -TotalCount 120
+
+// ©2025 Blackwood Business Technology, Inc. All Rights Reserved.
+// Last updated 10/14/2025 by Nick Pearce
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Bikini.Biz.Integration;
+using Bikini.Core;
+using Bikini.DataCore;
+using Bikini.Shopify;
+using Microsoft.EntityFrameworkCore;
+
+namespace Bikini.Biz;
+
+public class CommonOopsAdapter(DbContextCore dbCore, IChannelConfiguration channelConfiguration)
+{
+    private readonly List<string> _oopsOrderTags = ["FoundImage", "Wholesale"];
+
+    public async Task<List<OrderCommonModel>> Orders(DateTime dateFrom, DateTime dateTo, int channelId)
+    {
+        var from = dateFrom.ToUniversalTime();
+        var to = dateTo.ToUniversalTime();
+
+        var channel = channelConfiguration.GetChannel(channelId);
+
+        var orders = await dbCore.Orders
+                                 .Include(o => o.SalesRep)
+                                 .Include(o => o.Contact.Customer)
+                                 .Where(o => o.OrderDate > from && o.OrderDate < to) // Removing OrderStatusEntries
+                                 .ToListAsync();
+
+        var models = orders.Select(order => OrderCommonModel(channel, order, new List<OrderItemCommonModel>()))
+                           .ToList();
+        return models;
+    }
+
+    public async Task<OrderCommonModel> Order(int channelId, int orderId)
+    {
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+
+        var channel = channelConfiguration.GetChannel(channelId);
+
+        var justOrder = await dbCore.Orders
+                                    .AsNoTracking()
+                                    .Include(o => o.SalesRep)
+                                    .Include(o => o.Contact.Customer)
+                                    .Where(o => o.Id == orderId)
+                                    .SingleAsync();
+
+        var loadOrderMs = sw.ElapsedMilliseconds;
+
+        var justItems = await dbCore.CartItems
+                                    .AsNoTracking()
+                                    .Include(ci => ci.Image.Category.Classification.Vendor)
+                                    .Include(ci => ci.Product.ProductCode.ProductType)
+                                    .Include(ci => ci.Product.ChannelProducts)
+                                    .Include(ci => ci.Product.ProductEans)
+                                    .Where(ci => ci.CartId == justOrder.CartId)
+                                    .Select(ci => new
+                                     {
+                                         ci.Id,
+                                         ci.Quantity,
+                                         ci.Product,
+                                         ci.Image,
+                                         channelProduct = ci.Product.ChannelProducts.Single(cp => cp.ChannelId == channelId),
+                                         productEan = ci.Product.ProductEans.SingleOrDefault(e => e.ImageId == ci.ImageId)
+                                     })
+                                    .ToListAsync();
+
+        var loadCartItemsMs = sw.ElapsedMilliseconds - loadOrderMs;
+
+        var artCodeEngine = new TemporaryArtCodeEngine();
+
+        var model = OrderCommonModel(channel,
+                                     justOrder,
+                                     justItems
+                                        .Select((item, i) => new OrderItemCommonModel
+                                         {
+                                             Id = (i + 1).ToString("D3"),
+                                             Sku = SkuEngine.FromProductAndImage(channel.ChannelCode, item.Product, item.Image, item.channelProduct.PackSize, item.productEan),
+                                             ArtCode = item.Image != null ? artCodeEngine.ArtCode(item.Image) : ArtCode.Invalid(),
+                                             Caption = item.Image?.Caption,
+                                             ProductTypeId = item.Product.ProductCode.ProductTypeId,
+                                             Code = item.Product.ProductCode.Code,
+                                             ProductCodeDescription = item.Product.ProductCode.Description,
+                                             ProductType = item.Product.ProductCode.ProductType.DisplayName,
+                                             ProductDetails = item.Product.Description,
+                                             ProductFullName = $"{item.Product.ProductCode.ProductType.DisplayName} {item.Product.Description}",
+                                             QuantityPerPack = item.channelProduct.PackSize,
+                                             Quantity = item.Quantity * item.channelProduct.PackSize,
+                                             ProductUnitPrice = item.channelProduct.Price,
+                                             ProductUnitMsrp = item.channelProduct.Msrp,
+                                             LineTotal = item.Quantity * item.channelProduct.Price,
+                                             ProductionFileName = item.Product.ProductionFilename ?? "",
+                                             ProductId = item.Product.Id,
+                                             ProductionTypes = item.Product.ProductCode.ProductType.ProductionTypes,
+                                             ImageId = item.Image?.Id,
+                                             Packs = item.Quantity,
+                                             ProductEan = item.productEan?.Ean ?? 0
+                                         })
+                                        .ToList());
+
+        var buildModelMs = sw.ElapsedMilliseconds - loadOrderMs - loadCartItemsMs;
+
+        System.Diagnostics.Debug.WriteLine($"      → Order query: {loadOrderMs}ms");
+        System.Diagnostics.Debug.WriteLine($"      → CartItems query: {loadCartItemsMs}ms");
+        System.Diagnostics.Debug.WriteLine($"      → Build model: {buildModelMs}ms");
+        System.Diagnostics.Debug.WriteLine($"      → TOTAL CommonOopsAdapter.Order: {sw.ElapsedMilliseconds}ms");
+
+        return model;
+    }
+
+    private OrderCommonModel OrderCommonModel(Channel channel, Order order, List<OrderItemCommonModel> orderItems)
+    {
+        var orderSource = OrderSource.FoundImage;
+
+        var orderCustomerCommonModel = new OrderCustomerCommonModel
+        {
+            IdInternal = order.Contact.CustomerId.ToString(),
+]633;D;0;\PS D:\repos\Bikini\BikiniGit\BikiniMain> Get-Content "D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon\CommonOopsAdapter.cs" | Select-Object -Skip 115 -First 40
+
+        var orderSource = OrderSource.FoundImage;
+
+        var orderCustomerCommonModel = new OrderCustomerCommonModel
+        {
+            IdInternal = order.Contact.CustomerId.ToString(),
+            IdExternal = order.Contact.CustomerId.ToString(),
+            CustomerName = order.Contact.Customer?.Name ?? "",
+            CustomerRef = order.CustomerRef,
+            UserFirstName = order.Contact.FirstName,
+            UserLastName = order.Contact.LastName
+        };
+
+        var orderSalesRepCommonModel = new OrderSalesRepCommonModel
+        {
+            Id = order.SalesRepId.ToString(),
+            FirstName = order.SalesRep?.FirstName,
+            LastName = order.SalesRep?.LastName,
+            Region = order.SalesRep?.Region,
+            Phone = order.SalesRep?.PhoneNumber,
+            Email = order.SalesRep?.Email
+        };
+
+        var orderCommon = new OrderCommonModel
+        {
+            OrderSource = orderSource,
+            ChannelCode = channel.ChannelCode,
+            OrderIdInternal = $"{order.Id}",
+            OrderIdExternal = $"{channel.ChannelCode}{order.Id}",
+            OrderDate = order.OrderDate,
+            Status = "Direct", // Channel status - N/A for Bikini orders
+            InternalNotes = order.InternalNotes,
+            CustomerNotes = order.CustomerNotes,
+            Customer = orderCustomerCommonModel,
+            SalesRep = orderSalesRepCommonModel,
+            ChannelId = channel.Id,
+            Provider = channel.Provider,
+            ChannelType = channel.ChannelType,
+            ExternalUri = new Uri($"{channel.OrderUrl}/{order.Id}"),
+            Tags = _oopsOrderTags,
+            Items = orderItems,
+**********************
+PowerShell transcript start
+Start time: 20260627021734
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -Command & { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+Process ID: 92452
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS>& { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+**********************************************************************
+** Visual Studio 2026 Developer PowerShell v18.7.2
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+PS D:\repos\Bikini\BikiniGit\BikiniMain> if (Get-Module -Name PSReadLine) {$setPSReadLineOption = Get-Command Set-PSReadLineOption -ErrorAction SilentlyContinue;if ($setPSReadLineOption) { if ($setPSReadLineOption.Parameters.ContainsKey('AddToHistoryHandler')) { Set-PSReadLineOption -AddToHistoryHandler { $false }; }; if ($setPSReadLineOption.Parameters.ContainsKey('HistorySaveStyle')) { Set-PSReadLineOption -HistorySaveStyle SaveNothing; };};$Global:VSReadLine = $function:PSConsoleHostReadLine;$env:GIT_PAGER='cat';$Global:VSPrompt = $function:Prompt;$Global:VSInCmd=$false;[console]::WindowHeight = 9999;function Global:PSConsoleHostReadLine { [Console]::Write("$([char]0x1b)]633;P$([char]0x1b)\"); $cmd = $Global:VSReadLine.Invoke(); $Global:VSInCmd = $true; [Console]::Write("$([char]0x1b)]633;C$([char]0x1b)\"); $cmd;};function Global:Prompt { $rc = [int]!$Global:?; $r = $Global:VSPrompt.Invoke(); if ($Global:VSInCmd -eq $true) { $r = "$([char]0x1b)]633;D;$rc;$([char]0x1b)\$r"; }; $Global:VSInCmd=$false; return $r;};};clear;
+PS D:\repos\Bikini\BikiniGit\BikiniMain> dotnet build "D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.slnx" --no-incremental
+
+    C:\Program Files\dotn
+et\sdk\10.0.301\NuGet.tar
+gets(521,5): error MSB320
+2: The project file "D:\r
+epos\Bikini\BikiniGit\Bik
+iniMain\Bikini.SignalR\Bi
+kini.SignalR.csproj" was
+not found.
+
+Restore failed with 1 err
+or(s) in 1.1s
+**********************
+PowerShell transcript start
+Start time: 20260627034121
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -Command & { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+Process ID: 113112
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS>& { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+**********************************************************************
+** Visual Studio 2026 Developer PowerShell v18.7.2
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+PS D:\repos\Bikini\BikiniGit\BikiniMain> if (Get-Module -Name PSReadLine) {$setPSReadLineOption = Get-Command Set-PSReadLineOption -ErrorAction SilentlyContinue;if ($setPSReadLineOption) { if ($setPSReadLineOption.Parameters.ContainsKey('AddToHistoryHandler')) { Set-PSReadLineOption -AddToHistoryHandler { $false }; }; if ($setPSReadLineOption.Parameters.ContainsKey('HistorySaveStyle')) { Set-PSReadLineOption -HistorySaveStyle SaveNothing; };};$Global:VSReadLine = $function:PSConsoleHostReadLine;$env:GIT_PAGER='cat';$Global:VSPrompt = $function:Prompt;$Global:VSInCmd=$false;[console]::WindowHeight = 9999;function Global:PSConsoleHostReadLine { [Console]::Write("$([char]0x1b)]633;P$([char]0x1b)\"); $cmd = $Global:VSReadLine.Invoke(); $Global:VSInCmd = $true; [Console]::Write("$([char]0x1b)]633;C$([char]0x1b)\"); $cmd;};function Global:Prompt { $rc = [int]!$Global:?; $r = $Global:VSPrompt.Invoke(); if ($Global:VSInCmd -eq $true) { $r = "$([char]0x1b)]633;D;$rc;$([char]0x1b)\$r"; }; $Global:VSInCmd=$false; return $r;};};clear;
+PS D:\repos\Bikini\BikiniGit\BikiniMain> cd "D:\repos\Bikini\BikiniGit"; git status
+
+On branch dev
+Your branch is ahead of '
+origin/dev' by 3 commits.
+  (use "git push" to publ
+ish your local commits)
+
+Changes not staged for co
+mmit:
+  (use "git add/rm <file>
+..." to update what will
+be committed)
+  (use "git restore <file
+>..." to discard changes
+in working directory)
+        modified:   Bikin
+i.Base/Bikini.Base.csproj
+        modified:   Bikin
+iMain/Bikini.Api.Gbs/Biki
+ni.Api.Gbs.csproj
+        modified:   Bikin
+iMain/Bikini.Assets/Bikin
+i.Assets.csproj
+        modified:   Bikin
+iMain/Bikini.Barcodes/Bik
+ini.Barcodes.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Calendar
+s/Bikini.Biz.Calendars.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Biz.Channel/
+Bikini.Biz.Channel.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Compose/
+Bikini.Biz.Compose.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation.Models/BikOrderMode
+l.cs
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation.Models/Bikini.Biz.O
+rchestration.Models.cspro
+j
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation/Bikini.Biz.Orchestr
+ation.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation/OrchestrationEngine
+.cs
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation/SearchResultsModel.
+cs
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon.Models/Bikini.Biz.Ord
+erCommon.Models.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon/Bikini.Biz.OrderCommo
+n.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon/CommonOopsAdapter.cs
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon/OrderCommonEngine.cs
+        modified:   Bikin
+iMain/Bikini.Biz.Principa
+l/Bikini.Biz.Principal.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Biz.PrintCom
+mon/Bikini.Biz.PrintCommo
+n.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Printing
+/Bikini.Biz.Printing.cspr
+oj
+        modified:   Bikin
+iMain/Bikini.Biz.Search/B
+ikini.Biz.Search.csproj
+        modified:   Bikin
+iMain/Bikini.Blazor.Desig
+n/Bikini.Blazor.Design/Bi
+kini.Blazor.Design.csproj
+        modified:   Bikin
+iMain/Bikini.Cli/Bikini.C
+li.csproj
+        modified:   Bikin
+iMain/Bikini.ClientEngine
+/Bikini.ClientEngine.cspr
+oj
+        modified:   Bikin
+iMain/Bikini.Design.Api/B
+ikini.Design.Api.csproj
+        modified:   Bikin
+iMain/Bikini.Event.Shopif
+yOrder/Bikini.Event.Shopi
+fyOrder.csproj
+        modified:   Bikin
+iMain/Bikini.Events/Bikin
+i.Events.csproj
+        modified:   Bikin
+iMain/Bikini.Export.Conso
+le/Bikini.Export.Console.
+csproj
+        modified:   Bikin
+iMain/Bikini.Export/Bikin
+i.Export.csproj
+        modified:   Bikin
+iMain/Bikini.Faire/Bikini
+.Faire.csproj
+        modified:   Bikin
+iMain/Bikini.Ftp/Bikini.F
+tp.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge.Product/Bikini.Functio
+n.Image.Product.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge.Upc/Bikini.Function.Im
+age.Upc.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge.Week/Bikini.Function.I
+mage.Week.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge/Bikini.Function.Image.
+csproj
+        modified:   Bikin
+iMain/Bikini.Function.Not
+ification/Bikini.Function
+.Notification.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ord
+er/Bikini.Function.Order.
+csproj
+        modified:   Bikin
+iMain/Bikini.Function.Pri
+nt.Client/Bikini.Function
+.Print.Client.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Pri
+nt/Bikini.Function.Print.
+csproj
+        modified:   Bikin
+iMain/Bikini.Function.Qui
+ckBooks/Bikini.Function.Q
+uickBooks.csproj
+        modified:   Bikin
+iMain/Bikini.Functions.Te
+sts/Bikini.Functions.Test
+s.csproj
+        modified:   Bikin
+iMain/Bikini.Images/Bikin
+i.Images.csproj
+        modified:   Bikin
+iMain/Bikini.Integration/
+Bikini.Integration.csproj
+        modified:   Bikin
+iMain/Bikini.Integration/
+IntegrationSingleton.cs
+        modified:   Bikin
+iMain/Bikini.Notification
+.Client/Bikini.Notificati
+on.Client.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.Adapt
+ers/Bikini.Orders.Adapter
+s.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.KeyVa
+ult/Bikini.Orders.KeyVaul
+t.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.Model
+s.Workflow/Bikini.Orders.
+Models.Workflow.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.Model
+s/Bikini.Orders.Models.cs
+proj
+        modified:   Bikin
+iMain/Bikini.ProductImage
+s/Bikini.ProductImages.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Production/B
+ikini.Production.csproj
+        modified:   Bikin
+iMain/Bikini.Products/Bik
+ini.Products.csproj
+        modified:   Bikin
+iMain/Bikini.QuickBooks.C
+ore/Bikini.QuickBooks.Cor
+e.csproj
+        modified:   Bikin
+iMain/Bikini.Shopify/Biz/
+Engine/ShopifyOrderEngine
+.cs
+        modified:   Bikin
+iMain/Bikini.Storage/Biki
+ni.Storage.csproj
+        modified:   Bikin
+iMain/Bikini.Tests.Net5/B
+ikini.Tests.Net5.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Barcodes
+/Bikini.Web.Barcodes.cspr
+oj
+        modified:   Bikin
+iMain/Bikini.Web.Calendar
+s/Bikini.Web.Calendars.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Web.Design/B
+ikini.Web.Design.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Images/B
+ikini.Web.Images.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Integrat
+ion/Bikini.Web.Integratio
+n.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Landing/
+Bikini.Web.Landing.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Notifica
+tion/Bikini.Web.Notificat
+ion.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Orchestr
+ation/Bikini.Web.Orchestr
+ation.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Orchestr
+ation/Controllers/BikOrde
+rsController.cs
+        modified:   Bikin
+iMain/Bikini.Web.Orchestr
+ation/webpack.config.js
+        modified:   Bikin
+iMain/Bikini.Web.Orders/B
+ikini.Web.Orders.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Print/Bi
+kini.Web.Print.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Public/B
+ikini.Web.Public.csproj
+        modified:   Bikin
+iMain/Bikini.Webhook.Gbs/
+Bikini.Webhook.Gbs.csproj
+        modified:   Bikin
+iMain/Bikini.Webhook.Shop
+ify/Bikini.Webhook.Shopif
+y.csproj
+        modified:   Bikin
+iMain/BlazorApp1/BlazorAp
+p1/BlazorApp1.csproj
+        modified:   CoreP
+ackages/Bikini.Core.Web/B
+ikini.Core.Web.csproj
+        modified:   CoreP
+ackages/Bikini.Core/Bikin
+i.Core.csproj
+        modified:   CoreP
+ackages/Bikini.DataCore/B
+ikini.DataCore.csproj
+        modified:   CoreP
+ackages/Bikini.DataCore/D
+bContextCore.cs
+        modified:   CoreP
+ackages/Bikini.DataCore/E
+ntities/BikOrderPartStatu
+sView.cs
+        modified:   CoreP
+ackages/Bikini.DataCore/S
+ql/CreatePerformanceViews
+.sql
+        modified:   CoreP
+ackages/Bikini.DataIntegr
+ation/Bikini.DataIntegrat
+ion.csproj
+        modified:   CoreP
+ackages/Bikini.DataPrint/
+Bikini.DataPrint.csproj
+        deleted:    CoreP
+ackages/publishCore.ps1
+
+Untracked files:
+  (use "git add <file>...
+" to include in what will
+ be committed)
+        .vscode/
+        BikiniMain/Update
+.ps1
+        CorePackages/Biki
+ni.DataCore/Sql/IndexImag
+esViewArtCode.sql
+        CorePackages/Publ
+ish.ps1
+        CorePackages/READ
+ME-Publishing.md
+        PERFORMANCE_INSTR
+UMENTATION_GUIDE.md
+        PERFORMANCE_OPTIM
+IZATION_SUMMARY.md
+        QUICK_PERFORMANCE
+_TEST_PLAN.md
+        dev-ops/
+
+no changes added to commi
+t (use "git add" and/or "
+git commit -a")
+]633;D;0;\PS D:\repos\Bikini\BikiniGit> cd "D:\repos\Bikini\BikiniGit"; git add "BikiniMain/Bikini.Shopify/Biz/Engine/ShopifyOrderEngine.cs" "BikiniMain/Bikini.Biz.OrderCommon/*.cs" "BikiniMain/Bikini.Biz.Orchestration/OrchestrationEngine.cs" "CorePackages/Bikini.DataCore/Sql/IndexImagesViewArtCode.sql"
+
+
+]633;D;0;\PS D:\repos\Bikini\BikiniGit> cd "D:\repos\Bikini\BikiniGit"; git status
+
+On branch dev
+Your branch is ahead of '
+origin/dev' by 3 commits.
+  (use "git push" to publ
+ish your local commits)
+
+Changes to be committed:
+  (use "git restore --sta
+ged <file>..." to unstage
+)
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation/OrchestrationEngine
+.cs
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon/CommonOopsAdapter.cs
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon/OrderCommonEngine.cs
+        modified:   Bikin
+iMain/Bikini.Shopify/Biz/
+Engine/ShopifyOrderEngine
+.cs
+        new file:   CoreP
+ackages/Bikini.DataCore/S
+ql/IndexImagesViewArtCode
+.sql
+
+Changes not staged for co
+mmit:
+  (use "git add/rm <file>
+..." to update what will
+be committed)
+  (use "git restore <file
+>..." to discard changes
+in working directory)
+        modified:   Bikin
+i.Base/Bikini.Base.csproj
+        modified:   Bikin
+iMain/Bikini.Api.Gbs/Biki
+ni.Api.Gbs.csproj
+        modified:   Bikin
+iMain/Bikini.Assets/Bikin
+i.Assets.csproj
+        modified:   Bikin
+iMain/Bikini.Barcodes/Bik
+ini.Barcodes.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Calendar
+s/Bikini.Biz.Calendars.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Biz.Channel/
+Bikini.Biz.Channel.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Compose/
+Bikini.Biz.Compose.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation.Models/BikOrderMode
+l.cs
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation.Models/Bikini.Biz.O
+rchestration.Models.cspro
+j
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation/Bikini.Biz.Orchestr
+ation.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation/SearchResultsModel.
+cs
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon.Models/Bikini.Biz.Ord
+erCommon.Models.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon/Bikini.Biz.OrderCommo
+n.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Principa
+l/Bikini.Biz.Principal.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Biz.PrintCom
+mon/Bikini.Biz.PrintCommo
+n.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Printing
+/Bikini.Biz.Printing.cspr
+oj
+        modified:   Bikin
+iMain/Bikini.Biz.Search/B
+ikini.Biz.Search.csproj
+        modified:   Bikin
+iMain/Bikini.Blazor.Desig
+n/Bikini.Blazor.Design/Bi
+kini.Blazor.Design.csproj
+        modified:   Bikin
+iMain/Bikini.Cli/Bikini.C
+li.csproj
+        modified:   Bikin
+iMain/Bikini.ClientEngine
+/Bikini.ClientEngine.cspr
+oj
+        modified:   Bikin
+iMain/Bikini.Design.Api/B
+ikini.Design.Api.csproj
+        modified:   Bikin
+iMain/Bikini.Event.Shopif
+yOrder/Bikini.Event.Shopi
+fyOrder.csproj
+        modified:   Bikin
+iMain/Bikini.Events/Bikin
+i.Events.csproj
+        modified:   Bikin
+iMain/Bikini.Export.Conso
+le/Bikini.Export.Console.
+csproj
+        modified:   Bikin
+iMain/Bikini.Export/Bikin
+i.Export.csproj
+        modified:   Bikin
+iMain/Bikini.Faire/Bikini
+.Faire.csproj
+        modified:   Bikin
+iMain/Bikini.Ftp/Bikini.F
+tp.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge.Product/Bikini.Functio
+n.Image.Product.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge.Upc/Bikini.Function.Im
+age.Upc.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge.Week/Bikini.Function.I
+mage.Week.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge/Bikini.Function.Image.
+csproj
+        modified:   Bikin
+iMain/Bikini.Function.Not
+ification/Bikini.Function
+.Notification.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ord
+er/Bikini.Function.Order.
+csproj
+        modified:   Bikin
+iMain/Bikini.Function.Pri
+nt.Client/Bikini.Function
+.Print.Client.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Pri
+nt/Bikini.Function.Print.
+csproj
+        modified:   Bikin
+iMain/Bikini.Function.Qui
+ckBooks/Bikini.Function.Q
+uickBooks.csproj
+        modified:   Bikin
+iMain/Bikini.Functions.Te
+sts/Bikini.Functions.Test
+s.csproj
+        modified:   Bikin
+iMain/Bikini.Images/Bikin
+i.Images.csproj
+        modified:   Bikin
+iMain/Bikini.Integration/
+Bikini.Integration.csproj
+        modified:   Bikin
+iMain/Bikini.Integration/
+IntegrationSingleton.cs
+        modified:   Bikin
+iMain/Bikini.Notification
+.Client/Bikini.Notificati
+on.Client.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.Adapt
+ers/Bikini.Orders.Adapter
+s.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.KeyVa
+ult/Bikini.Orders.KeyVaul
+t.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.Model
+s.Workflow/Bikini.Orders.
+Models.Workflow.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.Model
+s/Bikini.Orders.Models.cs
+proj
+        modified:   Bikin
+iMain/Bikini.ProductImage
+s/Bikini.ProductImages.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Production/B
+ikini.Production.csproj
+        modified:   Bikin
+iMain/Bikini.Products/Bik
+ini.Products.csproj
+        modified:   Bikin
+iMain/Bikini.QuickBooks.C
+ore/Bikini.QuickBooks.Cor
+e.csproj
+        modified:   Bikin
+iMain/Bikini.Storage/Biki
+ni.Storage.csproj
+        modified:   Bikin
+iMain/Bikini.Tests.Net5/B
+ikini.Tests.Net5.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Barcodes
+/Bikini.Web.Barcodes.cspr
+oj
+        modified:   Bikin
+iMain/Bikini.Web.Calendar
+s/Bikini.Web.Calendars.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Web.Design/B
+ikini.Web.Design.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Images/B
+ikini.Web.Images.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Integrat
+ion/Bikini.Web.Integratio
+n.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Landing/
+Bikini.Web.Landing.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Notifica
+tion/Bikini.Web.Notificat
+ion.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Orchestr
+ation/Bikini.Web.Orchestr
+ation.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Orchestr
+ation/Controllers/BikOrde
+rsController.cs
+        modified:   Bikin
+iMain/Bikini.Web.Orchestr
+ation/webpack.config.js
+        modified:   Bikin
+iMain/Bikini.Web.Orders/B
+ikini.Web.Orders.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Print/Bi
+kini.Web.Print.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Public/B
+ikini.Web.Public.csproj
+        modified:   Bikin
+iMain/Bikini.Webhook.Gbs/
+Bikini.Webhook.Gbs.csproj
+        modified:   Bikin
+iMain/Bikini.Webhook.Shop
+ify/Bikini.Webhook.Shopif
+y.csproj
+        modified:   Bikin
+iMain/BlazorApp1/BlazorAp
+p1/BlazorApp1.csproj
+        modified:   CoreP
+ackages/Bikini.Core.Web/B
+ikini.Core.Web.csproj
+        modified:   CoreP
+ackages/Bikini.Core/Bikin
+i.Core.csproj
+        modified:   CoreP
+ackages/Bikini.DataCore/B
+ikini.DataCore.csproj
+        modified:   CoreP
+ackages/Bikini.DataCore/D
+bContextCore.cs
+        modified:   CoreP
+ackages/Bikini.DataCore/E
+ntities/BikOrderPartStatu
+sView.cs
+        modified:   CoreP
+ackages/Bikini.DataCore/S
+ql/CreatePerformanceViews
+.sql
+        modified:   CoreP
+ackages/Bikini.DataIntegr
+ation/Bikini.DataIntegrat
+ion.csproj
+        modified:   CoreP
+ackages/Bikini.DataPrint/
+Bikini.DataPrint.csproj
+        deleted:    CoreP
+ackages/publishCore.ps1
+
+Untracked files:
+  (use "git add <file>...
+" to include in what will
+ be committed)
+        .vscode/
+        BikiniMain/Update
+.ps1
+        CorePackages/Publ
+ish.ps1
+        CorePackages/READ
+ME-Publishing.md
+        PERFORMANCE_INSTR
+UMENTATION_GUIDE.md
+        PERFORMANCE_OPTIM
+IZATION_SUMMARY.md
+        QUICK_PERFORMANCE
+_TEST_PLAN.md
+        dev-ops/
+]633;D;0;\PS D:\repos\Bikini\BikiniGit> cd "D:\repos\Bikini\BikiniGit"; git diff --cached --name-only
+
+BikiniMain/Bikini.Biz.Orc
+hestration/OrchestrationE
+ngine.cs
+BikiniMain/Bikini.Biz.Ord
+erCommon/CommonOopsAdapte
+r.cs
+BikiniMain/Bikini.Biz.Ord
+erCommon/OrderCommonEngin
+e.cs
+BikiniMain/Bikini.Shopify
+/Biz/Engine/ShopifyOrderE
+ngine.cs
+CorePackages/Bikini.DataC
+ore/Sql/IndexImagesViewAr
+tCode.sql
+]633;D;0;\PS D:\repos\Bikini\BikiniGit> cd "D:\repos\Bikini\BikiniGit"; git commit -m "Performance: Optimize Shopify order details with batch queries and ImagesView
+
+- Refactored ShopifyOrderEngine.CreateLineItemModel() to eliminate N+1 patterns
+- Replace per-item DB calls with 4 batch queries (products, EANs, images, artcode-EANs)
+- Use ImagesView with pre-computed ArtCode column for fast image lookups
+- Added detailed timing instrumentation to measure each batch query
+- Fixed dynamic type issues with Enumerable.FirstOrDefault for ChannelProducts
+
+OOPS path previously optimized:
+- CommonOopsAdapter.Order() now uses narrow projection + separate image load
+- Reduced OOPS query time from ~1457ms to ~62ms
+
+Expected Shopify improvements:
+- Image loading: from ~990ms to ~20-50ms (with index)
+- Total Shopify time: from ~1523ms to ~550-600ms
+- API call remains ~471ms, local build drops from ~1051ms to ~80-130ms
+
+Includes SQL script for ImagesView.ArtCode index (not yet applied)"
+
+[dev 841f3d74c] Performan
+ce: Optimize Shopify orde
+r details with batch quer
+ies and ImagesView
+ 5 files changed, 596 ins
+ertions(+), 216 deletions
+(-)
+ create mode 100644 CoreP
+ackages/Bikini.DataCore/S
+ql/IndexImagesViewArtCode
+.sql
+**********************
+PowerShell transcript start
+Start time: 20260627042412
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit -Command & { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+Process ID: 99280
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS>& { Import-Module "$env:VSAPPIDDIR\..\Tools\Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell -SkipAutomaticLocation -SetDefaultWindowTitle -InstallPath $env:VSAPPIDDIR\..\..\}
+**********************************************************************
+** Visual Studio 2026 Developer PowerShell v18.7.2
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+PS D:\repos\Bikini\BikiniGit\BikiniMain> if (Get-Module -Name PSReadLine) {$setPSReadLineOption = Get-Command Set-PSReadLineOption -ErrorAction SilentlyContinue;if ($setPSReadLineOption) { if ($setPSReadLineOption.Parameters.ContainsKey('AddToHistoryHandler')) { Set-PSReadLineOption -AddToHistoryHandler { $false }; }; if ($setPSReadLineOption.Parameters.ContainsKey('HistorySaveStyle')) { Set-PSReadLineOption -HistorySaveStyle SaveNothing; };};$Global:VSReadLine = $function:PSConsoleHostReadLine;$env:GIT_PAGER='cat';$Global:VSPrompt = $function:Prompt;$Global:VSInCmd=$false;[console]::WindowHeight = 9999;function Global:PSConsoleHostReadLine { [Console]::Write("$([char]0x1b)]633;P$([char]0x1b)\"); $cmd = $Global:VSReadLine.Invoke(); $Global:VSInCmd = $true; [Console]::Write("$([char]0x1b)]633;C$([char]0x1b)\"); $cmd;};function Global:Prompt { $rc = [int]!$Global:?; $r = $Global:VSPrompt.Invoke(); if ($Global:VSInCmd -eq $true) { $r = "$([char]0x1b)]633;D;$rc;$([char]0x1b)\$r"; }; $Global:VSInCmd=$false; return $r;};};clear;
+PS D:\repos\Bikini\BikiniGit\BikiniMain> cd "D:\repos\Bikini\BikiniGit"; git add "BikiniMain/Bikini.Shopify/Biz/Engine/ShopifyOrderEngine.cs" "CorePackages/Bikini.DataCore/Sql/AlterImagesViewDeterministic.sql"
+
+
+]633;D;0;\PS D:\repos\Bikini\BikiniGit> cd "D:\repos\Bikini\BikiniGit"; git status
+
+On branch dev
+Your branch is ahead of '
+origin/dev' by 4 commits.
+  (use "git push" to publ
+ish your local commits)
+
+Changes to be committed:
+  (use "git restore --sta
+ged <file>..." to unstage
+)
+        modified:   Bikin
+iMain/Bikini.Shopify/Biz/
+Engine/ShopifyOrderEngine
+.cs
+        new file:   CoreP
+ackages/Bikini.DataCore/S
+ql/AlterImagesViewDetermi
+nistic.sql
+
+Changes not staged for co
+mmit:
+  (use "git add/rm <file>
+..." to update what will
+be committed)
+  (use "git restore <file
+>..." to discard changes
+in working directory)
+        modified:   Bikin
+i.Base/Bikini.Base.csproj
+        modified:   Bikin
+iMain/Bikini.Api.Gbs/Biki
+ni.Api.Gbs.csproj
+        modified:   Bikin
+iMain/Bikini.Assets/Bikin
+i.Assets.csproj
+        modified:   Bikin
+iMain/Bikini.Barcodes/Bik
+ini.Barcodes.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Calendar
+s/Bikini.Biz.Calendars.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Biz.Channel/
+Bikini.Biz.Channel.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Compose/
+Bikini.Biz.Compose.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation.Models/BikOrderMode
+l.cs
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation.Models/Bikini.Biz.O
+rchestration.Models.cspro
+j
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation/Bikini.Biz.Orchestr
+ation.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Orchestr
+ation/SearchResultsModel.
+cs
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon.Models/Bikini.Biz.Ord
+erCommon.Models.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.OrderCom
+mon/Bikini.Biz.OrderCommo
+n.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Principa
+l/Bikini.Biz.Principal.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Biz.PrintCom
+mon/Bikini.Biz.PrintCommo
+n.csproj
+        modified:   Bikin
+iMain/Bikini.Biz.Printing
+/Bikini.Biz.Printing.cspr
+oj
+        modified:   Bikin
+iMain/Bikini.Biz.Search/B
+ikini.Biz.Search.csproj
+        modified:   Bikin
+iMain/Bikini.Blazor.Desig
+n/Bikini.Blazor.Design/Bi
+kini.Blazor.Design.csproj
+        modified:   Bikin
+iMain/Bikini.Cli/Bikini.C
+li.csproj
+        modified:   Bikin
+iMain/Bikini.ClientEngine
+/Bikini.ClientEngine.cspr
+oj
+        modified:   Bikin
+iMain/Bikini.Design.Api/B
+ikini.Design.Api.csproj
+        modified:   Bikin
+iMain/Bikini.Event.Shopif
+yOrder/Bikini.Event.Shopi
+fyOrder.csproj
+        modified:   Bikin
+iMain/Bikini.Events/Bikin
+i.Events.csproj
+        modified:   Bikin
+iMain/Bikini.Export.Conso
+le/Bikini.Export.Console.
+csproj
+        modified:   Bikin
+iMain/Bikini.Export/Bikin
+i.Export.csproj
+        modified:   Bikin
+iMain/Bikini.Faire/Bikini
+.Faire.csproj
+        modified:   Bikin
+iMain/Bikini.Ftp/Bikini.F
+tp.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge.Product/Bikini.Functio
+n.Image.Product.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge.Upc/Bikini.Function.Im
+age.Upc.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge.Week/Bikini.Function.I
+mage.Week.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ima
+ge/Bikini.Function.Image.
+csproj
+        modified:   Bikin
+iMain/Bikini.Function.Not
+ification/Bikini.Function
+.Notification.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Ord
+er/Bikini.Function.Order.
+csproj
+        modified:   Bikin
+iMain/Bikini.Function.Pri
+nt.Client/Bikini.Function
+.Print.Client.csproj
+        modified:   Bikin
+iMain/Bikini.Function.Pri
+nt/Bikini.Function.Print.
+csproj
+        modified:   Bikin
+iMain/Bikini.Function.Qui
+ckBooks/Bikini.Function.Q
+uickBooks.csproj
+        modified:   Bikin
+iMain/Bikini.Functions.Te
+sts/Bikini.Functions.Test
+s.csproj
+        modified:   Bikin
+iMain/Bikini.Images/Bikin
+i.Images.csproj
+        modified:   Bikin
+iMain/Bikini.Integration/
+Bikini.Integration.csproj
+        modified:   Bikin
+iMain/Bikini.Integration/
+IntegrationSingleton.cs
+        modified:   Bikin
+iMain/Bikini.Notification
+.Client/Bikini.Notificati
+on.Client.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.Adapt
+ers/Bikini.Orders.Adapter
+s.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.KeyVa
+ult/Bikini.Orders.KeyVaul
+t.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.Model
+s.Workflow/Bikini.Orders.
+Models.Workflow.csproj
+        modified:   Bikin
+iMain/Bikini.Orders.Model
+s/Bikini.Orders.Models.cs
+proj
+        modified:   Bikin
+iMain/Bikini.ProductImage
+s/Bikini.ProductImages.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Production/B
+ikini.Production.csproj
+        modified:   Bikin
+iMain/Bikini.Products/Bik
+ini.Products.csproj
+        modified:   Bikin
+iMain/Bikini.QuickBooks.C
+ore/Bikini.QuickBooks.Cor
+e.csproj
+        modified:   Bikin
+iMain/Bikini.Storage/Biki
+ni.Storage.csproj
+        modified:   Bikin
+iMain/Bikini.Tests.Net5/B
+ikini.Tests.Net5.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Barcodes
+/Bikini.Web.Barcodes.cspr
+oj
+        modified:   Bikin
+iMain/Bikini.Web.Calendar
+s/Bikini.Web.Calendars.cs
+proj
+        modified:   Bikin
+iMain/Bikini.Web.Design/B
+ikini.Web.Design.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Images/B
+ikini.Web.Images.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Integrat
+ion/Bikini.Web.Integratio
+n.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Landing/
+Bikini.Web.Landing.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Notifica
+tion/Bikini.Web.Notificat
+ion.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Orchestr
+ation/Bikini.Web.Orchestr
+ation.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Orchestr
+ation/Controllers/BikOrde
+rsController.cs
+        modified:   Bikin
+iMain/Bikini.Web.Orchestr
+ation/webpack.config.js
+        modified:   Bikin
+iMain/Bikini.Web.Orders/B
+ikini.Web.Orders.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Print/Bi
+kini.Web.Print.csproj
+        modified:   Bikin
+iMain/Bikini.Web.Public/B
+ikini.Web.Public.csproj
+        modified:   Bikin
+iMain/Bikini.Webhook.Gbs/
+Bikini.Webhook.Gbs.csproj
+        modified:   Bikin
+iMain/Bikini.Webhook.Shop
+ify/Bikini.Webhook.Shopif
+y.csproj
+        modified:   Bikin
+iMain/BlazorApp1/BlazorAp
+p1/BlazorApp1.csproj
+        modified:   CoreP
+ackages/Bikini.Core.Web/B
+ikini.Core.Web.csproj
+        modified:   CoreP
+ackages/Bikini.Core/Bikin
+i.Core.csproj
+        modified:   CoreP
+ackages/Bikini.DataCore/B
+ikini.DataCore.csproj
+        modified:   CoreP
+ackages/Bikini.DataCore/D
+bContextCore.cs
+        modified:   CoreP
+ackages/Bikini.DataCore/E
+ntities/BikOrderPartStatu
+sView.cs
+        modified:   CoreP
+ackages/Bikini.DataCore/S
+ql/CreatePerformanceViews
+.sql
+        deleted:    CoreP
+ackages/Bikini.DataCore/S
+ql/IndexImagesViewArtCode
+.sql
+        modified:   CoreP
+ackages/Bikini.DataIntegr
+ation/Bikini.DataIntegrat
+ion.csproj
+        modified:   CoreP
+ackages/Bikini.DataPrint/
+Bikini.DataPrint.csproj
+        deleted:    CoreP
+ackages/publishCore.ps1
+
+Untracked files:
+  (use "git add <file>...
+" to include in what will
+ be committed)
+        .vscode/
+        BikiniMain/Update
+.ps1
+        CorePackages/Publ
+ish.ps1
+        CorePackages/READ
+ME-Publishing.md
+        PERFORMANCE_INSTR
+UMENTATION_GUIDE.md
+        PERFORMANCE_OPTIM
+IZATION_SUMMARY.md
+        QUICK_PERFORMANCE
+_TEST_PLAN.md
+        dev-ops/
+]633;D;0;\PS D:\repos\Bikini\BikiniGit> cd "D:\repos\Bikini\BikiniGit"; git diff --cached --name-only
+
+BikiniMain/Bikini.Shopify
+/Biz/Engine/ShopifyOrderE
+ngine.cs
+CorePackages/Bikini.DataC
+ore/Sql/AlterImagesViewDe
+terministic.sql
+]633;D;0;\PS D:\repos\Bikini\BikiniGit> cd "D:\repos\Bikini\BikiniGit"; git commit -m "WIP: ImagesView indexed view with deterministic VendorArtCode lookup
+
+- Created AlterImagesViewDeterministic.sql to rebuild ImagesView with SCHEMABINDING
+- Replaced non-deterministic FORMAT() with deterministic RIGHT() + CAST() for art code padding
+- Added unique clustered index on Id (required for indexed views)
+- Added non-clustered index on VendorArtCode for fast lookups
+- Updated ShopifyOrderEngine to use direct VendorArtCode lookup instead of parsing
+- Simplified image lookup from complex multi-column filtering to simple indexed lookup
+
+Benefits:
+- ImagesView is now a materialized indexed view (like a table)
+- VendorArtCode column is directly indexable (was blocked by FORMAT())
+- Query: WHERE artCodes.Contains(iv.VendorArtCode) uses index efficiently
+- Will benefit many other parts of codebase doing awkward image lookups
+
+Known issue: Hit an exception during testing - will debug tomorrow
+
+This indexed view approach will replace numerous inefficient image lookup patterns throughout the codebase."
+
+[dev 4ef044fa5] WIP: Imag
+esView indexed view with
+deterministic VendorArtCo
+de lookup
+ 2 files changed, 97 inse
+rtions(+), 8 deletions(-)
+ create mode 100644 CoreP
+ackages/Bikini.DataCore/S
+ql/AlterImagesViewDetermi
+nistic.sql
+**********************
+PowerShell transcript start
+Start time: 20260627104231
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 71944
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+👨‍🚀 Log Transcripts Initialized
+⚡ Loading System Core Utilities (./Init:
+   Connect-Azure             (azl)      | Authenticates to Azure for the Planet Pearce tenant and sets the active subsc…
+   Enable-VS                 (vst)      | Mounts the Visual Studio Developer Shell environment into the current termina…
+   Get-Commands              (cmds)     | Lists all loaded Init utilities and available Scripts with their aliases and …
+   Get-DevCacheStatus                   | Reports current disk usage for high-traffic Dev Drive cache paths including N…
+   Get-DevDriveStatus                   | Validates D: Dev Drive health by checking ReFS format, async antivirus filter…
+   Get-GitLogTable           (glt)      | Outputs the last 20 git commits as a tab-aligned table showing hash, author, …
+   Get-Go                    (go)       | Smart navigation hub for jumping to bookmarked directories, git repositories,…
+   Get-Listing               (ll)       | Linux-style listing helpers: ll (long), la (show hidden), lr (recursive), lss…
+   Get-PlanetPearceMenu      (pp)       | Displays an interactive fuzzy command radar menu listing all available Init u…
+   Get-Status                (status)   | Shows the current status of the development environment, including Dev Drive …
+   Open-MarkdownBrowser      (mdview)   | Renders a Markdown file with custom CSS styling in the default browser. Defau…
+   Set-Project               (vsp)      | Discovers .sln and .slnx solution files in the directory tree, presents an in…
+   Update-TSGlobals                     | Recursively walks JavaScript module directories, parses structural variables …
+⚡ Initializing Scripts (./Scripts)
+   Clean-Build                          | Safely deletes bin, obj, and .vs build artifacts under verified project footp…
+   NugetAnalysis                        | Scans all .csproj files in the current solution directory and opens a NuGet p…
+   Update-TSGlobals                     | Build tool entry point for Update-TSGlobals. Loads the profile and forwards a…
+   Update-Version                       | Stamps the current git commit hash into the InformationalVersion field of the…
+👨‍🚀 Orbit Stabilized
+
+PS D:\> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+
+Target Workspaces:
+[1]
+repos
+(D:\repos)
+[2]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[3]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[4]
+pp
+(D:\repos\PlanetPearce)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+2
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+
+Select project directory:
+[a]
+Bikini.Api.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Api.Gbs)
+[b]
+Bikini.AppHost
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.AppHost)
+[c]
+Bikini.Assets
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Assets)
+[d]
+Bikini.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes)
+[e]
+Bikini.Barcodes.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes.Test)
+[f]
+Bikini.Base
+(D:\repos\Bikini\BikiniGit\BikiniMain\..\Bikini.Base)
+[g]
+Bikini.Biz.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Calendars)
+[h]
+Bikini.Biz.Channel
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Channel)
+[i]
+Bikini.Biz.Comp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Comp)
+[j]
+Bikini.Biz.Compose
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose)
+[k]
+Bikini.Biz.Compose.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose.Tests)
+[l]
+Bikini.Biz.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration)
+[m]
+Bikini.Biz.Orchestration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration.Models)
+[n]
+Bikini.Biz.OrderCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon)
+[o]
+Bikini.Biz.OrderCommon.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon.Models)
+[p]
+Bikini.Biz.Principal
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Principal)
+[q]
+Bikini.Biz.PrintCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.PrintCommon)
+[r]
+Bikini.Biz.Printing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Printing)
+[s]
+Bikini.Biz.Search
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Search)
+[t]
+Bikini.Blazor.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design)
+[u]
+Bikini.Blazor.Design.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Blazor.Design\Bikini.Blazor.Design.Client)
+[v]
+Bikini.Cli
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli)
+[w]
+Bikini.Cli.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli.Test)
+[x]
+Bikini.ClientEngine
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ClientEngine)
+[y]
+Bikini.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design)
+[z]
+Bikini.Design.Api
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design.Api)
+[aa]
+Bikini.Encryption
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Encryption)
+[ab]
+Bikini.Event.ShopifyOrder
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Event.ShopifyOrder)
+[ac]
+Bikini.Events
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Events)
+[ad]
+Bikini.Export
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export)
+[ae]
+Bikini.Export.Console
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Console)
+[af]
+Bikini.Export.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Tests)
+[ag]
+Bikini.Faire
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire)
+[ah]
+Bikini.Faire.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire.Models)
+[ai]
+Bikini.Ftp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Ftp)
+[aj]
+Bikini.Function.Image
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image)
+[ak]
+Bikini.Function.Image.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Product)
+[al]
+Bikini.Function.Image.Upc
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Upc)
+[am]
+Bikini.Function.Image.Week
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Week)
+[an]
+Bikini.Function.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Notification)
+[ao]
+Bikini.Function.Order
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Order)
+[ap]
+Bikini.Function.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print)
+[aq]
+Bikini.Function.Print.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print.Client)
+[ar]
+Bikini.Function.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.QuickBooks)
+[as]
+Bikini.Functions.Shopify.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Shopify.Product)
+[at]
+Bikini.Functions.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Tests)
+[au]
+Bikini.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images)
+[av]
+Bikini.Images.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images.Models)
+[aw]
+Bikini.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration)
+[ax]
+Bikini.Integration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration.Models)
+[ay]
+Bikini.Notification.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Client)
+[az]
+Bikini.Notification.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Core)
+[ba]
+Bikini.Notification.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Tests)
+[bb]
+Bikini.Orders.Adapters
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Adapters)
+[bc]
+Bikini.Orders.KeyVault
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.KeyVault)
+[bd]
+Bikini.Orders.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models)
+[be]
+Bikini.Orders.Models.Workflow
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models.Workflow)
+[bf]
+Bikini.PdfBackup
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.PdfBackup)
+[bg]
+Bikini.ProductImages
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ProductImages)
+[bh]
+Bikini.Production
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production)
+[bi]
+Bikini.Production.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production.Models)
+[bj]
+Bikini.Products
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Products)
+[bk]
+Bikini.Publishing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Publishing)
+[bl]
+Bikini.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks)
+[bm]
+Bikini.QuickBooks.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks.Core)
+[bn]
+Bikini.ServiceDefaults
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ServiceDefaults)
+[bo]
+Bikini.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify)
+[bp]
+Bikini.Shopify.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify.Models)
+[bq]
+Bikini.Storage
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage)
+[br]
+Bikini.Storage.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage.Tests)
+[bs]
+Bikini.Tests.Net5
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Tests.Net5)
+[bt]
+Bikini.Web.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Barcodes)
+[bu]
+Bikini.Web.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Calendars)
+[bv]
+Bikini.Web.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Design)
+[bw]
+Bikini.Web.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Images)
+[bx]
+Bikini.Web.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Integration)
+[by]
+Bikini.Web.Landing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Landing)
+[bz]
+Bikini.Web.Net8
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Net8)
+[ca]
+Bikini.Web.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Notification)
+[cb]
+Bikini.Web.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration)
+[cc]
+Bikini.Web.Orders
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orders)
+[cd]
+Bikini.Web.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Print)
+[ce]
+Bikini.Web.Public
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Public)
+[cf]
+Bikini.Webhook.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Gbs)
+[cg]
+Bikini.Webhook.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Shopify)
+[ch]
+Bikini.Webhook.Vanilla
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Vanilla)
+[ci]
+BlazorApp1
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1)
+[cj]
+BlazorApp1.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\BlazorApp1\BlazorApp1.Client)
+[ck]
+QuadrilateralDistortion
+(D:\repos\Bikini\BikiniGit\BikiniMain\QuadrilateralDistortion)
+[↑ Up Arrow] Scan Parent Root
+[Space/Esc] Quit
+Press letter or ↑:
+WARNING: Invalid selection.
+PS D:\> go bikini web.orch
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           12/2/2025  3:45 PM                .config
+d----           6/22/2026  1:14 AM                bin
+d----           6/24/2026 10:15 PM                Components
+d----           6/27/2026  1:15 AM                Controllers
+d----           12/2/2025  3:45 PM                Models
+d----           6/25/2026  3:00 AM                node_modules
+d----           6/26/2026 10:51 PM                obj
+d----           6/21/2026  5:55 PM                Pages
+d----           12/2/2025  3:45 PM                Properties
+d----           6/26/2026  2:57 PM                src
+d----           6/19/2026  9:40 PM                Views
+d----           6/25/2026  3:34 AM                wwwroot
+-a---           6/23/2026  9:48 PM           1174 .stylelintrc.json
+-a---           12/2/2025  3:45 PM            127 appsettings.Development.json
+-a---           5/29/2026  4:35 PM            498 appsettings.json
+-a---           6/26/2026  7:41 PM           6078 Bikini.Web.Orchestration.csproj
+-a---           12/2/2025  3:45 PM            704 Bikini.Web.Orchestration.csproj.DotSettings
+-a---            5/4/2026  1:25 PM           1307 Bikini.Web.Orchestration.csproj.user
+-a---           6/25/2026  3:00 AM         331997 package-lock.json
+-a---           6/26/2026  2:15 PM           4181 package.json
+-a---           12/2/2025  3:45 PM            618 Program.cs
+-a---           6/24/2026  1:42 PM           2549 publish.ps1
+-a---           6/25/2026 11:24 PM           4563 README.md
+-a---           5/28/2026 10:20 PM           6064 Startup.cs
+-a---           6/26/2026 11:55 PM          10459 webpack.config.js
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> npm run build:prod
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> glt
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> glt
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git show df503d1bb  # Shows full message + diff
+commit df503d1bb180c691de371636f6aecbb985a86cba (HEAD -> dev)
+Author: Nick Pearce <nick@planetpearce.com>
+Date:   Sat Jun 27 11:41:45 2026 -0700
+
+    Fix SKU parsing and rendering for EAN/UPC values
+
+    - Fixed Sku.Parse() regex patterns to use verbatim strings for proper \d interpretation
+    - Updated Sku.Parse() to trim input and preserve OriginalString for invalid SKUs
+    - Modified AsSkuString() and AsShortSkuString() to safely render invalid SKUs and EAN values
+    - Improved SkuEngine.FromProductAndImage() to handle null productEan.Sku by using EAN directly
+    - Removed unreachable Martha's Vineyard fallback code in ShopifyOrderEngine
+    - Fixed anonymous type property mismatches in EAN projection (added Id, Code, Description, ProductionFilename)
+
+    These changes eliminate 'INVALID' display for valid UPC/EAN SKUs and remove fragile workarounds.
+
+diff --git a/Bikini.Base/Sku.cs b/Bikini.Base/Sku.cs
+index 9995a9ae2..a43d43701 100644
+--- a/Bikini.Base/Sku.cs
++++ b/Bikini.Base/Sku.cs
+@@ -1,5 +1,5 @@
+�// @2026 Blackwood Business Technology, Inc. All Rights Reserved.
+-// 06/24/2026 NickPearce
++// 06/27/2026 NickPearce
+
+ using System.Text.RegularExpressions;
+
+@@ -17,13 +17,13 @@ public enum SkuType
+ public class Sku
+ {
+     // language=regex
+-    public const string SKU_ART_CODE_REGEX = "^(?<VendorCode>[a-zA-Z]?)(?<CategoryCode>[a-zA-Z]{2})-+(?<ArtCodeNumber>\\d{5})-+(?<ProductCode>[a-zA-Z]{2})(?<PackSize>\\d{2})(?<Version>\\d{2})";
++    public const string SKU_ART_CODE_REGEX = @"^(?<VendorCode>[a-zA-Z]?)(?<CategoryCode>[a-zA-Z]{2})-+(?<ArtCodeNumber>\d{5})-+(?<ProductCode>[a-zA-Z]{2})(?<PackSize>\d{2})(?<Version>\d{2})";
+
+     // language=regex
+-    public const string SKU_ART_CODE_SHORT_REGEX = "^(?<VendorCode>[a-zA-Z]?)(?<CategoryCode>[a-zA-Z]{2})-+(?<ArtCodeNumber>\\d{5})-+(?<ProductCode>[a-zA-Z]{2})";
++    public const string SKU_ART_CODE_SHORT_REGEX = @"^(?<VendorCode>[a-zA-Z]?)(?<CategoryCode>[a-zA-Z]{2})-+(?<ArtCodeNumber>\d{5})-+(?<ProductCode>[a-zA-Z]{2})";
+
+     // language=regex
+-    public const string SKU_EAN_REGEX = "^\\d{12,13}$";
++    public const string SKU_EAN_REGEX = @"^\d{12,13}$";
+
+     private Sku()
+     {
+@@ -36,10 +36,14 @@ public class Sku
+     public int Version { get; private init; }
+     public ArtCode ArtCode { get; private init; } = ArtCode.Invalid();
+     public string EanString { get; private init; } = "";
++    public string OriginalString { get; private init; } = "";
+
+     public static Sku Parse(string? skuString)
+     {
+-        if (skuString == null) return InvalidSku();
++        if (string.IsNullOrWhiteSpace(skuString)) return InvalidSku(skuString);
++
++        // Trim whitespace from the input
++        skuString = skuString.Trim();
+
+         var regex = new Regex(SKU_ART_CODE_REGEX);
+         var match = regex.Match(skuString);
+@@ -59,7 +63,8 @@ public class Sku
+                 ProductCode = match.Groups["ProductCode"].Value,
+                 PackSize = int.Parse(match.Groups["PackSize"].Value),
+                 Version = int.Parse(match.Groups["Version"].Value),
+-                ArtCode = new ArtCode(vendorCode + categoryCode + artCodeNumber)
++                ArtCode = new ArtCode(vendorCode + categoryCode + artCodeNumber),
++                OriginalString = skuString
+             };
+         }
+
+@@ -79,7 +84,8 @@ public class Sku
+                 IsValid = true,
+                 SkuType = SkuType.ArtCodeProductShort,
+                 ProductCode = match.Groups["ProductCode"].Value,
+-                ArtCode = new ArtCode(vendorCode + categoryCode + artCodeNumber)
++                ArtCode = new ArtCode(vendorCode + categoryCode + artCodeNumber),
++                OriginalString = skuString
+             };
+         }
+
+@@ -91,18 +97,20 @@ public class Sku
+             {
+                 IsValid = true,
+                 SkuType = SkuType.Ean,
+-                EanString = skuString
++                EanString = skuString,
++                OriginalString = skuString
+             };
+
+-        return InvalidSku();
++        return InvalidSku(skuString);
+     }
+
+-    public static Sku InvalidSku()
++    public static Sku InvalidSku(string? originalString = null)
+     {
+         return new Sku
+         {
+             IsValid = false,
+-            SkuType = SkuType.Invalid
++            SkuType = SkuType.Invalid,
++            OriginalString = originalString ?? ""
+         };
+     }
+
+@@ -112,6 +120,7 @@ public class Sku
+                {
+                    SkuType.ArtCodeProduct => $"{ArtCode.PublicD5}-{ProductCode}{PackSize:D2}{Version:D2}",
+                    SkuType.Ean => EanString,
++                   SkuType.Invalid => string.IsNullOrEmpty(OriginalString) ? "INVALID" : OriginalString,
+                    _ => throw new Exception("Unsupported SkuType: " + SkuType)
+                };
+     }
+@@ -122,6 +131,7 @@ public class Sku
+                {
+                    SkuType.ArtCodeProduct or SkuType.ArtCodeProductShort => $"{ArtCode.PublicD5}-{ProductCode}",
+                    SkuType.Ean => EanString,
++                   SkuType.Invalid => string.IsNullOrEmpty(OriginalString) ? "INVALID" : OriginalString,
+                    _ => throw new Exception("Unsupported SkuType: " + SkuType)
+                };
+     }
+diff --git a/BikiniMain/Bikini.Shopify/Biz/Engine/ShopifyOrderEngine.cs b/BikiniMain/Bikini.Shopify/Biz/Engine/ShopifyOrderEngine.cs
+index 63fd05dec..43262dc4d 100644
+--- a/BikiniMain/Bikini.Shopify/Biz/Engine/ShopifyOrderEngine.cs
++++ b/BikiniMain/Bikini.Shopify/Biz/Engine/ShopifyOrderEngine.cs
+@@ -341,10 +341,14 @@ public class ShopifyOrderEngine(Channel channel, ShopifyEventEngine shopifyEvent
+                     .Select(e => new
+                     {
+                         e.Ean,
++                        Id = e.ProductId, // Map ProductId to Id for consistency with products query
+                         e.ProductId,
+                         e.ImageId,
++                        Code = e.Product.Code, // Map to Code for consistency
+                         ProductCode = e.Product.Code,
++                        Description = e.Product.Description, // Map for consistency
+                         ProductDescription = e.Product.Description,
++                        ProductionFilename = e.Product.ProductionFilename, // Map for consistency
+                         ProductProductionFilename = e.Product.ProductionFilename,
+                         ProductCodeProductTypeId = e.Product.ProductCode.ProductTypeId,
+                         ProductTypeDisplayName = e.Product.ProductCode.ProductType.DisplayName,
+@@ -442,24 +446,8 @@ public class ShopifyOrderEngine(Channel channel, ShopifyEventEngine shopifyEvent
+             ImageView image = null;
+             dynamic channelProduct = null;
+
+-            // Martha's Vineyard PP hack
+-            if (!sku.IsValid)
+-            {
+-                sku = Sku.Parse("9781601500489");
+-                ean = 9781601500489;
+-
+-                if (!productEans.ContainsKey(ean))
+-                    throw new BikiniException($"EAN not found: [{ean}] for Order {order.Name} [{order.IdShort}]");
+-
+-                var productEanData = productEans[ean];
+-                product = productEanData;
+-                channelProduct = Enumerable.FirstOrDefault(productEanData.ChannelProducts);
+-
+-                if (channelProduct == null)
+-                    throw new BikiniException($"EAN [{ean}] was found for product [{product.ProductId}] but there are no ChannelProducts defined for channel [{channelId}] for Order {order.Name} [{order.IdShort}]");
+-            }
+             // Inventory (EAN-based)
+-            else if (sku.SkuType == SkuType.Ean)
++            if (sku.SkuType == SkuType.Ean)
+             {
+                 ean = ulong.Parse(item.Sku);
+
+@@ -525,20 +513,20 @@ public class ShopifyOrderEngine(Channel channel, ShopifyEventEngine shopifyEvent
+             {
+                 Id = $"{index + 1:D3}",
+                 ProductId = product.Id,
+-                Code = product.Code ?? product.ProductCode,
++                Code = product.Code,
+                 ProductTypeId = product.ProductCodeProductTypeId,
+                 ProductionTypes = productionTypes,
+                 Sku = sku,
+                 ProductType = product.ProductTypeDisplayName,
+-                ProductDetails = product.Description ?? product.ProductDescription,
+-                ProductFullName = $"{product.ProductTypeDisplayName} {product.Description ?? product.ProductDescription}",
++                ProductDetails = product.Description,
++                ProductFullName = $"{product.ProductTypeDisplayName} {product.Description}",
+                 ArtCode = artCode,
+                 Packs = packs,
+                 QuantityPerPack = quantityPerPack,
+                 Quantity = quantity,
+                 ProductUnitPrice = packPrice,
+                 LineTotal = lineTotal,
+-                ProductionFileName = product.ProductionFilename ?? product.ProductProductionFilename,
++                ProductionFileName = product.ProductionFilename,
+                 ProductEan = ean,
+                 ImageId = image?.Id,
+                 Caption = image?.Caption,
+diff --git a/BikiniMain/Bikini.Shopify/Biz/SkuEngine.cs b/BikiniMain/Bikini.Shopify/Biz/SkuEngine.cs
+index 74708580e..7ea51bb75 100644
+--- a/BikiniMain/Bikini.Shopify/Biz/SkuEngine.cs
++++ b/BikiniMain/Bikini.Shopify/Biz/SkuEngine.cs
+@@ -24,7 +24,11 @@ public static class SkuEngine
+     {
+         if (image == null)
+         {
+-            return Sku.Parse(productEan.Sku);
++            // If productEan.Sku is populated, use it; otherwise use the EAN itself as the SKU
++            var skuString = !string.IsNullOrEmpty(productEan.Sku)
++                ? productEan.Sku
++                : productEan.Ean.ToString();
++            return Sku.Parse(skuString);
+         }
+
+         // TODO Replace with ExtensionMethod on Image?
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git show --stat df503d1bb  # Shows message + file statsgit show df503d1bb  # Shows full message + diff
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git show df503d1bb  # Shows full message + diff
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git show df503d1bb 
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> glt
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> glt
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> glt
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git log
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> npm run build:watch
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git push
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> npm run build:watch
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> npm run build:watch
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> npm run build:prod
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> npm run build:watch
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> npm run build:watch
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
