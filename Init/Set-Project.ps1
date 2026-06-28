@@ -52,10 +52,11 @@ function Set-Project {
             if ($fullDir) { Write-Host "$fullDir\" -NoNewline -ForegroundColor DarkGray }
             Write-Host "$fileName" -ForegroundColor Cyan
         }
-        Write-Host "[↑ Up Arrow] Scan Parent Root`n[Space/Esc] Quit`n" -ForegroundColor Yellow
+        Write-Host "[↑ Up Arrow] Scan Parent Root`n[Space] Go to Search Root  [Esc] Quit`n" -ForegroundColor Yellow
         Write-Host "Select letter or ↑: " -NoNewline; $k = [Console]::ReadKey($true)
         if ($k.Key -eq "UpArrow") { Set-Project -Filter $Filter -Path (Split-Path $currPath -Parent); return }
-        if ($k.Key -eq "Escape" -or $k.Key -eq "Spacebar") { Write-Host "Cancelled."; return }
+        if ($k.Key -eq "Spacebar") { Set-Location $currPath; return }
+        if ($k.Key -eq "Escape") { Write-Host "Cancelled."; return }
         $idx = Get-LetterIndex $k.KeyChar.ToString().ToLower()
         if ($idx -ge 0 -and $idx -lt $slnFiles.Count) { $slnFiles[$idx] } else { Write-Warning "Invalid."; return }
     } else { $slnFiles }
@@ -86,7 +87,7 @@ function Set-Project {
     for ($i = 0; $i -lt $projPaths.Count; $i++) {
         Write-Host "[$(Get-IndexLetter $i)] " -NoNewline -ForegroundColor Green; Write-Host "$(Split-Path $projPaths[$i] -Leaf) " -NoNewline -ForegroundColor White; Write-Host "($($projPaths[$i]))" -ForegroundColor DarkGray
     }
-    Write-Host "[↑ Up Arrow] Scan Parent Root`n[Space/Esc] Quit`n" -ForegroundColor Yellow
+    Write-Host "[↑ Up Arrow] Scan Parent Root`n[Space] Go to Solution Root  [Esc] Quit`n" -ForegroundColor Yellow
     
         Write-Host "Press letter or ↑: " -NoNewline; $k = [Console]::ReadKey($true)
     
@@ -99,7 +100,8 @@ function Set-Project {
         return 
     }
     
-    if ($k.Key -eq "Escape" -or $k.Key -eq "Spacebar") { Write-Host "Cancelled."; return }
+    if ($k.Key -eq "Spacebar") { Set-Location $slnFile.DirectoryName; return }
+    if ($k.Key -eq "Escape") { Write-Host "Cancelled."; return }
 
     
     $idx = Get-LetterIndex $k.KeyChar.ToString().ToLower()
