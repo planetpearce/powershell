@@ -6,22 +6,22 @@
 #>
 function Get-Go {
     [CmdletBinding()]
-    param([Parameter(Mandatory=$false, ValueFromRemainingArguments=$true)][string[]]$FilterArgs)
+    param([Parameter(Mandatory = $false, ValueFromRemainingArguments = $true)][string[]]$FilterArgs)
 
     # 1. Fully unified saved paths, system directories, web macros, and workspaces
     $StaticBookmarks = [ordered]@{
-        "Core User Folders" = [ordered]@{
-            "home"      = "$HOME"
-            "dt"        = (Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders").Desktop
-            "docs"      = (Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders").Personal
-            "pics"      = (Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."My Pictures"
-            "dl"        = (Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."{374DE290-123F-4565-9164-39C4925E467B}"
+        "Core User Folders"          = [ordered]@{
+            "home" = "$HOME"
+            "dt"   = (Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders").Desktop
+            "docs" = (Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders").Personal
+            "pics" = (Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."My Pictures"
+            "dl"   = (Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."{374DE290-123F-4565-9164-39C4925E467B}"
         }
-        "Web Macros" = [ordered]@{
-            "emojis"    = "https://emojipedia.org"
-            "azure"     = "https://portal.azure.com"
-            "bs"        = "https://getbootstrap.com/docs/5.3/utilities/vertical-align"
-            "icons"     = "https://icons.getbootstrap.com"
+        "Web Macros"                 = [ordered]@{
+            "emojis" = "https://emojipedia.org"
+            "azure"  = "https://portal.azure.com"
+            "bs"     = "https://getbootstrap.com/docs/5.3/utilities/vertical-align"
+            "icons"  = "https://icons.getbootstrap.com"
         }
         "AppData & Developer Caches" = [ordered]@{
             "local"     = "$env:LOCALAPPDATA"
@@ -30,15 +30,17 @@ function Get-Go {
             "resharper" = "$env:LOCALAPPDATA\JetBrains\Transient"
             "nuget"     = "$env:NUGET_PACKAGES"
         }
-        "System Admin & Logs" = [ordered]@{
-            "winlogs"   = "C:\Windows\System32\Winevt\Logs"
-            "hosts"     = "C:\Windows\System32\drivers\etc"
-            "ssh"       = "$env:USERPROFILE\.ssh"
+        "System Admin & Logs"        = [ordered]@{
+            "winlogs" = "C:\Windows\System32\Winevt\Logs"
+            "hosts"   = "C:\Windows\System32\drivers\etc"
+            "ssh"     = "$env:USERPROFILE\.ssh"
         }
-        "PowerShell Control Center" = [ordered]@{
-            "ps"        = "D:\PowerShell"
-            "modules"   = "D:\PowerShell\Modules"
-            "scripts"   = "D:\PowerShell\Scripts"
+        "PowerShell Control Center"  = [ordered]@{
+            "ps"      = "D:\PowerShell"
+            "modules" = "D:\PowerShell\Modules"
+            "scripts" = "D:\PowerShell\Scripts"
+            "init"    = "D:\PowerShell\Init"
+            "do"      = "D:\repos\Bikini\BikiniGit\dev-ops"
         }
     }
 
@@ -49,10 +51,12 @@ function Get-Go {
     }
 
     $PathMappings = [ordered]@{
-        "repos"     = "D:\repos"
-        "bikini"    = "D:\repos\bikini\bikinigit\bikinimain"
-        "core"      = "D:\repos\Bikini\BikiniGit\CorePackages"        
-        "pp"        = "D:\repos\PlanetPearce"
+       
+        "bikini" = "D:\repos\bikini\bikinigit\bikinimain"
+        "core"   = "D:\repos\Bikini\BikiniGit\CorePackages"        
+        "pp"     = "D:\repos\PlanetPearce"
+        "bw"     = "D:\repos\Blackwood Website"
+        "repos"  = "D:\repos"
     }
 
     $TargetKey = $null; $RemainingFilter = @()
@@ -68,7 +72,8 @@ function Get-Go {
         }
         if ($PathMappings.Contains($FirstArg)) {
             $TargetKey = $FirstArg; $RemainingFilter = $FilterArgs[1..($FilterArgs.Count - 1)]
-        } else {
+        }
+        else {
             $RemainingFilter = $FilterArgs
         }
     }
@@ -85,7 +90,7 @@ function Get-Go {
         }
         function Get-MenuIndex ($str) {
             $chars = "abcdefghijklmnopqrstuvwxyz"; $num = 0
-            for ($i=0; $i -lt $str.Length; $i++) { $num = $num * 26 + $chars.IndexOf($str[$i]); if ($i -lt $str.Length - 1) { $num++ } }
+            for ($i = 0; $i -lt $str.Length; $i++) { $num = $num * 26 + $chars.IndexOf($str[$i]); if ($i -lt $str.Length - 1) { $num++ } }
             return $num
         }
 
@@ -105,7 +110,7 @@ function Get-Go {
 
         # Display target workspaces underneath using numbers
         Write-Host "`nTarget Workspaces:" -ForegroundColor Yellow
-        for ($i=0; $i -lt $wKeys.Count; $i++) {
+        for ($i = 0; $i -lt $wKeys.Count; $i++) {
             Write-Host "[$($i + 1)] " -NoNewline -ForegroundColor Green
             Write-Host "$($wKeys[$i].PadRight(10)) " -NoNewline -ForegroundColor White
             Write-Host "($($PathMappings[$wKeys[$i]]))" -ForegroundColor DarkGray

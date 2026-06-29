@@ -1,0 +1,4469 @@
+**********************
+PowerShell transcript start
+Start time: 20260629002411
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 44716
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629002414
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629002549
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 36136
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629002552
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629002926
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 127436
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629002929
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629005200
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 125816
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629005203
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629005225
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 119040
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629005227
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629010604
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 78728
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629010607
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629010700
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 112748
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629010703
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629010811
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 105152
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629010814
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629010900
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 54092
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629010903
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629010917
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 122608
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629010919
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629010958
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 111748
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629011001
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629011038
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 102232
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629011041
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629011220
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 121752
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629011223
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629011507
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 123816
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629011510
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629011806
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 101780
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629011809
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629011830
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 102348
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629011833
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629012007
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 124204
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629012010
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629012131
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 87128
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629012134
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629012402
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 116784
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629012404
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629012453
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 111744
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629012456
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629013921
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 98936
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629013924
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629014016
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 45320
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629014019
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629014604
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 118700
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629014607
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629014803
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 79696
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629014806
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629014817
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 126336
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629014820
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629015424
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 126304
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629015427
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629015600
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 120944
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629015603
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629015623
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 86540
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629015626
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629015745
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 83908
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629015748
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629015827
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 15096
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629015830
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629020035
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 103864
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629020038
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629020101
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 100528
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629020104
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629020132
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 84168
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629020135
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629020207
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 40092
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629020209
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629020236
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 36520
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629020239
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629020319
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 90768
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629020322
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629021946
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 24520
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629021949
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629025542
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 78224
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629025545
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629025558
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 26720
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629025601
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629025724
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 126580
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629025727
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629030435
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 120772
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629030438
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629030544
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 45100
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629030547
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629030558
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 94576
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629030601
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629030701
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 123928
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629030704
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629030743
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 83784
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629030746
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629113140
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 61608
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629113143
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629113304
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll -NonInteractive -File D:\repos\Bikini\BikiniGit\dev-ops\Run-LocalHooks.ps1
+Process ID: 29704
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS>CommandInvocation(Run-LocalHooks.ps1): "Run-LocalHooks.ps1"
+[Run-LocalHooks] Running: Update-TSGlobals...
+
+PS>$global:?
+True
+**********************
+PowerShell transcript end
+End time: 20260629113307
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260629114618
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 67008
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS C:\Users\NickPearce\.ssh> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+  [u]
+init
+(D:\PowerShell\Init)
+  [v]
+profile
+(D:\PowerShell\Init\Profile.ps1)
+
+Target Workspaces:
+[1]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[2]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[3]
+pp
+(D:\repos\PlanetPearce)
+[4]
+bw
+(D:\repos\Blackwood Website)
+[5]
+repos
+(D:\repos)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+u
+PS D:\PowerShell\Init> go init
+PS D:\PowerShell\Init> go profile
+Set-Location: D:\PowerShell\Init\Get-Go.ps1:71
+Line |
+  71 |              Set-Location $target; return
+     |              ~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'D:\PowerShell\Init\Profile.ps1' because it does not exist.
+Set-Location: D:\PowerShell\Init\Get-Go.ps1:71
+Line |
+  71 |              Set-Location $target; return
+     |              ~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'D:\PowerShell\Init\Profile.ps1' because it does not exist.
+
+PS D:\PowerShell\Init> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\PowerShell\Init> go
+
+  Core User Folders
+  [a]
+home
+(C:\Users\NickPearce)
+  [b]
+dt
+(C:\Users\NickPearce\OneDrive - Found Image\Desktop)
+  [c]
+docs
+(C:\Users\NickPearce\OneDrive - Found Image\Documents)
+  [d]
+pics
+(C:\Users\NickPearce\OneDrive - Found Image\Pictures)
+  [e]
+dl
+(C:\Users\NickPearce\Downloads)
+
+  Web Macros
+  [f]
+emojis
+(https://emojipedia.org)
+  [g]
+azure
+(https://portal.azure.com)
+  [h]
+bs
+(https://getbootstrap.com/docs/5.3/utilities/vertical-align)
+  [i]
+icons
+(https://icons.getbootstrap.com)
+
+  AppData & Developer Caches
+  [j]
+local
+(C:\Users\NickPearce\AppData\Local)
+  [k]
+roaming
+(C:\Users\NickPearce\AppData\Roaming)
+  [l]
+locallow
+(C:\Users\NickPearce\AppData\LocalLow)
+  [m]
+resharper
+(C:\Users\NickPearce\AppData\Local\JetBrains\Transient)
+  [n]
+nuget
+(D:\.nuget\packages)
+
+  System Admin & Logs
+  [o]
+winlogs
+(C:\Windows\System32\Winevt\Logs)
+  [p]
+hosts
+(C:\Windows\System32\drivers\etc)
+  [q]
+ssh
+(C:\Users\NickPearce\.ssh)
+
+  PowerShell Control Center
+  [r]
+ps
+(D:\PowerShell)
+  [s]
+modules
+(D:\PowerShell\Modules)
+  [t]
+scripts
+(D:\PowerShell\Scripts)
+  [u]
+init
+(D:\PowerShell\Init)
+  [v]
+do
+(D:\repos\Bikini\BikiniGit\dev-ops)
+
+Target Workspaces:
+[1]
+bikini
+(D:\repos\bikini\bikinigit\bikinimain)
+[2]
+core
+(D:\repos\Bikini\BikiniGit\CorePackages)
+[3]
+pp
+(D:\repos\PlanetPearce)
+[4]
+bw
+(D:\repos\Blackwood Website)
+[5]
+repos
+(D:\repos)
+[Space/Esc] Cancel / Quit
+Press hotkey:
+g
+PS D:\PowerShell\Init> go do
+PS D:\repos\Bikini\BikiniGit\dev-ops> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\dev-ops
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           6/26/2026 10:52 PM           8365 CI-CD-QUICKSTART.md
+-a---           6/26/2026 10:53 PM           5253 INDEX.md
+-a---           6/28/2026  4:51 PM          25638 Invoke-AppPublish.ps1
+-a---           6/26/2026 10:51 PM           5489 MIGRATION-COMPLETE.md
+-a---           6/28/2026 11:17 AM          18825 Publish-CorePackages.ps1
+-a---           6/28/2026 11:08 PM          11125 README.md
+-a---           6/26/2026 11:44 PM           2316 Run-LocalHooks.ps1
+-a---           6/28/2026 11:04 AM          13022 Update-Packages.ps1
+
+PS D:\repos\Bikini\BikiniGit\dev-ops> go bikini web.orch
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           12/2/2025  3:45 PM                .config
+d----           6/22/2026  1:14 AM                bin
+d----           6/24/2026 10:15 PM                Components
+d----           6/27/2026  8:12 PM                Controllers
+d----           12/2/2025  3:45 PM                Models
+d----           6/25/2026  3:00 AM                node_modules
+d----           6/29/2026  2:44 AM                obj
+d----           12/2/2025  3:45 PM                Properties
+d----           6/28/2026  8:56 PM                src
+d----           6/19/2026  9:40 PM                Views
+d----           6/25/2026  3:34 AM                wwwroot
+-a---           6/23/2026  9:48 PM           1174 .stylelintrc.json
+-a---           12/2/2025  3:45 PM            127 appsettings.Development.json
+-a---           5/29/2026  4:35 PM            498 appsettings.json
+-a---           6/29/2026  2:43 AM           6160 Bikini.Web.Orchestration.csproj
+-a---           12/2/2025  3:45 PM            704 Bikini.Web.Orchestration.csproj.DotSettings
+-a---            5/4/2026  1:25 PM           1307 Bikini.Web.Orchestration.csproj.user
+-a---           6/25/2026  3:00 AM         331997 package-lock.json
+-a---           6/28/2026  4:54 PM           4182 package.json
+-a---           12/2/2025  3:45 PM            618 Program.cs
+-a---           6/28/2026  2:07 PM           3290 Publish-Orchestration.ps1
+-a---           6/28/2026 12:51 PM           5833 README.md
+-a---           6/28/2026  4:54 PM           7082 RELEASE_NOTES.md
+-a---           5/28/2026 10:20 PM           6064 Startup.cs
+-a---           6/26/2026 11:55 PM          10459 webpack.config.js
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> .\Publish-Orchestration.ps1 -VersionSuffix hotfix02 -SkipCorePackages -SkipNugetUpdate
+
+╔════════════════════════════════════════════════════════╗
+║  Bikini.Web.Orchestration — Publish Pipeline       ║
+╚════════════════════════════════════════════════════════╝
+  CorePackages increment : Patch
+  Skip CorePackages      : True
+  Skip NuGet update      : True
+  Skip tests             : False
+  Skip deploy            : False
+  Version suffix         : -hotfix02  (no version bump)
+
+══════════════════════════════════════════════════
+  Step 1 — Verify clean git working tree
+══════════════════════════════════════════════════
+
+Uncommitted changes detected:
+   M BikiniMain/Bikini.Api.Gbs/Bikini.Api.Gbs.csproj
+   M BikiniMain/Bikini.Assets/Bikini.Assets.csproj
+   M BikiniMain/Bikini.Barcodes/Bikini.Barcodes.csproj
+   M BikiniMain/Bikini.Biz.Calendars/Bikini.Biz.Calendars.csproj
+   M BikiniMain/Bikini.Biz.Channel/Bikini.Biz.Channel.csproj
+   M BikiniMain/Bikini.Biz.Compose/Bikini.Biz.Compose.csproj
+   M BikiniMain/Bikini.Biz.Orchestration.Models/Bikini.Biz.Orchestration.Models.csproj
+   M BikiniMain/Bikini.Biz.Orchestration/Bikini.Biz.Orchestration.csproj
+   M BikiniMain/Bikini.Biz.Orchestration/OrchestrationEngine.cs
+   M BikiniMain/Bikini.Biz.OrderCommon.Models/Bikini.Biz.OrderCommon.Models.csproj
+   M BikiniMain/Bikini.Biz.OrderCommon/Bikini.Biz.OrderCommon.csproj
+   M BikiniMain/Bikini.Biz.Principal/Bikini.Biz.Principal.csproj
+   M BikiniMain/Bikini.Biz.PrintCommon/Bikini.Biz.PrintCommon.csproj
+   M BikiniMain/Bikini.Biz.Printing/Bikini.Biz.Printing.csproj
+   M BikiniMain/Bikini.Biz.Search/Bikini.Biz.Search.csproj
+   M BikiniMain/Bikini.Cli/Bikini.Cli.csproj
+   M BikiniMain/Bikini.ClientEngine/Bikini.ClientEngine.csproj
+   M BikiniMain/Bikini.Event.ShopifyOrder/Bikini.Event.ShopifyOrder.csproj
+   M BikiniMain/Bikini.Events/Bikini.Events.csproj
+   M BikiniMain/Bikini.Export.Console/Bikini.Export.Console.csproj
+   M BikiniMain/Bikini.Export/Bikini.Export.csproj
+   M BikiniMain/Bikini.Faire/Bikini.Faire.csproj
+   M BikiniMain/Bikini.Ftp/Bikini.Ftp.csproj
+   M BikiniMain/Bikini.Function.Image.Product/Bikini.Function.Image.Product.csproj
+   M BikiniMain/Bikini.Function.Image.Upc/Bikini.Function.Image.Upc.csproj
+   M BikiniMain/Bikini.Function.Image.Week/Bikini.Function.Image.Week.csproj
+   M BikiniMain/Bikini.Function.Image/Bikini.Function.Image.csproj
+   M BikiniMain/Bikini.Function.Notification/Bikini.Function.Notification.csproj
+   M BikiniMain/Bikini.Function.Order/Bikini.Function.Order.csproj
+   M BikiniMain/Bikini.Function.Print.Client/Bikini.Function.Print.Client.csproj
+   M BikiniMain/Bikini.Function.Print/Bikini.Function.Print.csproj
+   M BikiniMain/Bikini.Function.QuickBooks/Bikini.Function.QuickBooks.csproj
+   M BikiniMain/Bikini.Functions.Tests/Bikini.Functions.Tests.csproj
+   M BikiniMain/Bikini.Images/Bikini.Images.csproj
+   M BikiniMain/Bikini.Integration/Bikini.Integration.csproj
+   M BikiniMain/Bikini.Notification.Client/Bikini.Notification.Client.csproj
+   M BikiniMain/Bikini.Orders.Adapters/Bikini.Orders.Adapters.csproj
+   M BikiniMain/Bikini.Orders.KeyVault/Bikini.Orders.KeyVault.csproj
+   M BikiniMain/Bikini.Orders.Models.Workflow/Bikini.Orders.Models.Workflow.csproj
+   M BikiniMain/Bikini.Orders.Models/Bikini.Orders.Models.csproj
+   M BikiniMain/Bikini.ProductImages/Bikini.ProductImages.csproj
+   M BikiniMain/Bikini.Production/Bikini.Production.csproj
+   M BikiniMain/Bikini.Products/Bikini.Products.csproj
+   M BikiniMain/Bikini.QuickBooks.Core/Bikini.QuickBooks.Core.csproj
+   M BikiniMain/Bikini.Storage/Bikini.Storage.csproj
+   M BikiniMain/Bikini.Tests.Net5/Bikini.Tests.Net5.csproj
+   M BikiniMain/Bikini.Web.Barcodes/Bikini.Web.Barcodes.csproj
+   M BikiniMain/Bikini.Web.Barcodes/Views/Home/Version.cshtml
+   M BikiniMain/Bikini.Web.Calendars/Bikini.Web.Calendars.csproj
+   M BikiniMain/Bikini.Web.Design/Bikini.Web.Design.csproj
+   M BikiniMain/Bikini.Web.Images/Bikini.Web.Images.csproj
+   M BikiniMain/Bikini.Web.Images/Views/Home/Version.cshtml
+   M BikiniMain/Bikini.Web.Integration/Bikini.Web.Integration.csproj
+   M BikiniMain/Bikini.Web.Landing/Bikini.Web.Landing.csproj
+   M BikiniMain/Bikini.Web.Notification/Bikini.Web.Notification.csproj
+   M BikiniMain/Bikini.Web.Orchestration/Bikini.Web.Orchestration.csproj
+   M BikiniMain/Bikini.Web.Orchestration/Views/BikOrders/CoverSheet.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/Views/BikOrders/Details.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/Views/Shared/Components/StatusStrip/Default.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/Views/Shared/_Layout.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/package.json
+   M BikiniMain/Bikini.Web.Orchestration/src/index.ejs
+   M BikiniMain/Bikini.Web.Orchestration/src/scss/views/_views.scss
+   M BikiniMain/Bikini.Web.Orders/Bikini.Web.Orders.csproj
+   M BikiniMain/Bikini.Web.Print/Bikini.Web.Print.csproj
+   M BikiniMain/Bikini.Web.Public/Bikini.Web.Public.csproj
+   M BikiniMain/Bikini.Webhook.Gbs/Bikini.Webhook.Gbs.csproj
+   M BikiniMain/Bikini.Webhook.Shopify/Bikini.Webhook.Shopify.csproj
+   M BikiniMain/BlazorApp1/BlazorApp1/BlazorApp1.csproj
+   M CorePackages/Bikini.Core.Cli/BuildVersion.cs
+   M CorePackages/Bikini.Core.Test/BuildInformationTests.cs
+   M CorePackages/Bikini.Core.Web/Views/Shared/BikiniFooter.cshtml
+   M CorePackages/Bikini.Core/Build/AssemblyInformation.cs
+   M CorePackages/Bikini.Core/Build/BuildInformation.cs
+   M dev-ops/README.md
+  ?? BikiniMain/Bikini.Web.Orchestration/Views/Shared/_Footer.cshtml
+  ?? CorePackages/CorePackages.sln.DotSettings
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "Commit or stash all changes before running the publish pipeline."
+
+[PUBLISH FAILED]  Line 114: Commit or stash all changes before running the publish pipeline.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> glt
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> .\Publish-Orchestration.ps1 -VersionSuffix hotfix02 -SkipCorePackages -SkipNugetUpdate
+
+╔════════════════════════════════════════════════════════╗
+║  Bikini.Web.Orchestration — Publish Pipeline       ║
+╚════════════════════════════════════════════════════════╝
+  CorePackages increment : Patch
+  Skip CorePackages      : True
+  Skip NuGet update      : True
+  Skip tests             : False
+  Skip deploy            : False
+  Version suffix         : -hotfix02  (no version bump)
+
+══════════════════════════════════════════════════
+  Step 1 — Verify clean git working tree
+══════════════════════════════════════════════════
+
+Uncommitted changes detected:
+   M BikiniMain/Bikini.Api.Gbs/Bikini.Api.Gbs.csproj
+   M BikiniMain/Bikini.Assets/Bikini.Assets.csproj
+   M BikiniMain/Bikini.Barcodes/Bikini.Barcodes.csproj
+   M BikiniMain/Bikini.Biz.Calendars/Bikini.Biz.Calendars.csproj
+   M BikiniMain/Bikini.Biz.Channel/Bikini.Biz.Channel.csproj
+   M BikiniMain/Bikini.Biz.Compose/Bikini.Biz.Compose.csproj
+   M BikiniMain/Bikini.Biz.Orchestration.Models/Bikini.Biz.Orchestration.Models.csproj
+   M BikiniMain/Bikini.Biz.Orchestration/Bikini.Biz.Orchestration.csproj
+   M BikiniMain/Bikini.Biz.OrderCommon.Models/Bikini.Biz.OrderCommon.Models.csproj
+   M BikiniMain/Bikini.Biz.OrderCommon/Bikini.Biz.OrderCommon.csproj
+   M BikiniMain/Bikini.Biz.Principal/Bikini.Biz.Principal.csproj
+   M BikiniMain/Bikini.Biz.PrintCommon/Bikini.Biz.PrintCommon.csproj
+   M BikiniMain/Bikini.Biz.Printing/Bikini.Biz.Printing.csproj
+   M BikiniMain/Bikini.Biz.Search/Bikini.Biz.Search.csproj
+   M BikiniMain/Bikini.Cli/Bikini.Cli.csproj
+   M BikiniMain/Bikini.ClientEngine/Bikini.ClientEngine.csproj
+   M BikiniMain/Bikini.Event.ShopifyOrder/Bikini.Event.ShopifyOrder.csproj
+   M BikiniMain/Bikini.Events/Bikini.Events.csproj
+   M BikiniMain/Bikini.Export.Console/Bikini.Export.Console.csproj
+   M BikiniMain/Bikini.Export/Bikini.Export.csproj
+   M BikiniMain/Bikini.Faire/Bikini.Faire.csproj
+   M BikiniMain/Bikini.Ftp/Bikini.Ftp.csproj
+   M BikiniMain/Bikini.Function.Image.Product/Bikini.Function.Image.Product.csproj
+   M BikiniMain/Bikini.Function.Image.Upc/Bikini.Function.Image.Upc.csproj
+   M BikiniMain/Bikini.Function.Image.Week/Bikini.Function.Image.Week.csproj
+   M BikiniMain/Bikini.Function.Image/Bikini.Function.Image.csproj
+   M BikiniMain/Bikini.Function.Notification/Bikini.Function.Notification.csproj
+   M BikiniMain/Bikini.Function.Order/Bikini.Function.Order.csproj
+   M BikiniMain/Bikini.Function.Print.Client/Bikini.Function.Print.Client.csproj
+   M BikiniMain/Bikini.Function.Print/Bikini.Function.Print.csproj
+   M BikiniMain/Bikini.Function.QuickBooks/Bikini.Function.QuickBooks.csproj
+   M BikiniMain/Bikini.Functions.Tests/Bikini.Functions.Tests.csproj
+   M BikiniMain/Bikini.Images/Bikini.Images.csproj
+   M BikiniMain/Bikini.Integration/Bikini.Integration.csproj
+   M BikiniMain/Bikini.Notification.Client/Bikini.Notification.Client.csproj
+   M BikiniMain/Bikini.Orders.Adapters/Bikini.Orders.Adapters.csproj
+   M BikiniMain/Bikini.Orders.KeyVault/Bikini.Orders.KeyVault.csproj
+   M BikiniMain/Bikini.Orders.Models.Workflow/Bikini.Orders.Models.Workflow.csproj
+   M BikiniMain/Bikini.Orders.Models/Bikini.Orders.Models.csproj
+   M BikiniMain/Bikini.ProductImages/Bikini.ProductImages.csproj
+   M BikiniMain/Bikini.Production/Bikini.Production.csproj
+   M BikiniMain/Bikini.Products/Bikini.Products.csproj
+   M BikiniMain/Bikini.QuickBooks.Core/Bikini.QuickBooks.Core.csproj
+   M BikiniMain/Bikini.Storage/Bikini.Storage.csproj
+   M BikiniMain/Bikini.Tests.Net5/Bikini.Tests.Net5.csproj
+   M BikiniMain/Bikini.Web.Barcodes/Bikini.Web.Barcodes.csproj
+   M BikiniMain/Bikini.Web.Barcodes/Views/Home/Version.cshtml
+   M BikiniMain/Bikini.Web.Calendars/Bikini.Web.Calendars.csproj
+   M BikiniMain/Bikini.Web.Design/Bikini.Web.Design.csproj
+   M BikiniMain/Bikini.Web.Images/Bikini.Web.Images.csproj
+   M BikiniMain/Bikini.Web.Images/Views/Home/Version.cshtml
+   M BikiniMain/Bikini.Web.Integration/Bikini.Web.Integration.csproj
+   M BikiniMain/Bikini.Web.Landing/Bikini.Web.Landing.csproj
+   M BikiniMain/Bikini.Web.Notification/Bikini.Web.Notification.csproj
+   M BikiniMain/Bikini.Web.Orchestration/Bikini.Web.Orchestration.csproj
+   M BikiniMain/Bikini.Web.Orchestration/Views/BikOrders/CoverSheet.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/Views/BikOrders/Details.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/Views/Shared/Components/StatusStrip/Default.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/Views/Shared/_Layout.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/package.json
+   M BikiniMain/Bikini.Web.Orchestration/src/index.ejs
+   M BikiniMain/Bikini.Web.Orchestration/src/scss/views/_views.scss
+   M BikiniMain/Bikini.Web.Orders/Bikini.Web.Orders.csproj
+   M BikiniMain/Bikini.Web.Print/Bikini.Web.Print.csproj
+   M BikiniMain/Bikini.Web.Public/Bikini.Web.Public.csproj
+   M BikiniMain/Bikini.Webhook.Gbs/Bikini.Webhook.Gbs.csproj
+   M BikiniMain/Bikini.Webhook.Shopify/Bikini.Webhook.Shopify.csproj
+   M BikiniMain/BlazorApp1/BlazorApp1/BlazorApp1.csproj
+   M CorePackages/Bikini.Core.Cli/BuildVersion.cs
+   M CorePackages/Bikini.Core.Test/BuildInformationTests.cs
+   M CorePackages/Bikini.Core.Web/Views/Shared/BikiniFooter.cshtml
+   M CorePackages/Bikini.Core/Build/AssemblyInformation.cs
+   M CorePackages/Bikini.Core/Build/BuildInformation.cs
+   M dev-ops/README.md
+  ?? BikiniMain/Bikini.Web.Orchestration/Views/Shared/_Footer.cshtml
+  ?? CorePackages/CorePackages.sln.DotSettings
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "Commit or stash all changes before running the publish pipeline."
+
+[PUBLISH FAILED]  Line 114: Commit or stash all changes before running the publish pipeline.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> ..
+PS D:\repos\Bikini\BikiniGit\BikiniMain> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\BikiniMain
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            3/4/2026 12:40 PM                Archirtecture
+d----            1/7/2026  7:16 PM                Assets
+d----           6/28/2026  3:45 PM                Bikini.Api.Gbs
+d----           6/19/2026 12:38 PM                Bikini.AppHost
+d----           6/28/2026 11:50 AM                Bikini.Assets
+d----           6/28/2026 11:50 AM                Bikini.Barcodes
+d----           6/19/2026 12:38 PM                Bikini.Barcodes.Test
+d----           6/28/2026 11:50 AM                Bikini.Biz.Calendars
+d----           6/28/2026 11:50 AM                Bikini.Biz.Channel
+d----           6/19/2026 12:38 PM                Bikini.Biz.Comp
+d----           6/28/2026 11:50 AM                Bikini.Biz.Compose
+d----           6/19/2026 12:26 PM                Bikini.Biz.Compose.Tests
+d----           6/29/2026 11:27 AM                Bikini.Biz.Orchestration
+d----           6/28/2026 11:50 AM                Bikini.Biz.Orchestration.Models
+d----           6/28/2026 11:50 AM                Bikini.Biz.OrderCommon
+d----           6/28/2026 11:50 AM                Bikini.Biz.OrderCommon.Models
+d----           6/28/2026 11:50 AM                Bikini.Biz.Principal
+d----           6/28/2026 11:50 AM                Bikini.Biz.PrintCommon
+d----           6/28/2026 11:50 AM                Bikini.Biz.Printing
+d----           6/28/2026 11:50 AM                Bikini.Biz.Search
+d----           3/31/2025 11:56 AM                Bikini.Blazor.Design
+d----           6/28/2026 11:50 AM                Bikini.Cli
+d----           6/19/2026  2:06 PM                Bikini.Cli.Test
+d----           6/28/2026 11:50 AM                Bikini.ClientEngine
+d----           6/19/2026 12:38 PM                Bikini.Design
+d----           6/28/2026 11:50 AM                Bikini.Design.Api
+d----           6/19/2026 12:38 PM                Bikini.Encryption
+d----           6/28/2026 11:50 AM                Bikini.Event.ShopifyOrder
+d----           6/28/2026 11:50 AM                Bikini.Events
+d----           6/28/2026 11:50 AM                Bikini.Export
+d----           6/28/2026 11:50 AM                Bikini.Export.Console
+d----           6/19/2026 12:38 PM                Bikini.Export.Tests
+d----           6/28/2026 11:50 AM                Bikini.Faire
+d----           6/19/2026 12:29 PM                Bikini.Faire.Models
+d----           6/28/2026 11:50 AM                Bikini.Ftp
+d----           6/28/2026 11:50 AM                Bikini.Function.Image
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Product
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Upc
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Week
+d----           6/28/2026 11:50 AM                Bikini.Function.Notification
+d----           6/28/2026 11:50 AM                Bikini.Function.Order
+d----           12/2/2025  3:45 PM                Bikini.Function.Pdf
+d----           6/28/2026 11:50 AM                Bikini.Function.Print
+d----           6/28/2026 11:50 AM                Bikini.Function.Print.Client
+d----           6/28/2026 11:50 AM                Bikini.Function.QuickBooks
+d----           6/19/2026 12:26 PM                Bikini.Functions.Shopify.Product
+d----           6/28/2026 11:50 AM                Bikini.Functions.Tests
+d----           4/11/2025  3:04 PM                Bikini.Image.Service
+d----           6/28/2026 11:50 AM                Bikini.Images
+d----           6/19/2026 12:26 PM                Bikini.Images.Models
+d----           6/28/2026 11:50 AM                Bikini.Integration
+d----           6/19/2026 12:29 PM                Bikini.Integration.Models
+d----           6/28/2026 11:50 AM                Bikini.Notification.Client
+d----           6/19/2026 12:38 PM                Bikini.Notification.Core
+d----           6/19/2026 12:38 PM                Bikini.Notification.Tests
+d----           6/28/2026 11:50 AM                Bikini.Orders.Adapters
+d----           6/28/2026 11:50 AM                Bikini.Orders.KeyVault
+d----           6/28/2026 11:50 AM                Bikini.Orders.Models
+d----           6/28/2026 11:50 AM                Bikini.Orders.Models.Workflow
+d----           6/19/2026 12:26 PM                Bikini.PdfBackup
+d----           6/28/2026 11:50 AM                Bikini.ProductImages
+d----           6/28/2026 11:50 AM                Bikini.Production
+d----           6/19/2026 12:38 PM                Bikini.Production.Models
+d----           6/28/2026 11:50 AM                Bikini.Products
+d----           6/25/2026  1:13 AM                Bikini.Publishing
+d----           6/19/2026 12:38 PM                Bikini.QuickBooks
+d----           6/28/2026 11:50 AM                Bikini.QuickBooks.Core
+d----           6/19/2026 12:38 PM                Bikini.ServiceDefaults
+d----           6/19/2026 12:26 PM                Bikini.Shopify
+d----           6/19/2026 12:26 PM                Bikini.Shopify.Models
+d----           6/28/2026 11:50 AM                Bikini.Storage
+d----           6/19/2026 12:26 PM                Bikini.Storage.Tests
+d----           6/28/2026 11:50 AM                Bikini.Tests.Net5
+d----           6/28/2026 11:50 AM                Bikini.Web.Barcodes
+d----           6/28/2026 11:50 AM                Bikini.Web.Calendars
+d----           6/28/2026 11:50 AM                Bikini.Web.Design
+d----           6/28/2026 11:50 AM                Bikini.Web.Images
+d----           6/28/2026 11:50 AM                Bikini.Web.Integration
+d----           6/28/2026 11:50 AM                Bikini.Web.Landing
+d----           6/19/2026 12:38 PM                Bikini.Web.Net8
+d----           6/28/2026 11:50 AM                Bikini.Web.Notification
+d----           6/29/2026 11:50 AM                Bikini.Web.Orchestration
+d----           6/28/2026 11:50 AM                Bikini.Web.Orders
+d----           6/28/2026 11:50 AM                Bikini.Web.Print
+d----           6/28/2026 11:50 AM                Bikini.Web.Public
+d----           6/12/2026 12:30 AM                Bikini.Web.Reports
+d----           6/28/2026 11:50 AM                Bikini.Webhook.Gbs
+d----           6/28/2026 11:50 AM                Bikini.Webhook.Shopify
+d----           6/19/2026 12:38 PM                Bikini.Webhook.Vanilla
+d----           3/31/2025 11:58 AM                BlazorApp1
+d----           12/2/2025  3:45 PM                Configurations
+d----           12/2/2025  3:45 PM                Documentation
+d----           4/16/2026  3:47 PM                Libraries
+d----           12/2/2025  3:45 PM                Pipelines
+d----           6/19/2026 12:38 PM                QuadrilateralDistortion
+d----           12/8/2025  1:42 PM                Scripts
+d----           12/2/2025  3:45 PM                ShopifyGraph
+d----           6/19/2026  2:06 PM                TestResults
+-a---           12/2/2025  3:45 PM            422 .dockerignore
+-a---           4/23/2026  8:22 PM            104 .editorconfig
+-a---           12/2/2025  3:45 PM           1378 azure-pipelines.yml
+-a---           6/22/2026  2:22 PM          13540 Bikini.sln.DotSettings
+-a---           6/19/2026  1:58 PM          13435 Bikini.sln.DotSettings.user
+-a---           1/12/2026 12:05 PM           1253 Bikini.slnLaunch.user
+-a---           6/28/2026 11:52 AM          11272 Bikini.slnx
+-a---           4/22/2026 12:02 PM            800 nuget.config
+-a---           6/26/2026 10:49 PM           4200 Update.ps1
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> more .\Bikini.sln.DotSettings
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\BikiniMain
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            3/4/2026 12:40 PM                Archirtecture
+d----            1/7/2026  7:16 PM                Assets
+d----           6/28/2026  3:45 PM                Bikini.Api.Gbs
+d----           6/19/2026 12:38 PM                Bikini.AppHost
+d----           6/28/2026 11:50 AM                Bikini.Assets
+d----           6/28/2026 11:50 AM                Bikini.Barcodes
+d----           6/19/2026 12:38 PM                Bikini.Barcodes.Test
+d----           6/28/2026 11:50 AM                Bikini.Biz.Calendars
+d----           6/28/2026 11:50 AM                Bikini.Biz.Channel
+d----           6/19/2026 12:38 PM                Bikini.Biz.Comp
+d----           6/28/2026 11:50 AM                Bikini.Biz.Compose
+d----           6/19/2026 12:26 PM                Bikini.Biz.Compose.Tests
+d----           6/29/2026 11:27 AM                Bikini.Biz.Orchestration
+d----           6/28/2026 11:50 AM                Bikini.Biz.Orchestration.Models
+d----           6/28/2026 11:50 AM                Bikini.Biz.OrderCommon
+d----           6/28/2026 11:50 AM                Bikini.Biz.OrderCommon.Models
+d----           6/28/2026 11:50 AM                Bikini.Biz.Principal
+d----           6/28/2026 11:50 AM                Bikini.Biz.PrintCommon
+d----           6/28/2026 11:50 AM                Bikini.Biz.Printing
+d----           6/28/2026 11:50 AM                Bikini.Biz.Search
+d----           3/31/2025 11:56 AM                Bikini.Blazor.Design
+d----           6/28/2026 11:50 AM                Bikini.Cli
+d----           6/19/2026  2:06 PM                Bikini.Cli.Test
+d----           6/28/2026 11:50 AM                Bikini.ClientEngine
+d----           6/19/2026 12:38 PM                Bikini.Design
+d----           6/28/2026 11:50 AM                Bikini.Design.Api
+d----           6/19/2026 12:38 PM                Bikini.Encryption
+d----           6/28/2026 11:50 AM                Bikini.Event.ShopifyOrder
+d----           6/28/2026 11:50 AM                Bikini.Events
+d----           6/28/2026 11:50 AM                Bikini.Export
+d----           6/28/2026 11:50 AM                Bikini.Export.Console
+d----           6/19/2026 12:38 PM                Bikini.Export.Tests
+d----           6/28/2026 11:50 AM                Bikini.Faire
+d----           6/19/2026 12:29 PM                Bikini.Faire.Models
+d----           6/28/2026 11:50 AM                Bikini.Ftp
+d----           6/28/2026 11:50 AM                Bikini.Function.Image
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Product
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Upc
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Week
+d----           6/28/2026 11:50 AM                Bikini.Function.Notification
+d----           6/28/2026 11:50 AM                Bikini.Function.Order
+d----           12/2/2025  3:45 PM                Bikini.Function.Pdf
+d----           6/28/2026 11:50 AM                Bikini.Function.Print
+d----           6/28/2026 11:50 AM                Bikini.Function.Print.Client
+d----           6/28/2026 11:50 AM                Bikini.Function.QuickBooks
+d----           6/19/2026 12:26 PM                Bikini.Functions.Shopify.Product
+d----           6/28/2026 11:50 AM                Bikini.Functions.Tests
+d----           4/11/2025  3:04 PM                Bikini.Image.Service
+d----           6/28/2026 11:50 AM                Bikini.Images
+d----           6/19/2026 12:26 PM                Bikini.Images.Models
+d----           6/28/2026 11:50 AM                Bikini.Integration
+d----           6/19/2026 12:29 PM                Bikini.Integration.Models
+d----           6/28/2026 11:50 AM                Bikini.Notification.Client
+d----           6/19/2026 12:38 PM                Bikini.Notification.Core
+d----           6/19/2026 12:38 PM                Bikini.Notification.Tests
+d----           6/28/2026 11:50 AM                Bikini.Orders.Adapters
+d----           6/28/2026 11:50 AM                Bikini.Orders.KeyVault
+d----           6/28/2026 11:50 AM                Bikini.Orders.Models
+d----           6/28/2026 11:50 AM                Bikini.Orders.Models.Workflow
+d----           6/19/2026 12:26 PM                Bikini.PdfBackup
+d----           6/28/2026 11:50 AM                Bikini.ProductImages
+d----           6/28/2026 11:50 AM                Bikini.Production
+d----           6/19/2026 12:38 PM                Bikini.Production.Models
+d----           6/28/2026 11:50 AM                Bikini.Products
+d----           6/25/2026  1:13 AM                Bikini.Publishing
+d----           6/19/2026 12:38 PM                Bikini.QuickBooks
+d----           6/28/2026 11:50 AM                Bikini.QuickBooks.Core
+d----           6/19/2026 12:38 PM                Bikini.ServiceDefaults
+d----           6/19/2026 12:26 PM                Bikini.Shopify
+d----           6/19/2026 12:26 PM                Bikini.Shopify.Models
+d----           6/28/2026 11:50 AM                Bikini.Storage
+d----           6/19/2026 12:26 PM                Bikini.Storage.Tests
+d----           6/28/2026 11:50 AM                Bikini.Tests.Net5
+d----           6/28/2026 11:50 AM                Bikini.Web.Barcodes
+d----           6/28/2026 11:50 AM                Bikini.Web.Calendars
+d----           6/28/2026 11:50 AM                Bikini.Web.Design
+d----           6/28/2026 11:50 AM                Bikini.Web.Images
+d----           6/28/2026 11:50 AM                Bikini.Web.Integration
+d----           6/28/2026 11:50 AM                Bikini.Web.Landing
+d----           6/19/2026 12:38 PM                Bikini.Web.Net8
+d----           6/28/2026 11:50 AM                Bikini.Web.Notification
+d----           6/29/2026 11:50 AM                Bikini.Web.Orchestration
+d----           6/28/2026 11:50 AM                Bikini.Web.Orders
+d----           6/28/2026 11:50 AM                Bikini.Web.Print
+d----           6/28/2026 11:50 AM                Bikini.Web.Public
+d----           6/12/2026 12:30 AM                Bikini.Web.Reports
+d----           6/28/2026 11:50 AM                Bikini.Webhook.Gbs
+d----           6/28/2026 11:50 AM                Bikini.Webhook.Shopify
+d----           6/19/2026 12:38 PM                Bikini.Webhook.Vanilla
+d----           3/31/2025 11:58 AM                BlazorApp1
+d----           12/2/2025  3:45 PM                Configurations
+d----           12/2/2025  3:45 PM                Documentation
+d----           4/16/2026  3:47 PM                Libraries
+d----           12/2/2025  3:45 PM                Pipelines
+d----           6/19/2026 12:38 PM                QuadrilateralDistortion
+d----           12/8/2025  1:42 PM                Scripts
+d----           12/2/2025  3:45 PM                ShopifyGraph
+d----           6/19/2026  2:06 PM                TestResults
+-a---           12/2/2025  3:45 PM            422 .dockerignore
+-a---           4/23/2026  8:22 PM            104 .editorconfig
+-a---           12/2/2025  3:45 PM           1378 azure-pipelines.yml
+-a---           6/22/2026  2:22 PM          13540 Bikini.sln.DotSettings
+-a---           6/19/2026  1:58 PM          13435 Bikini.sln.DotSettings.user
+-a---           1/12/2026 12:05 PM           1253 Bikini.slnLaunch.user
+-a---           6/28/2026 11:52 AM          11272 Bikini.slnx
+-a---           4/22/2026 12:02 PM            800 nuget.config
+-a---           6/26/2026 10:49 PM           4200 Update.ps1
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> code README.md
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> lr .\Bikini.Web.Orchestration\
+PS D:\repos\Bikini\BikiniGit\BikiniMain> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\repos\Bikini\BikiniGit\BikiniMain> go bikini web.orch
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           12/2/2025  3:45 PM                .config
+d----           6/22/2026  1:14 AM                bin
+d----           6/24/2026 10:15 PM                Components
+d----           6/27/2026  8:12 PM                Controllers
+d----           12/2/2025  3:45 PM                Models
+d----           6/25/2026  3:00 AM                node_modules
+d----           6/29/2026 11:50 AM                obj
+d----           12/2/2025  3:45 PM                Properties
+d----           6/28/2026  8:56 PM                src
+d----           6/19/2026  9:40 PM                Views
+d----           6/25/2026  3:34 AM                wwwroot
+-a---           6/23/2026  9:48 PM           1174 .stylelintrc.json
+-a---           12/2/2025  3:45 PM            127 appsettings.Development.json
+-a---           5/29/2026  4:35 PM            498 appsettings.json
+-a---           6/29/2026 11:50 AM           6160 Bikini.Web.Orchestration.csproj
+-a---           12/2/2025  3:45 PM            704 Bikini.Web.Orchestration.csproj.DotSettings
+-a---            5/4/2026  1:25 PM           1307 Bikini.Web.Orchestration.csproj.user
+-a---           6/25/2026  3:00 AM         331997 package-lock.json
+-a---           6/28/2026  4:54 PM           4182 package.json
+-a---           12/2/2025  3:45 PM            618 Program.cs
+-a---           6/28/2026  2:07 PM           3290 Publish-Orchestration.ps1
+-a---           6/28/2026 12:51 PM           5833 README.md
+-a---           6/28/2026  4:54 PM           7082 RELEASE_NOTES.md
+-a---           5/28/2026 10:20 PM           6064 Startup.cs
+-a---           6/26/2026 11:55 PM          10459 webpack.config.js
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> .\Publish-Orchestration.ps1 -VersionSuffix hotfix02 
+
+╔════════════════════════════════════════════════════════╗
+║  Bikini.Web.Orchestration — Publish Pipeline       ║
+╚════════════════════════════════════════════════════════╝
+  CorePackages increment : Patch
+  Skip CorePackages      : True
+  Skip NuGet update      : True
+  Skip tests             : False
+  Skip deploy            : False
+  Version suffix         : -hotfix02  (no version bump)
+
+══════════════════════════════════════════════════
+  Step 1 — Verify clean git working tree
+══════════════════════════════════════════════════
+Working tree is clean.
+
+══════════════════════════════════════════════════
+  Step 2 — Publish CorePackages
+══════════════════════════════════════════════════
+Skipped (--SkipCorePackages).
+
+══════════════════════════════════════════════════
+  Step 3 — Update CorePackage NuGet references
+══════════════════════════════════════════════════
+Skipped (--SkipNuGetUpdate).
+
+══════════════════════════════════════════════════
+  Step 4 — Build web app  (dotnet build --configuration Release)
+══════════════════════════════════════════════════
+  Clearing NuGet HTTP cache...
+
+Build succeeded.
+
+══════════════════════════════════════════════════
+  Step 6 — npm run test:scss
+══════════════════════════════════════════════════
+
+
+══════════════════════════════════════════════════
+  Step 7 — npm run build:prod
+══════════════════════════════════════════════════
+
+Frontend assets built.
+
+══════════════════════════════════════════════════
+  Step 8 — Apply version suffix  (-hotfix02)
+══════════════════════════════════════════════════
+Web app version: 5.7.101-hotfix02  (VersionPrefix unchanged)
+
+══════════════════════════════════════════════════
+  Step 9 — Create / update RELEASE_NOTES.md
+══════════════════════════════════════════════════
+  Last publish tag : orch-publish-v5.7.100-hotfix01
+Release notes written.
+
+══════════════════════════════════════════════════
+  Step 10 — Commit version + release notes, push to remote
+══════════════════════════════════════════════════
+Committed: Publish v5.7.101-hotfix02 to staging
+To https://dev.azure.com/blackwoodbiz/Found%20Image/_git/FoundImageV5
+   6c72a5bcf..ff0fa3f1d  HEAD -> dev
+Pushed to origin.
+
+══════════════════════════════════════════════════
+  Step 11 — Deploy to Azure (bikini-orchestration / staging slot)
+══════════════════════════════════════════════════
+  Collecting publish artifacts...
+  Bikini.Barcodes net10.0 succeeded (0.8s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes\bin\Release\net10.0\Bikini.Barcodes.dll
+  Bikini.Production net10.0 succeeded with 1 warning(s) (0.4s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production\bin\Release\net10.0\Bikini.Production.dll
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production\ProductionAutoMapperProfile.cs(36,31): warning CS0612: 'PrintOptionModel.PaperSizeName' is obsolete
+  Bikini.Orders.Models net10.0 succeeded (0.6s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models\bin\Release\net10.0\Bikini.Orders.Models.dll
+  Bikini.PdfBackup net10.0 succeeded (0.4s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.PdfBackup\bin\Release\net10.0\Bikini.PdfBackup.dll
+  Bikini.QuickBooks net10.0 succeeded with 1 warning(s) (0.0s)
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks\Bikini.QuickBooks.csproj : warning NU1902: Package 'System.Security.Cryptography.Xml' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh5
+5-786g-wjwj
+  Bikini.QuickBooks net10.0 succeeded with 2 warning(s) (0.5s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks\bin\Release\net10.0\Bikini.QuickBooks.dll
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks\Bikini.QuickBooks.csproj : warning NU1902: Package 'System.Security.Cryptography.Xml' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh5
+5-786g-wjwj
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks\Adapters\InvoiceAdapter.cs(18,128): warning CS9107: Parameter 'DbContextCore dbCore' is captured into the state of the enclosing type and its value is also passed to the base
+constructor. The value might be captured by the base class as well.
+  Bikini.Images net10.0 succeeded with 7 warning(s) (0.8s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images\bin\Release\net10.0\Bikini.Images.dll
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images\ComparisonEngine.cs(118,56): warning CS0612: 'ImageStatus.NoImage' is obsolete
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images\ComparisonEngine.cs(125,26): warning CS0612: 'ImageStatus.New' is obsolete
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images\ComparisonEngine.cs(136,26): warning CS0612: 'ImageStatus.NoImage' is obsolete
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images\ComparisonEngine.cs(147,26): warning CS0612: 'ImageStatus.New' is obsolete
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images\ImagesEngine.Base.cs(69,58): warning CS0612: 'ImageStatus.NotActive' is obsolete
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images\ImagesEngine.Handling.cs(136,35): warning CS0612: 'ImageStatus.NoImage' is obsolete
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images\ImagesEngine.Handling.cs(136,114): warning CS0612: 'ImageStatus.New' is obsolete
+  Bikini.Shopify net10.0 succeeded with 3 warning(s) (0.5s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify\bin\Release\net10.0\Bikini.Shopify.dll
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify\Biz\Engine\ShopifyOrderEngine.cs(22,124): warning CS9113: Parameter 'imagesEngine' is unread.
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify\Models\InventoryProductModel.cs(6,152): warning CS9113: Parameter 'paged' is unread.
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify\Biz\Graph\Entities\Product\Bikini\ProductSetEntity.cs(153,22): warning CS8321: The local function 'ProductImageFileSetInput' is declared but never used
+  Bikini.Biz.OrderCommon net10.0 succeeded with 3 warning(s) (0.2s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon\bin\Release\net10.0\Bikini.Biz.OrderCommon.dll
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon\Bikini.Biz.OrderCommon.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 8.0.2 has a known high severity vulnerability, https://github.com/advisories/GH
+SA-37gx-xxp4-5rgx
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon\Bikini.Biz.OrderCommon.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 8.0.2 has a known high severity vulnerability, https://github.com/advisories/GH
+SA-w3x6-4m5h-cxqf
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon\CommonOopsAdapter.cs(188,9): warning CS0162: Unreachable code detected
+  Bikini.Api.Gbs net10.0 succeeded with 2 warning(s) (0.2s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Api.Gbs\bin\Release\net10.0\Bikini.Api.Gbs.dll
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Api.Gbs\Bikini.Api.Gbs.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 8.0.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rg
+x
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Api.Gbs\Bikini.Api.Gbs.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 8.0.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxq
+f
+  Bikini.Biz.Orchestration net10.0 succeeded with 5 warning(s) (0.6s) → D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration\bin\Release\net10.0\Bikini.Biz.Orchestration.dll
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration\Bikini.Biz.Orchestration.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 8.0.2 has a known high severity vulnerability, https://github.com/advisorie
+s/GHSA-37gx-xxp4-5rgx
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration\Bikini.Biz.Orchestration.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 8.0.2 has a known high severity vulnerability, https://github.com/advisorie
+s/GHSA-w3x6-4m5h-cxqf
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration\OrchestrationEngine.cs(311,34): warning CS0168: The variable 'ex' is declared but never used
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration\OrchestrationEngine.cs(1219,104): warning CS0612: 'PrintOptionModel.TrayName' is obsolete
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration\OrchestrationEngine.cs(1219,146): warning CS0612: 'PrintOptionModel.PaperSizeName' is obsolete
+  Bikini.Web.Orchestration net10.0 succeeded with 2 warning(s) (2.9s) → D:\MSBuild\bikini-orchestration-staging-publish\
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\Controllers\PreviewController.cs(159,66): warning CS0612: 'PrintOptionModel.PaperSizeName' is obsolete
+    D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\Controllers\PreviewController.cs(159,91): warning CS0612: 'PrintOptionModel.TrayName' is obsolete
+
+Build succeeded with 509 warning(s) in 8.4s
+  Creating deployment package...
+  Package size: 198.4 MB
+  Checking Azure authentication...
+  Subscription : 955b0d26-ef56-491a-9672-80eeb763d932
+  Locating 'bikini-orchestration' resource group...
+  Resource group: whoops-production
+  Retrieving deployment credentials...
+  Deploying to https://bikini-orchestration-staging.azurewebsites.net ...
+  (This may take a few minutes...)
+Deployed to https://bikini-orchestration-staging.azurewebsites.net
+
+══════════════════════════════════════════════════
+  Step 12 — Tag release commit
+══════════════════════════════════════════════════
+To https://dev.azure.com/blackwoodbiz/Found%20Image/_git/FoundImageV5
+ * [new tag]             orch-publish-v5.7.101-hotfix02 -> orch-publish-v5.7.101-hotfix02
+Release tagged: orch-publish-v5.7.101-hotfix02
+
+╔════════════════════════════════════════════════════════╗
+║  Publish complete!  v5.7.101-hotfix02                               ║
+╚════════════════════════════════════════════════════════╝
+
