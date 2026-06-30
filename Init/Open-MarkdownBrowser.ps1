@@ -26,24 +26,27 @@ function Open-MarkdownBrowser {
     # 2. Define your custom CSS injected style sheet payload
     $CustomCSS = @"
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Special+Elite&display=swap');
+
         /* ── Planet Pearce Theme ─────────────────────────────────────────────
            Cyan  (#00ffff) = PLANET PEARCE  — primary / top-tier
            Magenta (#ff44ff) = VIOLETTA     — secondary / accent
            ─────────────────────────────────────────────────────────────────── */
         :root {
-            --cyan:    #00ffff;
-            --magenta: #ff44ff;
+            --cyan:    #66ddee;
+            --magenta: #d95bd9;
             --dim:     #888888;
-            --bg:      #0d0d0d;
-            --bg2:     #141414;
-            --bg3:     #1c1c1c;
-            --border:  #2a2a2a;
+            --bg:      #454545;
+            --bg2:     #555555;
+            --bg3:     #2c2c2c;
+            --border:  #666666;
             --text:    #d0d0d0;
         }
 
         body {
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-            line-height: 1.7;
+            font-family: 'Cabin Condensed', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            line-height: 1.2;
             max-width: 860px;
             margin: 48px auto;
             padding: 0 24px;
@@ -53,10 +56,11 @@ function Open-MarkdownBrowser {
 
         /* H1 = Cyan  (PLANET PEARCE tier) */
         h1 {
-            color: var(--cyan);
-            border-bottom: 1px solid var(--cyan);
+            color: #fff;
+            border-bottom: 1px solid var(--border);
             padding-bottom: 8px;
             letter-spacing: 0.03em;
+            font-weight: 500;
         }
 
         /* H2 = Magenta  (VIOLETTA tier) */
@@ -64,10 +68,13 @@ function Open-MarkdownBrowser {
             color: var(--magenta);
             border-bottom: 1px solid var(--border);
             padding-bottom: 6px;
+            font-weight: 500;
         }
 
         /* H3 = soft cyan */
-        h3 { color: #66ddee; }
+        h3 { color: #66ddee; 
+            font-weight: 400;
+        }
 
         /* H4+ = dim */
         h4, h5, h6 { color: var(--dim); }

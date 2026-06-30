@@ -4467,3 +4467,2920 @@ Release tagged: orch-publish-v5.7.101-hotfix02
 ║  Publish complete!  v5.7.101-hotfix02                               ║
 ╚════════════════════════════════════════════════════════╝
 
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> .\Publish-Orchestration.ps1 -SkipCorePackages -SkipNugetUpdate
+
+╔══════════════════════════════════════════════════════╗
+║   Bikini.Web.Orchestration — Publish Pipeline        ║
+╚══════════════════════════════════════════════════════╝
+  CorePackages increment : Patch
+  Skip CorePackages      : True
+  Skip NuGet update      : True
+  Skip tests             : False
+  Skip deploy            : False
+
+══════════════════════════════════════════════════
+  Step 1 — Verify clean git working tree
+══════════════════════════════════════════════════
+
+Uncommitted changes detected:
+   M BikiniMain/Bikini.Web.Orchestration/Bikini.Web.Orchestration.csproj
+   M BikiniMain/Bikini.Web.Orchestration/Publish-Orchestration.ps1
+   M BikiniMain/Bikini.Web.Orchestration/Views/Shared/_Footer.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/Views/Shared/_Layout.cshtml
+   M BikiniMain/Bikini.Web.Orchestration/package.json
+   M BikiniMain/Bikini.Web.Orchestration/src/globals.d.ts
+   M BikiniMain/Bikini.Web.Orchestration/src/index.ejs
+   M BikiniMain/Bikini.Web.Orchestration/src/index.js
+   M BikiniMain/Bikini.Web.Orchestration/src/scss/components/component-order-header.scss
+   M BikiniMain/Bikini.Web.Orchestration/src/scss/views/_views.scss
+   M BikiniMain/Bikini.Web.Orchestration/src/scss/views/view-bik-order.scss
+   M BikiniMain/Bikini.Web.Orchestration/src/scss/views/view-calendar-view.scss
+   M BikiniMain/README.md
+  ?? BikiniMain/Bikini.Web.Orchestration/docs/
+  ?? BikiniMain/Bikini.Web.Orchestration/src/js/_global.js
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "Commit or stash all changes before running the publish pipeline."
+
+[PUBLISH FAILED]  Line 144: Commit or stash all changes before running the publish pipeline.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git commit -a -m "Fix footer and disable assembly information for now."
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> .\Publish-Orchestration.ps1 -SkipCorePackages -SkipNugetUpdate
+
+╔══════════════════════════════════════════════════════╗
+║   Bikini.Web.Orchestration — Publish Pipeline        ║
+╚══════════════════════════════════════════════════════╝
+  CorePackages increment : Patch
+  Skip CorePackages      : True
+  Skip NuGet update      : True
+  Skip tests             : False
+  Skip deploy            : False
+
+══════════════════════════════════════════════════
+  Step 1 — Verify clean git working tree
+══════════════════════════════════════════════════
+
+Uncommitted changes detected:
+  ?? BikiniMain/Bikini.Web.Orchestration/docs/
+  ?? BikiniMain/Bikini.Web.Orchestration/src/js/_global.js
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "Commit or stash all changes before running the publish pipeline."
+
+[PUBLISH FAILED]  Line 144: Commit or stash all changes before running the publish pipeline.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git commit -a -m "Build artefacts"
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git add * 
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git commit -a -m "Build artefacts"
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> glt
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> .\Publish-Orchestration.ps1 -SkipCorePackages -SkipNugetUpdate
+
+╔══════════════════════════════════════════════════════╗
+║   Bikini.Web.Orchestration — Publish Pipeline        ║
+╚══════════════════════════════════════════════════════╝
+  CorePackages increment : Patch
+  Skip CorePackages      : True
+  Skip NuGet update      : True
+  Skip tests             : False
+  Skip deploy            : False
+
+══════════════════════════════════════════════════
+  Step 1 — Verify clean git working tree
+══════════════════════════════════════════════════
+Working tree is clean.
+
+══════════════════════════════════════════════════
+  Step 2 — Publish CorePackages
+══════════════════════════════════════════════════
+Skipped (--SkipCorePackages).
+
+══════════════════════════════════════════════════
+  Step 3 — Update CorePackage NuGet references in BikiniMain
+══════════════════════════════════════════════════
+Skipped (--SkipNuGetUpdate).
+
+══════════════════════════════════════════════════
+  Step 4 — Build web app  (dotnet build --configuration Release)
+══════════════════════════════════════════════════
+  Clearing NuGet HTTP cache...
+
+Build succeeded.
+
+══════════════════════════════════════════════════
+  Step 6 — npm run test:scss
+══════════════════════════════════════════════════
+
+
+══════════════════════════════════════════════════
+  Step 7 — npm run build:prod
+══════════════════════════════════════════════════
+
+Frontend assets built.
+
+══════════════════════════════════════════════════
+  Step 8 — Bump web app version  (Update-Version.ps1)
+══════════════════════════════════════════════════
+Incrementing application version to: 5.7.103 (Info: 5.7.103+ab22e148a)
+Successfully updated .csproj file VersionPrefix and informational hash tags.
+Successfully synced package.json metadata field.
+Local build or manual test detected. Skipping Git commit and push steps.
+  Cleared stale <VersionSuffix> from csproj.
+Web app version bumped to 5.7.103.
+
+══════════════════════════════════════════════════
+  Step 9 — Create / update RELEASE_NOTES.md
+══════════════════════════════════════════════════
+  Last publish tag : orch-publish-v5.7.101-hotfix02
+Release notes written: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\RELEASE_NOTES.md
+
+══════════════════════════════════════════════════
+  Step 10 — Commit version bump + release notes, push to remote
+══════════════════════════════════════════════════
+Committed: Publish v5.7.103 to staging
+To https://dev.azure.com/blackwoodbiz/Found%20Image/_git/FoundImageV5
+   ff0fa3f1d..9d7c01fe7  HEAD -> dev
+Pushed to origin.
+
+══════════════════════════════════════════════════
+  Step 11 — Deploy to Azure (bikini-orchestration / staging slot)
+══════════════════════════════════════════════════
+  Collecting publish artifacts (--no-build)...
+  + 7 modules
+webpack 5.107.2 compiled successfully in 4494 ms
+Frontend assets built.
+
+══════════════════════════════════════════════════
+  Step 8 — Bump web app version  (Update-Version.ps1)
+══════════════════════════════════════════════════
+Incrementing application version to: 5.7.103 (Info: 5.7.103+ab22e148a)
+Successfully updated .csproj file VersionPrefix and informational hash tags.
+Successfully synced package.json metadata field.
+Local build or manual test detected. Skipping Git commit and push steps.
+  Cleared stale <VersionSuffix> from csproj.
+Web app version bumped to 5.7.103.
+
+══════════════════════════════════════════════════
+  Step 9 — Create / update RELEASE_NOTES.md
+══════════════════════════════════════════════════
+  Last publish tag : orch-publish-v5.7.101-hotfix02
+Release notes written: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\RELEASE_NOTES.md
+
+══════════════════════════════════════════════════
+  Step 10 — Commit version bump + release notes, push to remote
+══════════════════════════════════════════════════
+[dev 9d7c01fe7] Publish v5.7.103 to staging
+ 4 files changed, 89 insertions(+), 79 deletions(-)
+Committed: Publish v5.7.103 to staging
+To https://dev.azure.com/blackwoodbiz/Found%20Image/_git/FoundImageV5
+   ff0fa3f1d..9d7c01fe7  HEAD -> dev
+Pushed to origin.
+
+══════════════════════════════════════════════════
+  Step 11 — Deploy to Azure (bikini-orchestration / staging slot)
+══════════════════════════════════════════════════
+  Collecting publish artifacts (--no-build)...
+  Bikini.Web.Orchestration net10.0 failed with 4 error(s) (1.0s)
+    C:\Program Files\dotnet\sdk\10.0.301\Sdks\Microsoft.NET.Sdk.StaticWebAssets\targets\Microsoft.NET.Sdk.StaticWebAssets.Compression.targets(403,5): error The asset 'D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\obj\R
+elease\net10.0\compressed\publish\lfmz1zb18m-{0}-p2pn44ztf0-p2pn44ztf0.br' can not be found at any of the searched locations 'wwwroot\dist\app.css' and 'D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\wwwroot\dist\app.cs
+s'.
+    C:\Program Files\dotnet\sdk\10.0.301\Sdks\Microsoft.NET.Sdk.StaticWebAssets\targets\Microsoft.NET.Sdk.StaticWebAssets.Compression.targets(403,5): error The asset 'D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\obj\R
+elease\net10.0\compressed\publish\lzl2r7f1bu-{0}-ornzkprpit-ornzkprpit.br' can not be found at any of the searched locations 'wwwroot\dist\app.js' and 'D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\wwwroot\dist\app.js'
+.
+    C:\Program Files\dotnet\sdk\10.0.301\Sdks\Microsoft.NET.Sdk.StaticWebAssets\targets\Microsoft.NET.Sdk.StaticWebAssets.Compression.targets(403,5): error The asset 'D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\obj\R
+elease\net10.0\compressed\publish\mco7tidm8y-{0}-hf30ya49f6-hf30ya49f6.br' can not be found at any of the searched locations 'wwwroot\dist\vendor.css' and 'D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\wwwroot\dist\ven
+dor.css'.
+    C:\Program Files\dotnet\sdk\10.0.301\Sdks\Microsoft.NET.Sdk.StaticWebAssets\targets\Microsoft.NET.Sdk.StaticWebAssets.Compression.targets(403,5): error The asset 'D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\obj\R
+elease\net10.0\compressed\publish\7qzs0b1jfh-{0}-qw3gn84y56-qw3gn84y56.br' can not be found at any of the searched locations 'wwwroot\dist\vendor.js' and 'D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\wwwroot\dist\vend
+or.js'.
+
+Build failed with 4 error(s) in 1.6s
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "dotnet publish (artifact collection) failed (exit code 1)."
+>> TerminatingError(): "dotnet publish (artifact collection) failed (exit code 1)."
+
+[PUBLISH FAILED]  Line 131: dotnet publish (artifact collection) failed (exit code 1).
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> .\Publish-Orchestration.ps1 -SkipCorePackages -SkipNugetUpdate
+
+╔══════════════════════════════════════════════════════╗
+║   Bikini.Web.Orchestration — Publish Pipeline        ║
+╚══════════════════════════════════════════════════════╝
+  CorePackages increment : Patch
+  Skip CorePackages      : True
+  Skip NuGet update      : True
+  Skip tests             : False
+  Skip deploy            : False
+
+══════════════════════════════════════════════════
+  Step 1 — Verify clean git working tree
+══════════════════════════════════════════════════
+
+Uncommitted changes detected:
+   M BikiniMain/Bikini.Web.Orchestration/Bikini.Web.Orchestration.csproj
+   M BikiniMain/Bikini.Web.Orchestration/package.json
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> TerminatingError(): "Commit or stash all changes before running the publish pipeline."
+
+[PUBLISH FAILED]  Line 144: Commit or stash all changes before running the publish pipeline.
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> git commit -a -m "Bump"
+ 2 files changed, 74 insertions(+), 74 deletions(-)
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> .\Publish-Orchestration.ps1 -SkipCorePackages -SkipNugetUpdate
+
+╔══════════════════════════════════════════════════════╗
+║   Bikini.Web.Orchestration — Publish Pipeline        ║
+╚══════════════════════════════════════════════════════╝
+  CorePackages increment : Patch
+  Skip CorePackages      : True
+  Skip NuGet update      : True
+  Skip tests             : False
+  Skip deploy            : False
+
+══════════════════════════════════════════════════
+  Step 1 — Verify clean git working tree
+══════════════════════════════════════════════════
+Working tree is clean.
+
+══════════════════════════════════════════════════
+  Step 2 — Publish CorePackages
+══════════════════════════════════════════════════
+Skipped (--SkipCorePackages).
+
+══════════════════════════════════════════════════
+  Step 3 — Update CorePackage NuGet references in BikiniMain
+══════════════════════════════════════════════════
+Skipped (--SkipNuGetUpdate).
+
+══════════════════════════════════════════════════
+  Step 4 — Build web app  (dotnet build --configuration Release)
+══════════════════════════════════════════════════
+  Clearing NuGet HTTP cache...
+
+Build succeeded.
+
+══════════════════════════════════════════════════
+  Step 6 — npm run test:scss
+══════════════════════════════════════════════════
+
+
+══════════════════════════════════════════════════
+  Step 7 — npm run build:prod
+══════════════════════════════════════════════════
+
+Frontend assets built.
+
+══════════════════════════════════════════════════
+  Step 8 — Bump web app version  (Update-Version.ps1)
+══════════════════════════════════════════════════
+Incrementing application version to: 5.7.105 (Info: 5.7.105+2ceeda8fe)
+Successfully updated .csproj file VersionPrefix and informational hash tags.
+Successfully synced package.json metadata field.
+Local build or manual test detected. Skipping Git commit and push steps.
+Web app version bumped to 5.7.105.
+
+══════════════════════════════════════════════════
+  Step 9 — Create / update RELEASE_NOTES.md
+══════════════════════════════════════════════════
+  Last publish tag : orch-publish-v5.7.101-hotfix02
+Release notes written: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\RELEASE_NOTES.md
+
+══════════════════════════════════════════════════
+  Step 10 — Commit version bump + release notes, push to remote
+══════════════════════════════════════════════════
+Committed: Publish v5.7.105 to staging
+To https://dev.azure.com/blackwoodbiz/Found%20Image/_git/FoundImageV5
+   9d7c01fe7..38efdc9d5  HEAD -> dev
+Pushed to origin.
+
+══════════════════════════════════════════════════
+  Step 11 — Deploy to Azure (bikini-orchestration / staging slot)
+══════════════════════════════════════════════════
+  Collecting publish artifacts (--no-build)...
+
+══════════════════════════════════════════════════
+  Step 8 — Bump web app version  (Update-Version.ps1)
+══════════════════════════════════════════════════
+Incrementing application version to: 5.7.105 (Info: 5.7.105+2ceeda8fe)
+Successfully updated .csproj file VersionPrefix and informational hash tags.
+Successfully synced package.json metadata field.
+Local build or manual test detected. Skipping Git commit and push steps.
+Web app version bumped to 5.7.105.
+
+══════════════════════════════════════════════════
+  Step 9 — Create / update RELEASE_NOTES.md
+══════════════════════════════════════════════════
+  Last publish tag : orch-publish-v5.7.101-hotfix02
+Release notes written: D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration\RELEASE_NOTES.md
+
+══════════════════════════════════════════════════
+  Step 10 — Commit version bump + release notes, push to remote
+══════════════════════════════════════════════════
+[dev 38efdc9d5] Publish v5.7.105 to staging
+ 3 files changed, 86 insertions(+), 74 deletions(-)
+Committed: Publish v5.7.105 to staging
+To https://dev.azure.com/blackwoodbiz/Found%20Image/_git/FoundImageV5
+   9d7c01fe7..38efdc9d5  HEAD -> dev
+Pushed to origin.
+
+══════════════════════════════════════════════════
+  Step 11 — Deploy to Azure (bikini-orchestration / staging slot)
+══════════════════════════════════════════════════
+  Collecting publish artifacts (--no-build)...
+  Bikini.Web.Orchestration net10.0 succeeded (2.0s) → D:\MSBuild\bikini-orchestration-staging-publish\
+
+Build succeeded in 2.7s
+  Creating deployment package...
+  Package size: 198.4 MB
+  Checking Azure authentication...
+  Subscription : 955b0d26-ef56-491a-9672-80eeb763d932
+  Locating 'bikini-orchestration' resource group...
+  Resource group: whoops-production
+  Retrieving deployment credentials...
+  Deploying to https://bikini-orchestration-staging.azurewebsites.net ...
+  (This may take a few minutes...)
+Deployed to https://bikini-orchestration-staging.azurewebsites.net
+
+══════════════════════════════════════════════════
+  Step 12 — Tag release commit
+══════════════════════════════════════════════════
+To https://dev.azure.com/blackwoodbiz/Found%20Image/_git/FoundImageV5
+ * [new tag]             orch-publish-v5.7.105 -> orch-publish-v5.7.105
+Release tagged: orch-publish-v5.7.105
+
+╔══════════════════════════════════════════════════════╗
+║   Publish complete!  v5.7.105                     ║
+╚══════════════════════════════════════════════════════╝
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> cd
+PS C:\Users\NickPearce> go bikini web.orch
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> cd..
+PS D:\repos\Bikini\BikiniGit\BikiniMain> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\BikiniMain
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            3/4/2026 12:40 PM                Archirtecture
+d----            1/7/2026  7:16 PM                Assets
+d----           6/28/2026  3:45 PM                Bikini.Api.Gbs
+d----           6/19/2026 12:38 PM                Bikini.AppHost
+d----           6/28/2026 11:50 AM                Bikini.Assets
+d----           6/28/2026 11:50 AM                Bikini.Barcodes
+d----           6/19/2026 12:38 PM                Bikini.Barcodes.Test
+d----           6/28/2026 11:50 AM                Bikini.Biz.Calendars
+d----           6/28/2026 11:50 AM                Bikini.Biz.Channel
+d----           6/19/2026 12:38 PM                Bikini.Biz.Comp
+d----           6/28/2026 11:50 AM                Bikini.Biz.Compose
+d----           6/19/2026 12:26 PM                Bikini.Biz.Compose.Tests
+d----           6/29/2026 11:27 AM                Bikini.Biz.Orchestration
+d----           6/28/2026 11:50 AM                Bikini.Biz.Orchestration.Models
+d----           6/28/2026 11:50 AM                Bikini.Biz.OrderCommon
+d----           6/28/2026 11:50 AM                Bikini.Biz.OrderCommon.Models
+d----           6/28/2026 11:50 AM                Bikini.Biz.Principal
+d----           6/28/2026 11:50 AM                Bikini.Biz.PrintCommon
+d----           6/28/2026 11:50 AM                Bikini.Biz.Printing
+d----           6/28/2026 11:50 AM                Bikini.Biz.Search
+d----           3/31/2025 11:56 AM                Bikini.Blazor.Design
+d----           6/28/2026 11:50 AM                Bikini.Cli
+d----           6/19/2026  2:06 PM                Bikini.Cli.Test
+d----           6/28/2026 11:50 AM                Bikini.ClientEngine
+d----           6/19/2026 12:38 PM                Bikini.Design
+d----           6/28/2026 11:50 AM                Bikini.Design.Api
+d----           6/19/2026 12:38 PM                Bikini.Encryption
+d----           6/28/2026 11:50 AM                Bikini.Event.ShopifyOrder
+d----           6/28/2026 11:50 AM                Bikini.Events
+d----           6/28/2026 11:50 AM                Bikini.Export
+d----           6/28/2026 11:50 AM                Bikini.Export.Console
+d----           6/19/2026 12:38 PM                Bikini.Export.Tests
+d----           6/28/2026 11:50 AM                Bikini.Faire
+d----           6/19/2026 12:29 PM                Bikini.Faire.Models
+d----           6/28/2026 11:50 AM                Bikini.Ftp
+d----           6/28/2026 11:50 AM                Bikini.Function.Image
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Product
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Upc
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Week
+d----           6/28/2026 11:50 AM                Bikini.Function.Notification
+d----           6/28/2026 11:50 AM                Bikini.Function.Order
+d----           12/2/2025  3:45 PM                Bikini.Function.Pdf
+d----           6/28/2026 11:50 AM                Bikini.Function.Print
+d----           6/28/2026 11:50 AM                Bikini.Function.Print.Client
+d----           6/28/2026 11:50 AM                Bikini.Function.QuickBooks
+d----           6/19/2026 12:26 PM                Bikini.Functions.Shopify.Product
+d----           6/28/2026 11:50 AM                Bikini.Functions.Tests
+d----           4/11/2025  3:04 PM                Bikini.Image.Service
+d----           6/28/2026 11:50 AM                Bikini.Images
+d----           6/19/2026 12:26 PM                Bikini.Images.Models
+d----           6/28/2026 11:50 AM                Bikini.Integration
+d----           6/19/2026 12:29 PM                Bikini.Integration.Models
+d----           6/28/2026 11:50 AM                Bikini.Notification.Client
+d----           6/19/2026 12:38 PM                Bikini.Notification.Core
+d----           6/19/2026 12:38 PM                Bikini.Notification.Tests
+d----           6/28/2026 11:50 AM                Bikini.Orders.Adapters
+d----           6/28/2026 11:50 AM                Bikini.Orders.KeyVault
+d----           6/28/2026 11:50 AM                Bikini.Orders.Models
+d----           6/28/2026 11:50 AM                Bikini.Orders.Models.Workflow
+d----           6/19/2026 12:26 PM                Bikini.PdfBackup
+d----           6/28/2026 11:50 AM                Bikini.ProductImages
+d----           6/28/2026 11:50 AM                Bikini.Production
+d----           6/19/2026 12:38 PM                Bikini.Production.Models
+d----           6/28/2026 11:50 AM                Bikini.Products
+d----           6/25/2026  1:13 AM                Bikini.Publishing
+d----           6/19/2026 12:38 PM                Bikini.QuickBooks
+d----           6/28/2026 11:50 AM                Bikini.QuickBooks.Core
+d----           6/19/2026 12:38 PM                Bikini.ServiceDefaults
+d----           6/19/2026 12:26 PM                Bikini.Shopify
+d----           6/19/2026 12:26 PM                Bikini.Shopify.Models
+d----           6/28/2026 11:50 AM                Bikini.Storage
+d----           6/19/2026 12:26 PM                Bikini.Storage.Tests
+d----           6/28/2026 11:50 AM                Bikini.Tests.Net5
+d----           6/28/2026 11:50 AM                Bikini.Web.Barcodes
+d----           6/28/2026 11:50 AM                Bikini.Web.Calendars
+d----           6/28/2026 11:50 AM                Bikini.Web.Design
+d----           6/28/2026 11:50 AM                Bikini.Web.Images
+d----           6/28/2026 11:50 AM                Bikini.Web.Integration
+d----           6/28/2026 11:50 AM                Bikini.Web.Landing
+d----           6/19/2026 12:38 PM                Bikini.Web.Net8
+d----           6/28/2026 11:50 AM                Bikini.Web.Notification
+d----           6/29/2026  1:00 PM                Bikini.Web.Orchestration
+d----           6/28/2026 11:50 AM                Bikini.Web.Orders
+d----           6/28/2026 11:50 AM                Bikini.Web.Print
+d----           6/28/2026 11:50 AM                Bikini.Web.Public
+d----           6/12/2026 12:30 AM                Bikini.Web.Reports
+d----           6/28/2026 11:50 AM                Bikini.Webhook.Gbs
+d----           6/28/2026 11:50 AM                Bikini.Webhook.Shopify
+d----           6/19/2026 12:38 PM                Bikini.Webhook.Vanilla
+d----           3/31/2025 11:58 AM                BlazorApp1
+d----           12/2/2025  3:45 PM                Configurations
+d----           12/2/2025  3:45 PM                Documentation
+d----           4/16/2026  3:47 PM                Libraries
+d----           12/2/2025  3:45 PM                Pipelines
+d----           6/19/2026 12:38 PM                QuadrilateralDistortion
+d----           12/8/2025  1:42 PM                Scripts
+d----           12/2/2025  3:45 PM                ShopifyGraph
+d----           6/19/2026  2:06 PM                TestResults
+-a---           12/2/2025  3:45 PM            422 .dockerignore
+-a---           4/23/2026  8:22 PM            104 .editorconfig
+-a---           12/2/2025  3:45 PM           1378 azure-pipelines.yml
+-a---           6/22/2026  2:22 PM          13540 Bikini.sln.DotSettings
+-a---           6/19/2026  1:58 PM          13435 Bikini.sln.DotSettings.user
+-a---           1/12/2026 12:05 PM           1253 Bikini.slnLaunch.user
+-a---           6/28/2026 11:52 AM          11272 Bikini.slnx
+-a---           4/22/2026 12:02 PM            800 nuget.config
+-a---           6/29/2026 12:11 PM           1187 README.md
+-a---           6/26/2026 10:49 PM           4200 Update.ps1
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> dotnet build . --configuration Release /consoleloggerparameters:NoSummary;NoWarning
+
+NoWarning: The term 'NoWarning' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+NoWarning: The term 'NoWarning' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS D:\repos\Bikini\BikiniGit\BikiniMain> CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="UseFuzzyMatching"; value="True"
+>> ParameterBinding(Get-Command): name="FuzzyMinimumDistance"; value="1"
+>> ParameterBinding(Get-Command): name="Name"; value="NoWarning"
+>> CommandInvocation(Select-Object): "Select-Object"
+>> ParameterBinding(Select-Object): name="First"; value="5"
+>> ParameterBinding(Select-Object): name="Unique"; value="True"
+>> ParameterBinding(Select-Object): name="ExpandProperty"; value="Name"
+PS D:\repos\Bikini\BikiniGit\BikiniMain> dotnet build . --configuration Release /consoleloggerparameters:NoSummary /p:WarningLevel=0
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> dotnet build . --configuration Release /consoleloggerparameters:NoSummary -v -q
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> dotnet build . --configuration Release /consoleloggerparameters:NoSummary -v q
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> dotnet build . --configuration Release /consoleloggerparameters:NoSummary;ErrorsOnly
+
+ErrorsOnly: The term 'ErrorsOnly' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ErrorsOnly: The term 'ErrorsOnly' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS D:\repos\Bikini\BikiniGit\BikiniMain> CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="UseFuzzyMatching"; value="True"
+>> ParameterBinding(Get-Command): name="FuzzyMinimumDistance"; value="1"
+>> ParameterBinding(Get-Command): name="Name"; value="ErrorsOnly"
+>> CommandInvocation(Select-Object): "Select-Object"
+>> ParameterBinding(Select-Object): name="First"; value="5"
+>> ParameterBinding(Select-Object): name="Unique"; value="True"
+>> ParameterBinding(Select-Object): name="ExpandProperty"; value="Name"
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> . $PROFILE
+
+     _____   _                    _     _____
+    |  __ \ | |                  | |   |  __ \
+    | |__) || |  __ _  _ __   ___| |_  | |__) |___  __ _  _ __ ___ ___
+    |  ___/ | | / _\ || '_ \ / _ \ __| |  ___// _ \/ _\ || '__/ __/ _ \
+    | |     | || (_| || | | |  __/ |_  | |   |  __/ (_| || | | (_|  __/
+    |_|     |_| \__,_||_| |_|\___|\__| |_|    \___|\__,_||_|  \___\___|
+
+                         🛰️ ORBITING:
+PLANET PEARCE
+                         🌑 SYSTEM:
+VIOLETTA
+ -----------------------------------------------------------------------
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> mdview
+🌐 Rendering with Custom CSS in default browser...
+PS D:\repos\Bikini\BikiniGit\BikiniMain> cd
+PS C:\Users\NickPearce> ls
+
+    Directory: C:\Users\NickPearce
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 10:33 AM                .agents
+d----           6/29/2026  3:14 PM                .aitk
+d----           6/12/2026 12:46 AM                .aspire
+d----           3/13/2026  4:40 PM                .aws
+d----           6/17/2026 12:41 PM                .azcopy
+d----           4/27/2026  7:58 PM                .azd
+d----           6/28/2026  3:58 PM                .azure
+d----           4/18/2026  4:04 PM                .azure-functions-core-tools
+d----           4/16/2026  3:29 PM                .azurefunctions
+d----           6/26/2026 12:47 PM                .cache
+d----           3/13/2026  4:36 PM                .config
+d----           6/27/2026  2:41 PM                .copilot
+d----           6/12/2026 12:46 AM                .dcp
+d----           5/22/2026  2:48 PM                .docker
+d----           6/23/2026  4:09 AM                .dotnet
+d----           3/31/2026 11:37 AM                .FlashPrint5
+d----           6/26/2026  4:53 PM                .gk
+d----           4/29/2026  2:25 PM                .gnupg
+d----           4/19/2026  3:47 PM                .rest-client
+d----           6/22/2026  7:40 PM                .ssh
+d----           3/13/2026  5:21 PM                .templateengine
+d----           3/22/2026  2:14 PM                .thumbnails
+d----           3/22/2026  7:43 PM                .vscode
+d----           5/24/2026  7:21 PM                .vscode-shared
+d-r--           3/12/2026  1:56 PM                Contacts
+d----           3/13/2026  6:44 PM                CrossDevice
+l----           6/26/2026 12:11 PM                Desktop -> C:\Users\NickPearce\OneDrive - Found Image\Desktop
+l----           6/26/2026 12:11 PM                Documents -> C:\Users\NickPearce\OneDrive - Found Image\Documents
+d----           3/13/2026  5:14 PM                dotnet
+d-r--           6/26/2026 11:24 AM                Downloads
+d-r--           3/12/2026  1:56 PM                Favorites
+lar--           6/22/2026  1:58 PM                iCloudDrive
+d-r--           6/22/2026  1:58 PM                iCloudPhotos
+d-r--           3/12/2026  1:56 PM                Links
+d-r--           3/12/2026  1:56 PM                Music
+lar--           6/26/2026  6:14 PM                OneDrive
+lar--           6/26/2026  6:14 PM                OneDrive - Found Image
+d-r--           3/12/2026  1:56 PM                Saved Games
+d-r--           6/19/2026  9:34 AM                Searches
+d-r--           3/12/2026  2:19 PM                Videos
+d----           4/29/2026  6:22 PM                vsdbg
+-a---           6/26/2026 11:25 AM            279 .gitconfig
+-a---           6/29/2026  1:29 PM             26 .lesshst
+-a---           4/28/2026  7:23 PM             25 .node_repl_history
+-a---           3/12/2026  5:06 PM           1310 .viminfo
+
+PS C:\Users\NickPearce> cd .github
+Set-Location: Cannot find path 'C:\Users\NickPearce\.github' because it does not exist.
+Set-Location: Cannot find path 'C:\Users\NickPearce\.github' because it does not exist.
+PS C:\Users\NickPearce> cd \
+PS C:\> ls
+
+    Directory: C:\
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            3/6/2026  3:54 PM                inetpub
+d----            4/1/2024 12:26 AM                PerfLogs
+d-r--           6/25/2026  1:56 PM                Program Files
+d-r--           6/23/2026  2:40 AM                Program Files (x86)
+d-r--           6/22/2026  1:06 PM                Users
+d----           6/22/2026 10:42 PM                Windows
+-a---           6/12/2026 12:16 PM          12288 DumpStack.log
+
+PS C:\> go bikini web.orch
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+PS D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration> ..
+PS D:\repos\Bikini\BikiniGit\BikiniMain> ..
+PS D:\repos\Bikini\BikiniGit> ls
+
+    Directory: D:\repos\Bikini\BikiniGit
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:47 PM                .vscode
+d----           6/12/2026 12:59 AM                AspireBikiniReports
+d----           6/27/2026  1:40 PM                Bikini.Base
+d----           12/2/2025  3:45 PM                Bikini.Images.AppHost
+d----           6/28/2026 12:18 PM                Bikini.Images.Function
+d----           12/2/2025  3:45 PM                Bikini.Images.ServiceDefaults
+d----           6/22/2026  5:14 PM                Bikini.SignalR
+d----           12/2/2025  3:45 PM                Bikini.Web.Design
+d----           6/29/2026  2:34 PM                BikiniMain
+d----           6/29/2026  2:40 AM                CorePackages
+d----           6/28/2026  2:07 PM                dev-ops
+-a---           12/2/2025  3:45 PM           2581 .gitattributes
+-a---           6/29/2026 12:08 PM           1835 .gitignore
+-a---           12/2/2025  3:45 PM          85144 Architecture view for Bikini_1.graphml
+-a---           12/2/2025  3:45 PM         542582 Architecture view for Bikini_1.png
+-a---           12/2/2025  3:45 PM           1047 FixGatewayKeyVaultPermissions.ps1
+-a---           6/27/2026  2:33 PM           8531 IMAGESVIEW_MIGRATION_CANDIDATES.md
+-a---           6/28/2026  4:22 PM          18300 NULLABLE_MIGRATION_STRATEGY.md
+-a---           6/27/2026  1:41 AM           6801 PERFORMANCE_INSTRUMENTATION_GUIDE.md
+-a---           6/27/2026  1:28 AM           8540 PERFORMANCE_OPTIMIZATION_SUMMARY.md
+-a---           6/27/2026  1:41 AM           4968 QUICK_PERFORMANCE_TEST_PLAN.md
+-a---           6/28/2026 12:55 PM           3877 README.md
+-a---           6/27/2026  2:27 PM           5760 REFACTORING_OPPORTUNITIES.md
+-a---           12/2/2025  3:45 PM          96008 SimplifiedArchitecture.argr
+
+PS D:\repos\Bikini\BikiniGit> la
+Mode   Modified          Size        Name
+-----  ----------------  ----------  --------------------------------------
+d--h-  2026-06-29 14:20      <DIR>   .git
+d--h-  2026-06-26 17:35      <DIR>   .vs
+d----  2026-06-26 23:47      <DIR>   .vscode
+d----  2026-06-12 00:59      <DIR>   AspireBikiniReports
+d----  2026-06-27 13:40      <DIR>   Bikini.Base
+d----  2025-12-02 15:45      <DIR>   Bikini.Images.AppHost
+d----  2026-06-28 12:18      <DIR>   Bikini.Images.Function
+d----  2025-12-02 15:45      <DIR>   Bikini.Images.ServiceDefaults
+d----  2026-06-22 17:14      <DIR>   Bikini.SignalR
+d----  2025-12-02 15:45      <DIR>   Bikini.Web.Design
+d----  2026-06-29 14:34      <DIR>   BikiniMain
+d----  2026-06-29 02:40      <DIR>   CorePackages
+d----  2026-06-28 14:07      <DIR>   dev-ops
+-a---  2025-12-02 15:45      2.5 KB  .gitattributes
+-a---  2026-06-29 12:08      1.8 KB  .gitignore
+-a---  2025-12-02 15:45     83.1 KB  Architecture view for Bikini_1.graphml
+-a---  2025-12-02 15:45    529.9 KB  Architecture view for Bikini_1.png
+-a---  2025-12-02 15:45      1.0 KB  FixGatewayKeyVaultPermissions.ps1
+-a---  2026-06-27 14:33      8.3 KB  IMAGESVIEW_MIGRATION_CANDIDATES.md
+-a---  2026-06-28 16:22     17.9 KB  NULLABLE_MIGRATION_STRATEGY.md
+-a---  2026-06-27 01:41      6.6 KB  PERFORMANCE_INSTRUMENTATION_GUIDE.md
+-a---  2026-06-27 01:28      8.3 KB  PERFORMANCE_OPTIMIZATION_SUMMARY.md
+-a---  2026-06-27 01:41      4.9 KB  QUICK_PERFORMANCE_TEST_PLAN.md
+-a---  2026-06-28 12:55      3.8 KB  README.md
+-a---  2026-06-27 14:27      5.6 KB  REFACTORING_OPPORTUNITIES.md
+-a---  2025-12-02 15:45     93.8 KB  SimplifiedArchitecture.argr
+
+PS D:\repos\Bikini\BikiniGit> ls
+
+    Directory: D:\repos\Bikini\BikiniGit
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:47 PM                .vscode
+d----           6/12/2026 12:59 AM                AspireBikiniReports
+d----           6/27/2026  1:40 PM                Bikini.Base
+d----           12/2/2025  3:45 PM                Bikini.Images.AppHost
+d----           6/28/2026 12:18 PM                Bikini.Images.Function
+d----           12/2/2025  3:45 PM                Bikini.Images.ServiceDefaults
+d----           6/22/2026  5:14 PM                Bikini.SignalR
+d----           12/2/2025  3:45 PM                Bikini.Web.Design
+d----           6/29/2026  2:34 PM                BikiniMain
+d----           6/29/2026  2:40 AM                CorePackages
+d----           6/28/2026  2:07 PM                dev-ops
+-a---           12/2/2025  3:45 PM           2581 .gitattributes
+-a---           6/29/2026 12:08 PM           1835 .gitignore
+-a---           12/2/2025  3:45 PM          85144 Architecture view for Bikini_1.graphml
+-a---           12/2/2025  3:45 PM         542582 Architecture view for Bikini_1.png
+-a---           12/2/2025  3:45 PM           1047 FixGatewayKeyVaultPermissions.ps1
+-a---           6/27/2026  2:33 PM           8531 IMAGESVIEW_MIGRATION_CANDIDATES.md
+-a---           6/28/2026  4:22 PM          18300 NULLABLE_MIGRATION_STRATEGY.md
+-a---           6/27/2026  1:41 AM           6801 PERFORMANCE_INSTRUMENTATION_GUIDE.md
+-a---           6/27/2026  1:28 AM           8540 PERFORMANCE_OPTIMIZATION_SUMMARY.md
+-a---           6/27/2026  1:41 AM           4968 QUICK_PERFORMANCE_TEST_PLAN.md
+-a---           6/28/2026 12:55 PM           3877 README.md
+-a---           6/27/2026  2:27 PM           5760 REFACTORING_OPPORTUNITIES.md
+-a---           12/2/2025  3:45 PM          96008 SimplifiedArchitecture.argr
+
+PS D:\repos\Bikini\BikiniGit> cd..
+PS D:\repos\Bikini> ls
+
+    Directory: D:\repos\Bikini
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            5/5/2025 10:29 AM                ArchiveToKeep
+d----            2/2/2026  7:11 PM                Azure Templates
+d----           3/31/2025 11:56 AM                Bikini.Databases
+d----           3/31/2025 11:56 AM                Bikini.Events
+d----           3/31/2025 11:56 AM                Bikini.ScreenSaver
+d----           4/22/2026 12:29 PM                BikiniDeployPrototype
+d----           6/28/2026  4:22 PM                BikiniGit
+d----           12/1/2025 10:09 AM                BikiniTemp
+d----           3/31/2026  7:23 PM                Cli
+d----           4/19/2026  3:40 PM                functions-quickstart-powershell-azd-eventgrid-blob
+d----           1/20/2026  1:55 PM                ms-identity-docs-code-javascript
+d----           3/31/2025 11:59 AM                ShopifyExport
+d----           1/20/2026  4:23 PM                vue3-msal
+-a---           1/10/2026 12:03 AM       49473036 Cli (2).zip
+-a---           1/10/2026  6:13 PM       49473222 Cli (3).zip
+-a---            1/8/2026  1:35 PM       49473562 Cli.zip
+
+PS D:\repos\Bikini> code CLAUDE.md
+
+PS D:\repos\Bikini> go ps
+PS D:\PowerShell> ls
+
+    Directory: D:\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:08 AM                .github
+d----           6/29/2026 12:24 AM                .logs
+d----           6/28/2026 10:18 PM                Init
+d----           6/22/2026 10:27 PM                Modules
+d----           6/27/2026  5:26 PM                Scripts
+-a---           6/28/2026  2:58 AM           3981 _profile.ps1
+-a---           6/26/2026 11:33 AM           1043 .gitignore
+-a---           6/28/2026  2:48 AM           5542 Init-Functions.ps1
+-a---           6/28/2026  2:58 AM           1750 Init-Logs.ps1
+-a---           4/23/2024  8:29 PM            131 powershell.config.json
+-a---           6/28/2026 10:13 AM            341 ps-profile.code-workspace
+-a---           6/26/2026  5:20 PM          12686 README.md
+-a---           6/27/2026 12:15 AM              0 settings.json
+
+PS D:\PowerShell> cd .git
+PS D:\PowerShell\.git> ls
+
+    Directory: D:\PowerShell\.git
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026  4:55 PM                gk
+d----           6/26/2026 11:11 AM                hooks
+d----           6/26/2026 11:11 AM                info
+d----           6/26/2026 11:34 AM                logs
+d----           6/28/2026  9:39 AM                objects
+d----           6/26/2026 11:36 AM                refs
+-a---           6/29/2026 12:27 PM             90 COMMIT_EDITMSG
+-a---           6/26/2026 11:36 AM            303 config
+-a---           6/26/2026 11:11 AM             73 description
+-a---           6/26/2026  4:47 PM            101 FETCH_HEAD
+-a---           6/26/2026 11:27 AM             20 HEAD
+-a---           6/29/2026 12:27 PM           3070 index
+-a---           6/26/2026  4:47 PM             41 ORIG_HEAD
+
+PS D:\PowerShell\.git> la
+Mode   Modified          Size        Name
+-----  ----------------  ----------  --------------
+d----  2026-06-26 16:55      <DIR>   gk
+d----  2026-06-26 11:11      <DIR>   hooks
+d----  2026-06-26 11:11      <DIR>   info
+d----  2026-06-26 11:34      <DIR>   logs
+d----  2026-06-28 09:39      <DIR>   objects
+d----  2026-06-26 11:36      <DIR>   refs
+-a---  2026-06-29 12:27       90 B   COMMIT_EDITMSG
+-a---  2026-06-26 11:36      303 B   config
+-a---  2026-06-26 11:11       73 B   description
+-a---  2026-06-26 16:47      101 B   FETCH_HEAD
+-a---  2026-06-26 11:27       20 B   HEAD
+-a---  2026-06-29 12:27      3.0 KB  index
+-a---  2026-06-26 16:47       41 B   ORIG_HEAD
+
+PS D:\PowerShell\.git> la
+Mode   Modified          Size        Name
+-----  ----------------  ----------  --------------
+d----  2026-06-26 16:55      <DIR>   gk
+d----  2026-06-26 11:11      <DIR>   hooks
+d----  2026-06-26 11:11      <DIR>   info
+d----  2026-06-26 11:34      <DIR>   logs
+d----  2026-06-28 09:39      <DIR>   objects
+d----  2026-06-26 11:36      <DIR>   refs
+-a---  2026-06-29 12:27       90 B   COMMIT_EDITMSG
+-a---  2026-06-26 11:36      303 B   config
+-a---  2026-06-26 11:11       73 B   description
+-a---  2026-06-26 16:47      101 B   FETCH_HEAD
+-a---  2026-06-26 11:27       20 B   HEAD
+-a---  2026-06-29 12:27      3.0 KB  index
+-a---  2026-06-26 16:47       41 B   ORIG_HEAD
+
+PS D:\PowerShell\.git> ls
+
+    Directory: D:\PowerShell\.git
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026  4:55 PM                gk
+d----           6/26/2026 11:11 AM                hooks
+d----           6/26/2026 11:11 AM                info
+d----           6/26/2026 11:34 AM                logs
+d----           6/28/2026  9:39 AM                objects
+d----           6/26/2026 11:36 AM                refs
+-a---           6/29/2026 12:27 PM             90 COMMIT_EDITMSG
+-a---           6/26/2026 11:36 AM            303 config
+-a---           6/26/2026 11:11 AM             73 description
+-a---           6/26/2026  4:47 PM            101 FETCH_HEAD
+-a---           6/26/2026 11:27 AM             20 HEAD
+-a---           6/29/2026 12:27 PM           3070 index
+-a---           6/26/2026  4:47 PM             41 ORIG_HEAD
+
+PS D:\PowerShell\.git> ..
+PS D:\PowerShell> ls
+
+    Directory: D:\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:08 AM                .github
+d----           6/29/2026 12:24 AM                .logs
+d----           6/28/2026 10:18 PM                Init
+d----           6/22/2026 10:27 PM                Modules
+d----           6/27/2026  5:26 PM                Scripts
+-a---           6/28/2026  2:58 AM           3981 _profile.ps1
+-a---           6/26/2026 11:33 AM           1043 .gitignore
+-a---           6/28/2026  2:48 AM           5542 Init-Functions.ps1
+-a---           6/28/2026  2:58 AM           1750 Init-Logs.ps1
+-a---           4/23/2024  8:29 PM            131 powershell.config.json
+-a---           6/28/2026 10:13 AM            341 ps-profile.code-workspace
+-a---           6/26/2026  5:20 PM          12686 README.md
+-a---           6/27/2026 12:15 AM              0 settings.json
+
+PS D:\PowerShell> more .\powershell.config.json
+
+PS D:\PowerShell> ls
+
+    Directory: D:\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:08 AM                .github
+d----           6/29/2026 12:24 AM                .logs
+d----           6/28/2026 10:18 PM                Init
+d----           6/22/2026 10:27 PM                Modules
+d----           6/27/2026  5:26 PM                Scripts
+-a---           6/28/2026  2:58 AM           3981 _profile.ps1
+-a---           6/26/2026 11:33 AM           1043 .gitignore
+-a---           6/28/2026  2:48 AM           5542 Init-Functions.ps1
+-a---           6/28/2026  2:58 AM           1750 Init-Logs.ps1
+-a---           4/23/2024  8:29 PM            131 powershell.config.json
+-a---           6/28/2026 10:13 AM            341 ps-profile.code-workspace
+-a---           6/26/2026  5:20 PM          12686 README.md
+-a---           6/27/2026 12:15 AM              0 settings.json
+
+PS D:\PowerShell> la
+Mode   Modified          Size        Name
+-----  ----------------  ----------  -------------------------
+d--h-  2026-06-29 12:27      <DIR>   .git
+d----  2026-06-26 11:08      <DIR>   .github
+d----  2026-06-29 00:24      <DIR>   .logs
+d----  2026-06-28 22:18      <DIR>   Init
+d----  2026-06-22 22:27      <DIR>   Modules
+d----  2026-06-27 17:26      <DIR>   Scripts
+-a---  2026-06-28 02:58      3.9 KB  _profile.ps1
+-a---  2026-06-26 11:33      1.0 KB  .gitignore
+-a---  2026-06-28 02:48      5.4 KB  Init-Functions.ps1
+-a---  2026-06-28 02:58      1.7 KB  Init-Logs.ps1
+-a---  2024-04-23 20:29      131 B   powershell.config.json
+-a---  2026-06-28 10:13      341 B   ps-profile.code-workspace
+-a---  2026-06-26 17:20     12.4 KB  README.md
+-a---  2026-06-27 00:15        0 B   settings.json
+
+PS D:\PowerShell> git -C "D:\PowerShell" log -20 --pretty=format:"--- %h %s%n%b"
+
+PS D:\PowerShell> go core
+Searching in: D:\repos\Bikini\BikiniGit\CorePackages...
+
+Multiple solutions found:
+[a]
+D:\repos\Bikini\BikiniGit\CorePackages\
+CorePackages.slnx
+[b]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Cli\
+Bikini.Cli.sln
+[c]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore\
+Bikini.DataCore.sln
+[d]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataIntegration\
+Bikini.DataIntegration.sln
+[↑ Up Arrow] Scan Parent Root
+[Space] Go to Search Root  [Esc] Quit
+Select letter or ↑:
+PS D:\repos\Bikini\BikiniGit\CorePackages> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\CorePackages
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           4/22/2026  2:53 PM                Bikini.Cli
+d----           6/26/2026  6:50 PM                Bikini.Core
+d----           6/28/2026  6:59 PM                Bikini.Core.Cli
+d----           6/28/2026  9:46 PM                Bikini.Core.Test
+d----           6/26/2026  6:50 PM                Bikini.Core.Web
+d----           6/26/2026  6:27 PM                Bikini.DataCore
+d----           4/21/2026  4:00 PM                Bikini.DataCore.Test
+d----           6/26/2026  6:50 PM                Bikini.DataIntegration
+d----           6/26/2026  6:50 PM                Bikini.DataPrint
+d----           4/24/2026  2:21 PM                TestResults
+-a---           4/24/2026 11:50 AM            108 .editorconfig
+-a---           6/29/2026  2:40 AM            631 CorePackages.sln.DotSettings
+-a---           6/28/2026  9:19 PM           1566 CorePackages.sln.DotSettings.user
+-a---           4/24/2026 11:50 AM           1330 CorePackages.slnx
+-a---           6/28/2026 10:26 AM              0 MIGRATION-SUMMARY.md
+-a---           4/21/2026  6:44 PM            450 nuget.config
+-a---           6/26/2026 10:49 PM           1571 Publish.ps1
+-a---           6/26/2026  7:34 PM           8994 README-Publishing.md
+-a---           6/28/2026 10:26 AM              0 README-Scripts.md
+
+PS D:\repos\Bikini\BikiniGit\CorePackages> la
+Mode   Modified          Size        Name
+-----  ----------------  ----------  ---------------------------------
+d--h-  2026-05-14 20:16      <DIR>   .vs
+d----  2026-04-22 14:53      <DIR>   Bikini.Cli
+d----  2026-06-26 18:50      <DIR>   Bikini.Core
+d----  2026-06-28 18:59      <DIR>   Bikini.Core.Cli
+d----  2026-06-28 21:46      <DIR>   Bikini.Core.Test
+d----  2026-06-26 18:50      <DIR>   Bikini.Core.Web
+d----  2026-06-26 18:27      <DIR>   Bikini.DataCore
+d----  2026-04-21 16:00      <DIR>   Bikini.DataCore.Test
+d----  2026-06-26 18:50      <DIR>   Bikini.DataIntegration
+d----  2026-06-26 18:50      <DIR>   Bikini.DataPrint
+d----  2026-04-24 14:21      <DIR>   TestResults
+-a---  2026-04-24 11:50      108 B   .editorconfig
+-a---  2026-06-29 02:40      631 B   CorePackages.sln.DotSettings
+-a---  2026-06-28 21:19      1.5 KB  CorePackages.sln.DotSettings.user
+-a---  2026-04-24 11:50      1.3 KB  CorePackages.slnx
+-a---  2026-06-28 10:26        0 B   MIGRATION-SUMMARY.md
+-a---  2026-04-21 18:44      450 B   nuget.config
+-a---  2026-06-26 22:49      1.5 KB  Publish.ps1
+-a---  2026-06-26 19:34      8.8 KB  README-Publishing.md
+-a---  2026-06-28 10:26        0 B   README-Scripts.md
+
+PS D:\repos\Bikini\BikiniGit\CorePackages> ..
+PS D:\repos\Bikini\BikiniGit> cd bikinimain
+PS D:\repos\Bikini\BikiniGit\BikiniMain> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\BikiniMain
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            3/4/2026 12:40 PM                Archirtecture
+d----            1/7/2026  7:16 PM                Assets
+d----           6/28/2026  3:45 PM                Bikini.Api.Gbs
+d----           6/19/2026 12:38 PM                Bikini.AppHost
+d----           6/28/2026 11:50 AM                Bikini.Assets
+d----           6/28/2026 11:50 AM                Bikini.Barcodes
+d----           6/19/2026 12:38 PM                Bikini.Barcodes.Test
+d----           6/28/2026 11:50 AM                Bikini.Biz.Calendars
+d----           6/28/2026 11:50 AM                Bikini.Biz.Channel
+d----           6/19/2026 12:38 PM                Bikini.Biz.Comp
+d----           6/28/2026 11:50 AM                Bikini.Biz.Compose
+d----           6/19/2026 12:26 PM                Bikini.Biz.Compose.Tests
+d----           6/29/2026 11:27 AM                Bikini.Biz.Orchestration
+d----           6/28/2026 11:50 AM                Bikini.Biz.Orchestration.Models
+d----           6/28/2026 11:50 AM                Bikini.Biz.OrderCommon
+d----           6/28/2026 11:50 AM                Bikini.Biz.OrderCommon.Models
+d----           6/28/2026 11:50 AM                Bikini.Biz.Principal
+d----           6/28/2026 11:50 AM                Bikini.Biz.PrintCommon
+d----           6/28/2026 11:50 AM                Bikini.Biz.Printing
+d----           6/28/2026 11:50 AM                Bikini.Biz.Search
+d----           3/31/2025 11:56 AM                Bikini.Blazor.Design
+d----           6/28/2026 11:50 AM                Bikini.Cli
+d----           6/19/2026  2:06 PM                Bikini.Cli.Test
+d----           6/28/2026 11:50 AM                Bikini.ClientEngine
+d----           6/19/2026 12:38 PM                Bikini.Design
+d----           6/28/2026 11:50 AM                Bikini.Design.Api
+d----           6/19/2026 12:38 PM                Bikini.Encryption
+d----           6/28/2026 11:50 AM                Bikini.Event.ShopifyOrder
+d----           6/28/2026 11:50 AM                Bikini.Events
+d----           6/28/2026 11:50 AM                Bikini.Export
+d----           6/28/2026 11:50 AM                Bikini.Export.Console
+d----           6/19/2026 12:38 PM                Bikini.Export.Tests
+d----           6/28/2026 11:50 AM                Bikini.Faire
+d----           6/19/2026 12:29 PM                Bikini.Faire.Models
+d----           6/28/2026 11:50 AM                Bikini.Ftp
+d----           6/28/2026 11:50 AM                Bikini.Function.Image
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Product
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Upc
+d----           6/28/2026 11:50 AM                Bikini.Function.Image.Week
+d----           6/28/2026 11:50 AM                Bikini.Function.Notification
+d----           6/28/2026 11:50 AM                Bikini.Function.Order
+d----           12/2/2025  3:45 PM                Bikini.Function.Pdf
+d----           6/28/2026 11:50 AM                Bikini.Function.Print
+d----           6/28/2026 11:50 AM                Bikini.Function.Print.Client
+d----           6/28/2026 11:50 AM                Bikini.Function.QuickBooks
+d----           6/19/2026 12:26 PM                Bikini.Functions.Shopify.Product
+d----           6/28/2026 11:50 AM                Bikini.Functions.Tests
+d----           4/11/2025  3:04 PM                Bikini.Image.Service
+d----           6/28/2026 11:50 AM                Bikini.Images
+d----           6/19/2026 12:26 PM                Bikini.Images.Models
+d----           6/28/2026 11:50 AM                Bikini.Integration
+d----           6/19/2026 12:29 PM                Bikini.Integration.Models
+d----           6/28/2026 11:50 AM                Bikini.Notification.Client
+d----           6/19/2026 12:38 PM                Bikini.Notification.Core
+d----           6/19/2026 12:38 PM                Bikini.Notification.Tests
+d----           6/28/2026 11:50 AM                Bikini.Orders.Adapters
+d----           6/28/2026 11:50 AM                Bikini.Orders.KeyVault
+d----           6/28/2026 11:50 AM                Bikini.Orders.Models
+d----           6/28/2026 11:50 AM                Bikini.Orders.Models.Workflow
+d----           6/19/2026 12:26 PM                Bikini.PdfBackup
+d----           6/28/2026 11:50 AM                Bikini.ProductImages
+d----           6/28/2026 11:50 AM                Bikini.Production
+d----           6/19/2026 12:38 PM                Bikini.Production.Models
+d----           6/28/2026 11:50 AM                Bikini.Products
+d----           6/25/2026  1:13 AM                Bikini.Publishing
+d----           6/19/2026 12:38 PM                Bikini.QuickBooks
+d----           6/28/2026 11:50 AM                Bikini.QuickBooks.Core
+d----           6/19/2026 12:38 PM                Bikini.ServiceDefaults
+d----           6/19/2026 12:26 PM                Bikini.Shopify
+d----           6/19/2026 12:26 PM                Bikini.Shopify.Models
+d----           6/28/2026 11:50 AM                Bikini.Storage
+d----           6/19/2026 12:26 PM                Bikini.Storage.Tests
+d----           6/28/2026 11:50 AM                Bikini.Tests.Net5
+d----           6/28/2026 11:50 AM                Bikini.Web.Barcodes
+d----           6/28/2026 11:50 AM                Bikini.Web.Calendars
+d----           6/28/2026 11:50 AM                Bikini.Web.Design
+d----           6/28/2026 11:50 AM                Bikini.Web.Images
+d----           6/28/2026 11:50 AM                Bikini.Web.Integration
+d----           6/28/2026 11:50 AM                Bikini.Web.Landing
+d----           6/19/2026 12:38 PM                Bikini.Web.Net8
+d----           6/28/2026 11:50 AM                Bikini.Web.Notification
+d----           6/29/2026  1:00 PM                Bikini.Web.Orchestration
+d----           6/28/2026 11:50 AM                Bikini.Web.Orders
+d----           6/28/2026 11:50 AM                Bikini.Web.Print
+d----           6/28/2026 11:50 AM                Bikini.Web.Public
+d----           6/12/2026 12:30 AM                Bikini.Web.Reports
+d----           6/28/2026 11:50 AM                Bikini.Webhook.Gbs
+d----           6/28/2026 11:50 AM                Bikini.Webhook.Shopify
+d----           6/19/2026 12:38 PM                Bikini.Webhook.Vanilla
+d----           3/31/2025 11:58 AM                BlazorApp1
+d----           12/2/2025  3:45 PM                Configurations
+d----           12/2/2025  3:45 PM                Documentation
+d----           4/16/2026  3:47 PM                Libraries
+d----           12/2/2025  3:45 PM                Pipelines
+d----           6/19/2026 12:38 PM                QuadrilateralDistortion
+d----           12/8/2025  1:42 PM                Scripts
+d----           12/2/2025  3:45 PM                ShopifyGraph
+d----           6/19/2026  2:06 PM                TestResults
+-a---           12/2/2025  3:45 PM            422 .dockerignore
+-a---           6/29/2026  2:34 PM            266 .editorconfig
+-a---           12/2/2025  3:45 PM           1378 azure-pipelines.yml
+-a---           6/22/2026  2:22 PM          13540 Bikini.sln.DotSettings
+-a---           6/19/2026  1:58 PM          13435 Bikini.sln.DotSettings.user
+-a---           1/12/2026 12:05 PM           1253 Bikini.slnLaunch.user
+-a---           6/28/2026 11:52 AM          11272 Bikini.slnx
+-a---           6/29/2026  2:47 PM           1192 Bikini.slnx.DotSettings
+-a---           4/22/2026 12:02 PM            800 nuget.config
+-a---           6/29/2026 12:11 PM           1187 README.md
+-a---           6/26/2026 10:49 PM           4200 Update.ps1
+
+PS D:\repos\Bikini\BikiniGit\BikiniMain> ..
+PS D:\repos\Bikini\BikiniGit> ls
+
+    Directory: D:\repos\Bikini\BikiniGit
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:47 PM                .vscode
+d----           6/12/2026 12:59 AM                AspireBikiniReports
+d----           6/27/2026  1:40 PM                Bikini.Base
+d----           12/2/2025  3:45 PM                Bikini.Images.AppHost
+d----           6/28/2026 12:18 PM                Bikini.Images.Function
+d----           12/2/2025  3:45 PM                Bikini.Images.ServiceDefaults
+d----           6/22/2026  5:14 PM                Bikini.SignalR
+d----           12/2/2025  3:45 PM                Bikini.Web.Design
+d----           6/29/2026  2:34 PM                BikiniMain
+d----           6/29/2026  2:40 AM                CorePackages
+d----           6/28/2026  2:07 PM                dev-ops
+-a---           12/2/2025  3:45 PM           2581 .gitattributes
+-a---           6/29/2026 12:08 PM           1835 .gitignore
+-a---           12/2/2025  3:45 PM          85144 Architecture view for Bikini_1.graphml
+-a---           12/2/2025  3:45 PM         542582 Architecture view for Bikini_1.png
+-a---           12/2/2025  3:45 PM           1047 FixGatewayKeyVaultPermissions.ps1
+-a---           6/27/2026  2:33 PM           8531 IMAGESVIEW_MIGRATION_CANDIDATES.md
+-a---           6/28/2026  4:22 PM          18300 NULLABLE_MIGRATION_STRATEGY.md
+-a---           6/27/2026  1:41 AM           6801 PERFORMANCE_INSTRUMENTATION_GUIDE.md
+-a---           6/27/2026  1:28 AM           8540 PERFORMANCE_OPTIMIZATION_SUMMARY.md
+-a---           6/27/2026  1:41 AM           4968 QUICK_PERFORMANCE_TEST_PLAN.md
+-a---           6/28/2026 12:55 PM           3877 README.md
+-a---           6/27/2026  2:27 PM           5760 REFACTORING_OPPORTUNITIES.md
+-a---           12/2/2025  3:45 PM          96008 SimplifiedArchitecture.argr
+
+PS D:\repos\Bikini\BikiniGit> cd Bikini.Base
+PS D:\repos\Bikini\BikiniGit\Bikini.Base> ls
+
+    Directory: D:\repos\Bikini\BikiniGit\Bikini.Base
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            4/6/2026  9:44 AM                bin
+d----           6/29/2026  4:55 PM                obj
+-a---            5/1/2026  9:07 AM            215 ApiEnum.cs
+-a---           4/24/2026  3:15 PM           2669 ArtCode.cs
+-a---           6/29/2026  2:42 AM            585 Bikini.Base.csproj
+-a---           4/24/2026  2:53 PM            454 Constants.cs
+-a---           12/2/2025  3:45 PM           3618 DbEnum.cs
+-a---           4/28/2026 10:49 PM           1263 Enum.cs
+-a---           4/28/2026 10:46 PM            290 IImage.cs
+-a---           12/2/2025  3:45 PM           3183 ImageEnum.cs
+-a---           12/2/2025  3:45 PM            257 IntegrationEnums.cs
+-a---           12/2/2025  3:45 PM            435 LayoutItemType.cs
+-a---           12/2/2025  3:45 PM            413 OrderCommonEnums.cs
+-a---           6/27/2026  1:40 PM           4877 Sku.cs
+
+PS D:\repos\Bikini\BikiniGit\Bikini.Base> ..
+PS D:\repos\Bikini\BikiniGit> ls
+
+    Directory: D:\repos\Bikini\BikiniGit
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           6/26/2026 11:47 PM                .vscode
+d----           6/12/2026 12:59 AM                AspireBikiniReports
+d----           6/27/2026  1:40 PM                Bikini.Base
+d----           12/2/2025  3:45 PM                Bikini.Images.AppHost
+d----           6/28/2026 12:18 PM                Bikini.Images.Function
+d----           12/2/2025  3:45 PM                Bikini.Images.ServiceDefaults
+d----           6/22/2026  5:14 PM                Bikini.SignalR
+d----           12/2/2025  3:45 PM                Bikini.Web.Design
+d----           6/29/2026  2:34 PM                BikiniMain
+d----           6/29/2026  2:40 AM                CorePackages
+d----           6/28/2026  2:07 PM                dev-ops
+-a---           12/2/2025  3:45 PM           2581 .gitattributes
+-a---           6/29/2026 12:08 PM           1835 .gitignore
+-a---           12/2/2025  3:45 PM          85144 Architecture view for Bikini_1.graphml
+-a---           12/2/2025  3:45 PM         542582 Architecture view for Bikini_1.png
+-a---           12/2/2025  3:45 PM           1047 FixGatewayKeyVaultPermissions.ps1
+-a---           6/27/2026  2:33 PM           8531 IMAGESVIEW_MIGRATION_CANDIDATES.md
+-a---           6/28/2026  4:22 PM          18300 NULLABLE_MIGRATION_STRATEGY.md
+-a---           6/27/2026  1:41 AM           6801 PERFORMANCE_INSTRUMENTATION_GUIDE.md
+-a---           6/27/2026  1:28 AM           8540 PERFORMANCE_OPTIMIZATION_SUMMARY.md
+-a---           6/27/2026  1:41 AM           4968 QUICK_PERFORMANCE_TEST_PLAN.md
+-a---           6/28/2026 12:55 PM           3877 README.md
+-a---           6/27/2026  2:27 PM           5760 REFACTORING_OPPORTUNITIES.md
+-a---           12/2/2025  3:45 PM          96008 SimplifiedArchitecture.argr
+
+PS D:\repos\Bikini\BikiniGit> go core
+Searching in: D:\repos\Bikini\BikiniGit\CorePackages...
+
+Multiple solutions found:
+[a]
+D:\repos\Bikini\BikiniGit\CorePackages\
+CorePackages.slnx
+[b]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Cli\
+Bikini.Cli.sln
+[c]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore\
+Bikini.DataCore.sln
+[d]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataIntegration\
+Bikini.DataIntegration.sln
+[↑ Up Arrow] Scan Parent Root
+[Space] Go to Search Root  [Esc] Quit
+Select letter or ↑:
+PS D:\repos\Bikini\BikiniGit\CorePackages> param(
+[string]$SolutionPath = "CorePackages\CorePackages.slnx"
+)
+>> ParameterBinding(): name="SolutionPath"; value="CorePackages\CorePackages.slnx"
+PS D:\repos\Bikini\BikiniGit\CorePackages> function Get-ProjectType {
+param([string]$ProjectPath)
+
+if (-not (Test-Path $ProjectPath)) {
+return "Unknown (file not found)"
+}
+
+try {
+[xml]$proj = Get-Content $ProjectPath
+$sdk = $proj.Project.Sdk
+$outputType = $proj.Project.PropertyGroup.OutputType | Select-Object -First 1
+$targetFramework = $proj.Project.PropertyGroup.TargetFramework | Select-Object -First 1
+$targetFrameworks = $proj.Project.PropertyGroup.TargetFrameworks | Select-Object -First 1
+
+# Determine project type
+$type = "Unknown"
+
+if ($sdk) {
+# SDK-style project
+switch ($sdk) {
+"Microsoft.NET.Sdk" {
+if ($outputType -eq "Exe") { $type = "Console Application" }
+elseif ($outputType -eq "Library") { $type = "Class Library" }
+elseif ($outputType -eq "WinExe") { $type = "Windows Application" }
+else { $type = "Class Library" }
+}
+"Microsoft.NET.Sdk.Web" { $type = "ASP.NET Core Web Application" }
+"Microsoft.NET.Sdk.Worker" { $type = "Worker Service" }
+"Microsoft.NET.Sdk.Razor" { $type = "Razor Class Library" }
+"Microsoft.NET.Sdk.BlazorWebAssembly" { $type = "Blazor WebAssembly" }
+default { $type = "SDK: $sdk" }
+}
+}
+else {
+# Legacy project format
+$projectTypeGuids = $proj.Project.PropertyGroup.ProjectTypeGuids
+if ($projectTypeGuids -match "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") {
+$type = "C# Project (Legacy)"
+}
+}
+
+# Add output type if available
+if ($outputType -and $type -ne "Unknown") {
+$type += " ($outputType)"
+}
+
+# Add framework info
+$framework = if ($targetFrameworks) { $targetFrameworks } else { $targetFramework }
+if ($framework) {
+$type += " [$framework]"
+}
+
+return $type
+}
+catch {
+return "Error reading project: $_"
+}
+}
+PS D:\repos\Bikini\BikiniGit\CorePackages> # Resolve solution path
+PS D:\repos\Bikini\BikiniGit\CorePackages> $solutionFullPath = if ([System.IO.Path]::IsPathRooted($SolutionPath)) {
+$SolutionPath
+} else {
+Join-Path (Get-Location) $SolutionPath
+}
+PS D:\repos\Bikini\BikiniGit\CorePackages> if (-not (Test-Path $solutionFullPath)) {
+Write-Error "Solution file not found: $solutionFullPath"
+exit 1
+}
+Write-Error: Solution file not found: D:\repos\Bikini\BikiniGit\CorePackages\CorePackages\CorePackages.slnx
+Write-Error: Solution file not found: D:\repos\Bikini\BikiniGit\CorePackages\CorePackages\CorePackages.slnx
+**********************
+PowerShell transcript start
+Start time: 20260629151420
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit
+Process ID: 131876
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+**********************
+PowerShell transcript start
+Start time: 20260629171701
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.dll
+Process ID: 120884
+PSVersion: 7.6.3
+PSEdition: Core
+GitCommitId: 7.6.3
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    Get-Solution
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\> Get-Solution
+Get-Solution.ps1: Solution file not found: D:\CorePackages\CorePackages.slnx
+Get-Solution.ps1: Solution file not found: D:\CorePackages\CorePackages.slnx
+PS D:\> go core
+Searching in: D:\repos\Bikini\BikiniGit\CorePackages...
+
+Multiple solutions found:
+[a]
+D:\repos\Bikini\BikiniGit\CorePackages\
+CorePackages.slnx
+[b]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Cli\
+Bikini.Cli.sln
+[c]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore\
+Bikini.DataCore.sln
+[d]
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataIntegration\
+Bikini.DataIntegration.sln
+[↑ Up Arrow] Scan Parent Root
+[Space] Go to Search Root  [Esc] Quit
+Select letter or ↑:
+PS D:\repos\Bikini\BikiniGit\CorePackages> Get-Solution CorePackages.slnx
+
+Solution: D:\repos\Bikini\BikiniGit\CorePackages\CorePackages.slnx
+================================================================================
+Parsing .slnx solution file...
+
+No projects found in solution.
+PS D:\repos\Bikini\BikiniGit\CorePackages> Get-ChildItem -Recurse -Filter *.csproj | ForEach-Object {
+    $xml = [xml](Get-Content $_.FullName -ErrorAction SilentlyContinue)
+    
+    # 1. Determine Project Type
+    $sdk = $xml.Project.Sdk
+    $type = "Legacy .NET Framework"
+    
+    if ($sdk -like "*Web*") { $type = "ASP.NET Core Web / API" }
+    elseif ($sdk) { $type = ".NET Core / Standard (SDK-Style)" }
+    elseif ($xml.Project.Import.Project -like "*Android*" -or $xml.Project.Import.Project -like "*iOS*") { $type = "Xamarin / MAUI" }
+
+    # 2. Output Details
+    [PSCustomObject]@{
+        "Project Name" = $_.BaseName
+        "Project Type" = $type
+        "Relative Path" = (Resolve-Path $_.FullName -Relative)
+    }
+} | Format-Table -AutoSize
+
+Project Name             Project Type                     Relative Path
+------------             ------------                     -------------
+Bikini.Cli               .NET Core / Standard (SDK-Style) .\Bikini.Cli\Bikini.Cli.csproj
+Bikini.Core              .NET Core / Standard (SDK-Style) .\Bikini.Core\Bikini.Core.csproj
+Bikini.Core.Cli          .NET Core / Standard (SDK-Style) .\Bikini.Core.Cli\Bikini.Core.Cli.csproj
+Bikini.Core.Test         .NET Core / Standard (SDK-Style) .\Bikini.Core.Test\Bikini.Core.Test.csproj
+Bikini - Backup.Core.Web .NET Core / Standard (SDK-Style) .\Bikini.Core.Web\Bikini - Backup.Core.Web.csproj
+Bikini.Core.Web          .NET Core / Standard (SDK-Style) .\Bikini.Core.Web\Bikini.Core.Web.csproj
+Bikini.DataCore          .NET Core / Standard (SDK-Style) .\Bikini.DataCore\Bikini.DataCore.csproj
+Bikini.DataCore.Test     .NET Core / Standard (SDK-Style) .\Bikini.DataCore.Test\Bikini.DataCore.Test.csproj
+Bikini.DataIntegration   .NET Core / Standard (SDK-Style) .\Bikini.DataIntegration\Bikini.DataIntegration.csproj
+Bikini.DataPrint         .NET Core / Standard (SDK-Style) .\Bikini.DataPrint\Bikini.DataPrint.csproj
+
+PS D:\repos\Bikini\BikiniGit\CorePackages> Get-ChildItem -Recurse -Filter *.csproj | ForEach-Object {
+    $xml = [xml](Get-Content $_.FullName -ErrorAction SilentlyContinue)
+    
+    # 1. Grab Core Attributes
+    $sdk = $xml.Project.Sdk
+    $outputType = $xml.Project.PropertyGroup.OutputType
+    
+    # Find any Azure Function package references
+    $packages = $xml.Project.ItemGroup.PackageReference.Include
+    $isFunctionApp = $packages -match "Microsoft\.Azure\.Functions" -or $packages -match "Microsoft\.NET\.Sdk\.Functions"
+
+    # 2. Apply Classification Logic
+    if ($sdk -like "*Web*") {
+        $type = "Web App (ASP.NET Core)"
+    }
+    elseif ($isFunctionApp) {
+        $type = "Azure Function App"
+    }
+    elseif ($outputType -eq "Exe") {
+        $type = "Console / Executable Application"
+    }
+    else {
+        $type = "Class Library"
+    }
+
+    # 3. Output standard summary object
+    [PSCustomObject]@{
+        "Project Name"  = $_.BaseName
+        "Project Type"  = $type
+        "Relative Path" = (Resolve-Path $_.FullName -Relative)
+    }
+} | Format-Table -AutoSize
+
+Project Name             Project Type                     Relative Path
+------------             ------------                     -------------
+Bikini.Cli               Console / Executable Application .\Bikini.Cli\Bikini.Cli.csproj
+Bikini.Core              Class Library                    .\Bikini.Core\Bikini.Core.csproj
+Bikini.Core.Cli          Console / Executable Application .\Bikini.Core.Cli\Bikini.Core.Cli.csproj
+Bikini.Core.Test         Class Library                    .\Bikini.Core.Test\Bikini.Core.Test.csproj
+Bikini - Backup.Core.Web Class Library                    .\Bikini.Core.Web\Bikini - Backup.Core.Web.csproj
+Bikini.Core.Web          Class Library                    .\Bikini.Core.Web\Bikini.Core.Web.csproj
+Bikini.DataCore          Class Library                    .\Bikini.DataCore\Bikini.DataCore.csproj
+Bikini.DataCore.Test     Class Library                    .\Bikini.DataCore.Test\Bikini.DataCore.Test.csproj
+Bikini.DataIntegration   Class Library                    .\Bikini.DataIntegration\Bikini.DataIntegration.csproj
+Bikini.DataPrint         Class Library                    .\Bikini.DataPrint\Bikini.DataPrint.csproj
+
+PS D:\repos\Bikini\BikiniGit\CorePackages> go bikini
+Searching in: D:\repos\bikini\bikinigit\bikinimain...
+
+Parsing: Bikini.slnx
+
+Select project directory:
+[a]
+Bikini.Api.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Api.Gbs)
+[b]
+Bikini.Assets
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Assets)
+[c]
+Bikini.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes)
+[d]
+Bikini.Barcodes.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Barcodes.Test)
+[e]
+Bikini.Base
+(D:\repos\Bikini\BikiniGit\BikiniMain\..\Bikini.Base)
+[f]
+Bikini.Biz.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Calendars)
+[g]
+Bikini.Biz.Channel
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Channel)
+[h]
+Bikini.Biz.Comp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Comp)
+[i]
+Bikini.Biz.Compose
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose)
+[j]
+Bikini.Biz.Compose.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Compose.Tests)
+[k]
+Bikini.Biz.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration)
+[l]
+Bikini.Biz.Orchestration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Orchestration.Models)
+[m]
+Bikini.Biz.OrderCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon)
+[n]
+Bikini.Biz.OrderCommon.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.OrderCommon.Models)
+[o]
+Bikini.Biz.Principal
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Principal)
+[p]
+Bikini.Biz.PrintCommon
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.PrintCommon)
+[q]
+Bikini.Biz.Printing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Printing)
+[r]
+Bikini.Biz.Search
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Biz.Search)
+[s]
+Bikini.Cli
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli)
+[t]
+Bikini.Cli.Test
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Cli.Test)
+[u]
+Bikini.ClientEngine
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ClientEngine)
+[v]
+Bikini.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Design)
+[w]
+Bikini.Encryption
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Encryption)
+[x]
+Bikini.Event.ShopifyOrder
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Event.ShopifyOrder)
+[y]
+Bikini.Events
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Events)
+[z]
+Bikini.Export
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export)
+[aa]
+Bikini.Export.Console
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Console)
+[ab]
+Bikini.Export.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Export.Tests)
+[ac]
+Bikini.Faire
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire)
+[ad]
+Bikini.Faire.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Faire.Models)
+[ae]
+Bikini.Ftp
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Ftp)
+[af]
+Bikini.Function.Image
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image)
+[ag]
+Bikini.Function.Image.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Product)
+[ah]
+Bikini.Function.Image.Upc
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Upc)
+[ai]
+Bikini.Function.Image.Week
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Image.Week)
+[aj]
+Bikini.Function.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Notification)
+[ak]
+Bikini.Function.Order
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Order)
+[al]
+Bikini.Function.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print)
+[am]
+Bikini.Function.Print.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.Print.Client)
+[an]
+Bikini.Function.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Function.QuickBooks)
+[ao]
+Bikini.Functions.Shopify.Product
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Shopify.Product)
+[ap]
+Bikini.Functions.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Functions.Tests)
+[aq]
+Bikini.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images)
+[ar]
+Bikini.Images.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Images.Models)
+[as]
+Bikini.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration)
+[at]
+Bikini.Integration.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Integration.Models)
+[au]
+Bikini.Notification.Client
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Client)
+[av]
+Bikini.Notification.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Core)
+[aw]
+Bikini.Notification.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Notification.Tests)
+[ax]
+Bikini.Orders.Adapters
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Adapters)
+[ay]
+Bikini.Orders.KeyVault
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.KeyVault)
+[az]
+Bikini.Orders.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models)
+[ba]
+Bikini.Orders.Models.Workflow
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Orders.Models.Workflow)
+[bb]
+Bikini.PdfBackup
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.PdfBackup)
+[bc]
+Bikini.ProductImages
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.ProductImages)
+[bd]
+Bikini.Production
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production)
+[be]
+Bikini.Production.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Production.Models)
+[bf]
+Bikini.Products
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Products)
+[bg]
+Bikini.Publishing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Publishing)
+[bh]
+Bikini.QuickBooks
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks)
+[bi]
+Bikini.QuickBooks.Core
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.QuickBooks.Core)
+[bj]
+Bikini.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify)
+[bk]
+Bikini.Shopify.Models
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Shopify.Models)
+[bl]
+Bikini.Storage
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage)
+[bm]
+Bikini.Storage.Tests
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Storage.Tests)
+[bn]
+Bikini.Tests.Net5
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Tests.Net5)
+[bo]
+Bikini.Web.Barcodes
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Barcodes)
+[bp]
+Bikini.Web.Calendars
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Calendars)
+[bq]
+Bikini.Web.Design
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Design)
+[br]
+Bikini.Web.Images
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Images)
+[bs]
+Bikini.Web.Integration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Integration)
+[bt]
+Bikini.Web.Landing
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Landing)
+[bu]
+Bikini.Web.Net8
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Net8)
+[bv]
+Bikini.Web.Notification
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Notification)
+[bw]
+Bikini.Web.Orchestration
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orchestration)
+[bx]
+Bikini.Web.Orders
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Orders)
+[by]
+Bikini.Web.Print
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Print)
+[bz]
+Bikini.Web.Public
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Web.Public)
+[ca]
+Bikini.Webhook.Gbs
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Gbs)
+[cb]
+Bikini.Webhook.Shopify
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Shopify)
+[cc]
+Bikini.Webhook.Vanilla
+(D:\repos\Bikini\BikiniGit\BikiniMain\Bikini.Webhook.Vanilla)
+[↑ Up Arrow] Scan Parent Root
+[Space] Go to Solution Root  [Esc] Quit
+Press letter or ↑:
+PS D:\repos\Bikini\BikiniGit\BikiniMain> Get-ChildItem -Recurse -Filter *.csproj | ForEach-Object {
+    $xml = [xml](Get-Content $_.FullName -ErrorAction SilentlyContinue)
+    
+    # 1. Grab Core Attributes
+    $sdk = $xml.Project.Sdk
+    $outputType = $xml.Project.PropertyGroup.OutputType
+    
+    # Find any Azure Function package references
+    $packages = $xml.Project.ItemGroup.PackageReference.Include
+    $isFunctionApp = $packages -match "Microsoft\.Azure\.Functions" -or $packages -match "Microsoft\.NET\.Sdk\.Functions"
+
+    # 2. Apply Classification Logic
+    if ($sdk -like "*Web*") {
+        $type = "Web App (ASP.NET Core)"
+    }
+    elseif ($isFunctionApp) {
+        $type = "Azure Function App"
+    }
+    elseif ($outputType -eq "Exe") {
+        $type = "Console / Executable Application"
+    }
+    else {
+        $type = "Class Library"
+    }
+
+    # 3. Output standard summary object
+    [PSCustomObject]@{
+        "Project Name"  = $_.BaseName
+        "Project Type"  = $type
+        "Relative Path" = (Resolve-Path $_.FullName -Relative)
+    }
+} | Format-Table -AutoSize
+
+Project Name                     Project Type                     Relative Path
+------------                     ------------                     -------------
+Bikini.Api.Gbs                   Class Library                    .\Bikini.Api.Gbs\Bikini.Api.Gbs.csproj
+Bikini.AppHost                   Console / Executable Application .\Bikini.AppHost\Bikini.AppHost.csproj
+Bikini.Assets                    Class Library                    .\Bikini.Assets\Bikini.Assets.csproj
+Bikini.Barcodes                  Class Library                    .\Bikini.Barcodes\Bikini.Barcodes.csproj
+Bikini.Barcodes.Test             Class Library                    .\Bikini.Barcodes.Test\Bikini.Barcodes.Test.csproj
+Bikini.Biz.Calendars             Class Library                    .\Bikini.Biz.Calendars\Bikini.Biz.Calendars.csproj
+Bikini.Biz.Channel               Class Library                    .\Bikini.Biz.Channel\Bikini.Biz.Channel.csproj
+Bikini.Biz.Compose.Models        Class Library                    .\Bikini.Biz.Comp\Bikini.Biz.Compose.Models.csproj
+Bikini.Biz.Compose               Class Library                    .\Bikini.Biz.Compose\Bikini.Biz.Compose.csproj
+Bikini.Biz.Compose.Tests         Class Library                    .\Bikini.Biz.Compose.Tests\Bikini.Biz.Compose.Tests.csproj
+Bikini.Biz.Orchestration         Class Library                    .\Bikini.Biz.Orchestration\Bikini.Biz.Orchestration.csproj
+Bikini.Biz.Orchestration.Models  Class Library                    .\Bikini.Biz.Orchestration.Models\Bikini.Biz.Orchestration.Models.csproj
+Bikini.Biz.OrderCommon           Class Library                    .\Bikini.Biz.OrderCommon\Bikini.Biz.OrderCommon.csproj
+Bikini.Biz.OrderCommon.Models    Class Library                    .\Bikini.Biz.OrderCommon.Models\Bikini.Biz.OrderCommon.Models.csproj
+Bikini.Biz.Principal             Class Library                    .\Bikini.Biz.Principal\Bikini.Biz.Principal.csproj
+Bikini.Biz.PrintCommon           Class Library                    .\Bikini.Biz.PrintCommon\Bikini.Biz.PrintCommon.csproj
+Bikini.Biz.Printing              Class Library                    .\Bikini.Biz.Printing\Bikini.Biz.Printing.csproj
+Bikini.Biz.Search                Class Library                    .\Bikini.Biz.Search\Bikini.Biz.Search.csproj
+Bikini.Blazor.Design             Web App (ASP.NET Core)           .\Bikini.Blazor.Design\Bikini.Blazor.Design\Bikini.Blazor.Design.csproj
+Bikini.Blazor.Design.Client      Web App (ASP.NET Core)           .\Bikini.Blazor.Design\Bikini.Blazor.Design.Client\Bikini.Blazor.Design.Client.csproj
+Bikini.Cli                       Console / Executable Application .\Bikini.Cli\Bikini.Cli.csproj
+Bikini.Cli.Test                  Class Library                    .\Bikini.Cli.Test\Bikini.Cli.Test.csproj
+Bikini.ClientEngine              Class Library                    .\Bikini.ClientEngine\Bikini.ClientEngine.csproj
+Bikini.Design                    Class Library                    .\Bikini.Design\Bikini.Design.csproj
+Bikini.Design.Api                Web App (ASP.NET Core)           .\Bikini.Design.Api\Bikini.Design.Api.csproj
+Bikini.Encryption                Class Library                    .\Bikini.Encryption\Bikini.Encryption.csproj
+Bikini.Event.ShopifyOrder        Azure Function App               .\Bikini.Event.ShopifyOrder\Bikini.Event.ShopifyOrder.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Event.ShopifyOrder\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Event.ShopifyOrder\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Events                    Class Library                    .\Bikini.Events\Bikini.Events.csproj
+Bikini.Export                    Class Library                    .\Bikini.Export\Bikini.Export.csproj
+Bikini.Export.Console            Console / Executable Application .\Bikini.Export.Console\Bikini.Export.Console.csproj
+Bikini.Export.Tests              Class Library                    .\Bikini.Export.Tests\Bikini.Export.Tests.csproj
+Bikini.Faire                     Class Library                    .\Bikini.Faire\Bikini.Faire.csproj
+Bikini.Faire.Models              Class Library                    .\Bikini.Faire.Models\Bikini.Faire.Models.csproj
+Bikini.Ftp                       Class Library                    .\Bikini.Ftp\Bikini.Ftp.csproj
+Bikini.Function.Image            Azure Function App               .\Bikini.Function.Image\Bikini.Function.Image.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Image\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Image\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Function.Image.Product    Azure Function App               .\Bikini.Function.Image.Product\Bikini.Function.Image.Product.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Image.Product\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Image.Product\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Function.Image.Upc        Azure Function App               .\Bikini.Function.Image.Upc\Bikini.Function.Image.Upc.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Image.Upc\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Image.Upc\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Function.Image.Week       Azure Function App               .\Bikini.Function.Image.Week\Bikini.Function.Image.Week.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Image.Week\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Image.Week\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Function.Notification     Azure Function App               .\Bikini.Function.Notification\Bikini.Function.Notification.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Notification\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Notification\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Function.Order            Azure Function App               .\Bikini.Function.Order\Bikini.Function.Order.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Order\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Order\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Function.Print            Azure Function App               .\Bikini.Function.Print\Bikini.Function.Print.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Print\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.Print\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Function.Print.Client     Class Library                    .\Bikini.Function.Print.Client\Bikini.Function.Print.Client.csproj
+Bikini.Function.QuickBooks       Azure Function App               .\Bikini.Function.QuickBooks\Bikini.Function.QuickBooks.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.QuickBooks\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Function.QuickBooks\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Functions.Shopify.Product Azure Function App               .\Bikini.Functions.Shopify.Product\Bikini.Functions.Shopify.Product.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Functions.Shopify.Product\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Functions.Shopify.Product\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Functions.Tests           Class Library                    .\Bikini.Functions.Tests\Bikini.Functions.Tests.csproj
+Bikini.Images                    Class Library                    .\Bikini.Images\Bikini.Images.csproj
+Bikini.Images.Models             Class Library                    .\Bikini.Images.Models\Bikini.Images.Models.csproj
+Bikini.Integration               Class Library                    .\Bikini.Integration\Bikini.Integration.csproj
+Bikini.Integration.Models        Class Library                    .\Bikini.Integration.Models\Bikini.Integration.Models.csproj
+Bikini.Notification.Client       Class Library                    .\Bikini.Notification.Client\Bikini.Notification.Client.csproj
+Bikini.Notification.Core         Class Library                    .\Bikini.Notification.Core\Bikini.Notification.Core.csproj
+Bikini.Notification.Tests        Class Library                    .\Bikini.Notification.Tests\Bikini.Notification.Tests.csproj
+Bikini.Orders.Adapters           Class Library                    .\Bikini.Orders.Adapters\Bikini.Orders.Adapters.csproj
+Bikini.Orders.KeyVault           Class Library                    .\Bikini.Orders.KeyVault\Bikini.Orders.KeyVault.csproj
+Bikini.Orders.Models             Class Library                    .\Bikini.Orders.Models\Bikini.Orders.Models.csproj
+Bikini.Orders.Models.Workflow    Class Library                    .\Bikini.Orders.Models.Workflow\Bikini.Orders.Models.Workflow.csproj
+Bikini.PdfBackup                 Class Library                    .\Bikini.PdfBackup\Bikini.PdfBackup.csproj
+Bikini.ProductImages             Class Library                    .\Bikini.ProductImages\Bikini.ProductImages.csproj
+Bikini.Production                Class Library                    .\Bikini.Production\Bikini.Production.csproj
+Bikini.Production.Models         Class Library                    .\Bikini.Production.Models\Bikini.Production.Models.csproj
+Bikini.Products                  Class Library                    .\Bikini.Products\Bikini.Products.csproj
+Bikini.Publishing                Class Library                    .\Bikini.Publishing\Bikini.Publishing.csproj
+Bikini.QuickBooks                Class Library                    .\Bikini.QuickBooks\Bikini.QuickBooks.csproj
+Bikini.QuickBooks.Core           Class Library                    .\Bikini.QuickBooks.Core\Bikini.QuickBooks.Core.csproj
+Bikini.ServiceDefaults           Class Library                    .\Bikini.ServiceDefaults\Bikini.ServiceDefaults.csproj
+Bikini.Shopify                   Class Library                    .\Bikini.Shopify\Bikini.Shopify.csproj
+Bikini.Shopify.Models            Class Library                    .\Bikini.Shopify.Models\Bikini.Shopify.Models.csproj
+Bikini.Storage                   Class Library                    .\Bikini.Storage\Bikini.Storage.csproj
+Bikini.Storage.Tests             Class Library                    .\Bikini.Storage.Tests\Bikini.Storage.Tests.csproj
+Bikini.Tests.Net5                Class Library                    .\Bikini.Tests.Net5\Bikini.Tests.Net5.csproj
+Bikini.Web.Barcodes              Web App (ASP.NET Core)           .\Bikini.Web.Barcodes\Bikini.Web.Barcodes.csproj
+Bikini.Web.Calendars             Web App (ASP.NET Core)           .\Bikini.Web.Calendars\Bikini.Web.Calendars.csproj
+Bikini.Web.Design                Web App (ASP.NET Core)           .\Bikini.Web.Design\Bikini.Web.Design.csproj
+Bikini.Web.Images                Web App (ASP.NET Core)           .\Bikini.Web.Images\Bikini.Web.Images.csproj
+Bikini.Web.Integration           Web App (ASP.NET Core)           .\Bikini.Web.Integration\Bikini.Web.Integration.csproj
+Bikini.Web.Landing               Web App (ASP.NET Core)           .\Bikini.Web.Landing\Bikini.Web.Landing.csproj
+Bikini.Web.Net8                  Web App (ASP.NET Core)           .\Bikini.Web.Net8\Bikini.Web.Net8.csproj
+Bikini.Web.Notification          Web App (ASP.NET Core)           .\Bikini.Web.Notification\Bikini.Web.Notification.csproj
+Bikini.Web.Orchestration         Web App (ASP.NET Core)           .\Bikini.Web.Orchestration\Bikini.Web.Orchestration.csproj
+Bikini.Web.Orders                Web App (ASP.NET Core)           .\Bikini.Web.Orders\Bikini.Web.Orders.csproj
+Bikini.Web.Print                 Web App (ASP.NET Core)           .\Bikini.Web.Print\Bikini.Web.Print.csproj
+Bikini.Web.Public                Web App (ASP.NET Core)           .\Bikini.Web.Public\Bikini.Web.Public.csproj
+Bikini.Web.Reports               Web App (ASP.NET Core)           .\Bikini.Web.Reports\Bikini.Web.Reports\Bikini.Web.Reports.csproj
+Bikini.Web.Reports.Client        Web App (ASP.NET Core)           .\Bikini.Web.Reports\Bikini.Web.Reports.Client\Bikini.Web.Reports.Client.csproj
+Bikini.Webhook.Gbs               Azure Function App               .\Bikini.Webhook.Gbs\Bikini.Webhook.Gbs.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Webhook.Gbs\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Webhook.Gbs\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Webhook.Shopify           Azure Function App               .\Bikini.Webhook.Shopify\Bikini.Webhook.Shopify.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Webhook.Shopify\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Webhook.Shopify\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+Bikini.Webhook.Vanilla           Azure Function App               .\Bikini.Webhook.Vanilla\Bikini.Webhook.Vanilla.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Webhook.Vanilla\obj\Debug\net10.0\WorkerExtensions\WorkerExtensions.csproj
+WorkerExtensions                 Azure Function App               .\Bikini.Webhook.Vanilla\obj\Release\net10.0\WorkerExtensions\WorkerExtensions.csproj
+BlazorApp1                       Web App (ASP.NET Core)           .\BlazorApp1\BlazorApp1\BlazorApp1.csproj
+BlazorApp1.Client                Web App (ASP.NET Core)           .\BlazorApp1\BlazorApp1.Client\BlazorApp1.Client.csproj
+QuadrilateralDistortion          Class Library                    .\QuadrilateralDistortion\QuadrilateralDistortion.csproj
+
+**********************
+PowerShell transcript start
+Start time: 20260629200114
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit
+Process ID: 104552
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    Get-Solution
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+
+PS D:\repos\Bikini\BikiniGit> Get-Content "c:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\d159a001344f95717d495e84a53d1989\GitHub.copilot-chat\debug-logs\5443b801-ab80-41cb-9602-e05d6b4dbfb8\main.jsonl" | Select-Object -Last 100 | ConvertFrom-Json -AsHashtable | ForEach-Object { if ($_.role -or $_.type) { $_ } } | Select-Object -First 50 | Format-List
+
+Name  : v
+Value : 1
+
+Name  : ts
+Value : 1782788373994
+
+Name  : dur
+Value : 0
+
+Name  : sid
+Value : 5443b801-ab80-41cb-9602-e05d6b4dbfb8
+
+Name  : type
+Value : session_start
+
+Name  : name
+Value : session_start
+
+Name  : spanId
+Value : session-start-5443b801-ab80-41cb-9602-e05d6b4dbfb8
+
+Name  : status
+Value : ok
+
+Name  : attrs
+Value : {[copilotVersion, 0.54.0], [vscodeVersion, 1.126.0]}
+
+PS D:\repos\Bikini\BikiniGit> Get-ChildItem "c:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage" -Recurse -Filter "main.jsonl" | Select-Object FullName, LastWriteTime | Sort-Object LastWriteTime -Descending | Select-Object -First 10
+
+FullName
+--------                                                                       
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\d159a001344f957…
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c864…
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c864…
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c864…
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c864…
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c864…
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\9cadb2b1244a514…
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\9cadb2b1244a514…
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\9cadb2b1244a514…
+
+PS D:\repos\Bikini\BikiniGit> Get-ChildItem "c:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c864*\GitHub.copilot-chat\debug-logs" -Directory | Sort-Object Name -Descending | Select-Object -First 5 | ForEach-Object { $_.FullName }
+C:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c8643b49ebb20731720a9\GitHub.copilot-chat\debug-logs
+PS D:\repos\Bikini\BikiniGit> Get-ChildItem "c:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c8643b49ebb20731720a9\GitHub.copilot-chat\debug-logs" | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime
+
+Name                                 LastWriteTime
+----                                 -------------
+cd08bc21-2c14-4022-8b3b-8adac53822a8 6/29/2026 3:54:38 PM
+e40e3607-8d51-45fb-82a4-c2a998420f57 6/28/2026 10:11:32 AM
+5ea2e200-7afb-49a3-bcf2-b35446e43d6c 6/28/2026 9:31:23 AM
+c8310de5-df38-40fc-867b-3778d3eea53f 6/27/2026 12:45:02 AM
+cd1f0c59-5591-4a63-a64a-79492f10e0eb 6/26/2026 11:53:15 PM
+
+PS D:\repos\Bikini\BikiniGit> $lines = Get-Content "c:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c8643b49ebb20731720a9\GitHub.copilot-chat\debug-logs\cd08bc21-2c14-4022-8b3b-8adac53822a8\main.jsonl"
+PS D:\repos\Bikini\BikiniGit> $lines | ForEach-Object { 
+    try { $_ | ConvertFrom-Json } catch {}
+} | Where-Object { $_.type -in @('turn', 'request', 'response') -or $_.name -in @('turn', 'request', 'response', 'user_message', 'assistant_message') } | Select-Object -First 30 | Format-List type, name, attrs
+PS D:\repos\Bikini\BikiniGit> $lines = Get-Content "c:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c8643b49ebb20731720a9\GitHub.copilot-chat\debug-logs\cd08bc21-2c14-4022-8b3b-8adac53822a8\main.jsonl"
+PS D:\repos\Bikini\BikiniGit> $parsed = $lines | ForEach-Object { try { $_ | ConvertFrom-Json } catch {} }
+PS D:\repos\Bikini\BikiniGit> $parsed | Select-Object -First 3 | Format-List
+
+v      : 1
+ts     : 1782773674692
+dur    : 0
+sid    : cd08bc21-2c14-4022-8b3b-8adac53822a8
+type   : session_start
+name   : session_start
+spanId : session-start-cd08bc21-2c14-4022-8b3b-8adac53822a8
+status : ok
+attrs  : @{copilotVersion=0.54.0; vscodeVersion=1.126.0}
+
+PS D:\repos\Bikini\BikiniGit> $lines = Get-Content "c:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c8643b49ebb20731720a9\GitHub.copilot-chat\debug-logs\cd08bc21-2c14-4022-8b3b-8adac53822a8\main.jsonl"
+PS D:\repos\Bikini\BikiniGit> $parsed = $lines | ForEach-Object { try { $_ | ConvertFrom-Json } catch {} }
+PS D:\repos\Bikini\BikiniGit> $types = $parsed | Select-Object -ExpandProperty type -ErrorAction SilentlyContinue | Sort-Object -Unique
+PS D:\repos\Bikini\BikiniGit> $types
+session_start
+PS D:\repos\Bikini\BikiniGit> $lines = Get-Content "c:\Users\NickPearce\AppData\Roaming\Code\User\workspaceStorage\69e09237186c8643b49ebb20731720a9\GitHub.copilot-chat\debug-logs\cd08bc21-2c14-4022-8b3b-8adac53822a8\main.jsonl"
+PS D:\repos\Bikini\BikiniGit> Write-Host "Total lines: $($lines.Count)"
+Total lines: 1
+PS D:\repos\Bikini\BikiniGit> $lines | Select-Object -First 5
+{"v":1,"ts":1782773674692,"dur":0,"sid":"cd08bc21-2c14-4022-8b3b-8adac53822a8","type":"session_start","name":"session_start","spanId":"session-start-cd08bc21-2c14-4022-8b3b-8adac53822a8","status":"ok","attrs":{"copilotVersion":"0.54.0","vscodeVersion":"1.126.0"}}
+PS D:\repos\Bikini\BikiniGit> Get-ChildItem "d:\repos\Bikini\BikiniGit" -Recurse -File -Exclude "*.dll","*.pdb","*.exe","*.nupkg" | Where-Object { $_.LastWriteTime -gt (Get-Date).AddDays(-3) } | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime -First 30
+
+FullName
+--------                                                                       
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Web\obj\Debug\net10.0\Bikin…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Web\obj\Debug\net10.0\Bikin…
+D:\repos\Bikini\BikiniGit\dev-ops\dev-ops-workspace.code-workspace
+D:\repos\Bikini\BikiniGit\Get-SolutionProjects.ps1
+D:\repos\Bikini\BikiniGit\Bikini.Base\obj\Debug\net10.0\Bikini.Base.assets.cac…
+D:\repos\Bikini\BikiniGit\Bikini.Base\obj\Bikini.Base.csproj.nuget.dgspec.json
+D:\repos\Bikini\BikiniGit\Bikini.Base\obj\project.nuget.cache
+D:\repos\Bikini\BikiniGit\Bikini.Base\obj\project.assets.json
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore.Test\bin\Debug\net10.0\…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore.Test\bin\Debug\net10.0\…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Test\bin\Debug\net10.0\Cove…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Test\bin\Debug\net10.0\.msC…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore.Test\obj\Debug\net10.0\…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore.Test\obj\Debug\net10.0\…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Test\obj\Debug\net10.0\Biki…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Test\obj\Debug\net10.0\Biki…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataIntegration\obj\Debug\net10.…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataIntegration\obj\Debug\net10.…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Cli\obj\Debug\net10.0\Bikin…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Cli\obj\Debug\net10.0\Bikin…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataPrint\obj\Debug\net10.0\Biki…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataPrint\obj\Debug\net10.0\Biki…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore\obj\Debug\net10.0\Bikin…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore\obj\Debug\net10.0\Bikin…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Cli\obj\Debug\net10.0\Bikin…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataCore.Test\obj\Debug\net10.0\…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataIntegration\obj\Debug\net10.…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Web\obj\Debug\net10.0\Bikin…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.DataPrint\obj\Debug\net10.0\Biki…
+D:\repos\Bikini\BikiniGit\CorePackages\Bikini.Core.Test\obj\Debug\net10.0\Biki…
+
+**********************
+PowerShell transcript start
+Start time: 20260629200218
+Username: AzureAD\NickPearce
+RunAs User: AzureAD\NickPearce
+Configuration Name: 
+Machine: VIOLETTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoExit
+Process ID: 67008
+PSVersion: 7.5.5
+PSEdition: Core
+GitCommitId: 7.5.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+⚡ Log Transcripts Initialized
+⚡ Loading System Core Utilities
+    Connect-Azure
+ azl
+    Enable-VS
+ vst
+    Find-In-Files
+ find
+    Get-Commands
+ cmds
+    Get-GitLogTable
+ glt
+    Get-Go
+ go
+    Get-Listing
+ ll
+    Get-PlanetPearceMenu
+ pp
+    Get-Status
+ status
+    Open-MarkdownBrowser
+ mdview
+    Set-Project
+ vsp
+⚡ Initializing Scripts
+    Clean-Build
+
+    Get-Solution
+
+    NugetAnalysis
+
+    Update-TSGlobals
+
+    Update-Version
+
+⚡ Optimizing Controls
+    cd..
+ ..
+    Get-AllFiles
+ la
+    Get-RecursiveList
+ lr
+    Get-SortedBySize
+ lss
+    Get-DirSize
+ ldu
+👨‍🚀 Orbit Stabilized
+

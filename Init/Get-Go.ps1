@@ -39,8 +39,9 @@ function Get-Go {
             "ps"      = "D:\PowerShell"
             "modules" = "D:\PowerShell\Modules"
             "scripts" = "D:\PowerShell\Scripts"
-            "init"    = "D:\PowerShell\Init"
-            "do"      = "D:\repos\Bikini\BikiniGit\dev-ops"
+            "init"      = "D:\PowerShell\Init"
+            "do"        = "D:\repos\Bikini\BikiniGit\dev-ops"
+            "templates" = "D:\PowerShell\Templates"
         }
     }
 

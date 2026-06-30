@@ -1,16 +1,12 @@
 {
 	"folders": [
-		{ "path": "D:\\PowerShell" },
-		{ "path": "D:\\repos\\Bikini\\BikiniGit" }
+		{ "path": "D:\\PowerShell" }
 	],
 	"settings": {
 		"debug.internalConsoleOptions": "neverOpen",
 		"chat.tools.terminal.autoApprove": {
 			"git add": true,
-			"git commit": true,
-			"git remote": true,
-			"git -C \"BikiniMain\"": true,
-			"git -C \"CorePackages\"": true
+			"git commit": true
 		}
 	}
 }

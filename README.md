@@ -129,6 +129,21 @@ Major Windows 11 feature upgrades, domain profile migrations, or storage drive r
 
 ---
 
+## 🤖 AI & Copilot Integration
+
+Copilot has no memory between sessions — instruction files are the memory. See **[Templates/README.md](Templates/README.md)** for the full strategy, the complete table of instruction files across all workspaces, and guidance on keeping them current.
+
+### Quick reference
+| File | Purpose |
+|---|---|
+| `.github/copilot-instructions.md` | Always loaded — repo-wide context |
+| `.github/instructions/*.instructions.md` | Auto-applied by file-pattern (`applyTo` glob) |
+| `SKILL.md` files | On-demand reference via Skills panel |
+
+`Templates/` also holds reusable starter packs (currently: `vue-starter/`) for bootstrapping new projects with pre-configured instruction files. Use `go templates` to navigate there.
+
+---
+
 ## 🔗 Engineering Log References
 
 *   **Active Architectural Thread:** [Nick's Dev Drive & Shell Optimization Logs](https://www.google.com/search?q=after+setting+up+my+dev+drive+in+windows+11%2C+resharper+still+says+%22Average+CPU+usage+of+MsMpEng.exe+during+the+last+build+was+277%25%22&newwindow=1&sca_esv=3a52d14fb15abeb5&rlz=1C1GCEA_enUS1205US1205&sxsrf=APpeQnudaeqjDhj-3RB-aL8UhfZWbt72ug%3A1782174381873&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JtdOuIEOJ1nHhG8N6Kw1G1--8sK5HSeIKdPwDspReFQmSOB62f6hOV3ul6PwI7nMwmcp_wqPSToxeW8e38twHWWWPGQNUPUGiduw9PfE1J9VcrwAD_H_gdCZtzDkO7eIxXgAcQ-lz7Z1ieDInQWizI4lI8YoJODjuhEGMvXOTfxvd2J5pYA&aep=1&ntc=1&sa=X&ved=2ahUKEwix79X3jJyVAxXiIUQIHZUqIq8Q2J8OegQIDxAD&cshid=1782174387408125&biw=1298&bih=1191&dpr=1&sourceid=chrome&ccb=1&cs=1&hl=en-US&mstk=AUtExfCFh4ljXLAIrFNRXlRdLgbpBi-W6KGPkqwKyE-SzgttRrrMJGEEkGBEmAov6YWIJz6qhOvYce8ZLETZ_VJKJONRxF7blHqKgTo0S6U-S3AFxa0cIT0_0hg6HJhoLGZN_rdvFBqNbrVXdfZQNa0Gz7kVBhK0r5zY4XqdeQWBqRHSDs1MUXqe_6M8buLawi3CWWARCmR1R5gkcPasvbRHHVpBzWJrUNiGaA9TRwf0GQLEQSW4_e7gurFKry63MAX0pjdiHR-gfqg6LQ&csuir=1&mtid=utI5av7aNuKhur8P_KCZ0Aw&atvm=2&udm=50)
